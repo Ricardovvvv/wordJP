@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Ricardo/Documents/apps/**)",
+      "Bash(npx create-expo-app@latest wordJP-temp --template blank-typescript)",
+      "Bash(npm --version)",
+      "Bash(where node *)",
+      "Bash(where npm *)",
+      "Bash(where winget *)",
+      "Bash(where choco *)",
+      "Bash(where nvm *)",
+      "Bash(winget install *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(taskkill //PID 29424 //F)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(start http://localhost:8081)",
+      "Bash(curl -s http://localhost:8081)",
+      "Bash(curl -s -o /dev/null -w \"bundle size: %{size_download} bytes, status: %{http_code}\" \"http://localhost:8081/node_modules/expo-router/entry.bundle?platform=web&dev=true&hot=false\")",
+      "Bash(cmd //c start http://localhost:8081)",
+      "Bash(cat /c/Users/ADMINI~1.DES/AppData/Local/Temp/claude/D--Ricardo-Documents-apps-wordJP/2cc8f04c-b8bd-4fdf-9652-6eef1592f2fe/tasks/brdx0ydj2.output 2>/dev/null | tail -10)",
+      "WebSearch",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
