@@ -11,25 +11,51 @@ interface WordCardProps {
 
 export function WordCard({ word, mode, showMeaning = false }: WordCardProps) {
   const isJpPrompt = mode === 1 || mode === 3;
+  const isKanjiPrompt = mode === 5;
+  const isKanaPrompt = mode === 6;
+  const isKanaMode = isKanjiPrompt || isKanaPrompt;
+
+  let label: string;
+  let mainText: string;
+  let hintText: string;
+
+  if (isKanjiPrompt) {
+    label = "汉字";
+    mainText = word.japanese;
+    hintText = word.chinese_meaning;
+  } else if (isKanaPrompt) {
+    label = "读音·释义";
+    mainText = word.reading;
+    hintText = word.chinese_meaning;
+  } else if (isJpPrompt) {
+    label = "日语单词";
+    mainText = word.japanese;
+    hintText = word.reading;
+  } else {
+    label = "中文释义";
+    mainText = word.chinese_meaning;
+    hintText = "";
+  }
 
   return (
     <View style={styles.card}>
-      <Text style={styles.label}>
-        {isJpPrompt ? "日语单词" : "中文释义"}
-      </Text>
+      <Text style={styles.label}>{label}</Text>
       <View style={styles.wordRow}>
-        <Text style={styles.mainText}>
-          {isJpPrompt ? word.japanese : word.chinese_meaning}
+        <Text style={[styles.mainText, isKanaPrompt && { fontSize: 26 }]}>
+          {mainText}
         </Text>
-        {isJpPrompt && <AudioButton text={word.japanese} />}
+        {(isJpPrompt || isKanjiPrompt) && <AudioButton text={word.japanese} />}
+        {isKanaPrompt && <AudioButton text={word.reading} />}
       </View>
-      {isJpPrompt && <Text style={styles.reading}>{word.reading}</Text>}
+      {hintText ? <Text style={styles.reading}>{hintText}</Text> : null}
       {showMeaning && (
         <View style={styles.meaningSection}>
           <Text style={styles.meaningText}>
-            {isJpPrompt
-              ? word.chinese_meaning
-              : `${word.japanese}（${word.reading}）`}
+            {isKanaMode
+              ? `${word.japanese}（${word.reading}）= ${word.chinese_meaning}`
+              : isJpPrompt
+                ? word.chinese_meaning
+                : `${word.japanese}（${word.reading}）`}
           </Text>
         </View>
       )}

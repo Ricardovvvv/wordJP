@@ -9,6 +9,8 @@ export const JLPT_LEVELS = [
 export const QUIZ_MODES = [
   { value: 1 as const, title: "日→中 单词", description: "看日语单词，选中文释义", icon: "jp-cn-word" },
   { value: 2 as const, title: "中→日 单词", description: "看中文释义，选日语单词", icon: "cn-jp-word" },
+  { value: 5 as const, title: "汉字→假名", description: "看汉字单词，选对应的平假名读音", icon: "kanji-kana" },
+  { value: 6 as const, title: "假名→汉字", description: "看平假名和中文释义，选对应汉字", icon: "kana-kanji" },
   { value: 3 as const, title: "日→中 句子", description: "看日语单词，选合适的句子", icon: "jp-cn-sentence" },
   { value: 4 as const, title: "中→日 句子", description: "看中文释义，选合适的日语句子", icon: "cn-jp-sentence" },
 ] as const;
@@ -26,8 +28,11 @@ export const QUESTION_COUNT_OPTIONS = [5, 10, 15, 20, 30] as const;
 export const SOURCES = [
   { value: "jlpt", label: "JLPT" },
   { value: "minna_no_nihongo", label: "みんなの日本語" },
-  { value: "genki", label: "Genki" },
-  { value: "standard_jp", label: "标准日本语" },
+] as const;
+
+export const MINNA_LESSONS = [
+  { value: 0, label: "全部" },
+  ...Array.from({ length: 25 }, (_, i) => ({ value: i + 1, label: `第${i + 1}课` })),
 ] as const;
 
 export const COLORS = {

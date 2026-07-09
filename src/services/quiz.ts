@@ -44,6 +44,44 @@ function generateWordQuestion(
   };
 }
 
+// Generate a question for Quiz modes 5 & 6 (kanji ↔ kana)
+// Mode 5: Show kanji → pick the correct reading
+// Mode 6: Show reading + meaning → pick the correct kanji
+function generateKanaQuestion(
+  mode: QuizMode,
+  availableWords: Word[]
+): QuizQuestion | null {
+  // Only use words where kanji and reading differ (actual kanji words)
+  const kanjiWords = availableWords.filter(
+    (w) => w.japanese !== w.reading && w.japanese.length >= 1
+  );
+  if (kanjiWords.length < 4) return null;
+
+  const correctWord = kanjiWords[Math.floor(Math.random() * kanjiWords.length)];
+  const distractors = getRandomItems(kanjiWords, 3, correctWord);
+
+  const isKanjiPrompt = mode === 5; // true = show kanji, pick reading
+
+  const correctOption: QuizOption = {
+    id: correctWord.id,
+    text: isKanjiPrompt ? correctWord.reading : correctWord.japanese,
+    secondaryText: isKanjiPrompt ? correctWord.japanese : correctWord.reading,
+    isCorrect: true,
+  };
+
+  const distractorOptions: QuizOption[] = distractors.map((w) => ({
+    id: w.id,
+    text: isKanjiPrompt ? w.reading : w.japanese,
+    secondaryText: isKanjiPrompt ? w.japanese : w.reading,
+    isCorrect: false,
+  }));
+
+  return {
+    promptWord: correctWord,
+    options: shuffleArray([correctOption, ...distractorOptions]),
+  };
+}
+
 // Generate a question for Quiz modes 3 & 4 (word-to-sentence)
 function generateSentenceQuestion(
   mode: QuizMode,
@@ -154,6 +192,8 @@ export function generateQuestions(
     let question: QuizQuestion | null = null;
     if (mode === 1 || mode === 2) {
       question = generateWordQuestion(mode, availableWords);
+    } else if (mode === 5 || mode === 6) {
+      question = generateKanaQuestion(mode, availableWords);
     } else {
       question = generateSentenceQuestion(mode, availableWords);
     }

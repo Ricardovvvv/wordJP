@@ -6,6 +6,7 @@ import { useSettingsStore } from "../../src/stores/settingsStore";
 import { getProgressStats } from "../../src/services/spaced-repetition";
 import { generateQuestions } from "../../src/services/quiz";
 import { useQuizStore } from "../../src/stores/quizStore";
+import type { QuizMode } from "../../src/types";
 
 export default function HomeScreen() {
   const settings = useSettingsStore((s) => s.settings);
@@ -18,7 +19,7 @@ export default function HomeScreen() {
     } catch {}
   }, []);
 
-  const handleStartQuiz = (mode: 1 | 2 | 3 | 4) => {
+  const handleStartQuiz = (mode: QuizMode) => {
     const questions = generateQuestions(mode, settings.dailyGoal, {
       jlptLevels: settings.jlptLevels,
       sources: settings.sources,

@@ -37,7 +37,7 @@ export interface UserProgress {
 }
 
 // Quiz types
-export type QuizMode = 1 | 2 | 3 | 4;
+export type QuizMode = 1 | 2 | 3 | 4 | 5 | 6;
 
 export interface QuizOption {
   id: number;

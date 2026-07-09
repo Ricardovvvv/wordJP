@@ -94,6 +94,18 @@ export default function QuizScreen() {
 
   const isJpPrompt = mode === 1 || mode === 3;
   const isSentenceMode = mode === 3 || mode === 4;
+  const isKanaMode = mode === 5 || mode === 6;
+  // Show audio on options that are Japanese text
+  const showOptionAudio = mode === 2 || mode === 4 || mode === 5 || mode === 6;
+
+  // Option label text
+  let optionLabel: string;
+  if (mode === 5) optionLabel = "选择对应的平假名读音";
+  else if (mode === 6) optionLabel = "选择对应的汉字";
+  else if (isSentenceMode)
+    optionLabel = isJpPrompt ? "选择可能使用该单词的中文句子" : "选择可能使用该单词的日语句子";
+  else
+    optionLabel = isJpPrompt ? "选择对应的中文释义" : "选择对应的日语单词";
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -103,9 +115,7 @@ export default function QuizScreen() {
         <WordCard word={question.promptWord} mode={mode} showMeaning={phase === "feedback"} />
 
         <Text style={styles.optionLabel}>
-          {isSentenceMode
-            ? (isJpPrompt ? "选择可能使用该单词的中文句子" : "选择可能使用该单词的日语句子")
-            : (isJpPrompt ? "选择对应的中文释义" : "选择对应的日语单词")}
+          {optionLabel}
         </Text>
 
         <View style={styles.optionsWrap}>
@@ -117,7 +127,7 @@ export default function QuizScreen() {
               state={getOptionState(idx)}
               onPress={handleSelect}
               disabled={phase === "feedback"}
-              showAudio={mode === 2 || mode === 4}
+              showAudio={showOptionAudio}
             />
           ))}
         </View>
