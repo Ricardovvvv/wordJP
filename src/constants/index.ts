@@ -1,3 +1,5 @@
+import type { QuizMode } from "../types";
+
 export const JLPT_LEVELS = [
   { value: 5, label: "N5", description: "入门" },
   { value: 4, label: "N4", description: "基础" },
@@ -7,12 +9,12 @@ export const JLPT_LEVELS = [
 ] as const;
 
 export const QUIZ_MODES = [
-  { value: 1 as const, title: "日→中 单词", description: "看日语单词，选中文释义", icon: "jp-cn-word" },
-  { value: 2 as const, title: "中→日 单词", description: "看中文释义，选日语单词", icon: "cn-jp-word" },
-  { value: 5 as const, title: "汉字→假名", description: "看汉字单词，选对应的平假名读音", icon: "kanji-kana" },
-  { value: 6 as const, title: "假名→汉字", description: "看平假名和中文释义，选对应汉字", icon: "kana-kanji" },
-  { value: 3 as const, title: "日→中 句子", description: "看日语单词，选合适的句子", icon: "jp-cn-sentence" },
-  { value: 4 as const, title: "中→日 句子", description: "看中文释义，选合适的日语句子", icon: "cn-jp-sentence" },
+  { value: 1 as const, title: "日→中 单词", description: "看日语单词，选中文释义" },
+  { value: 2 as const, title: "中→日 单词", description: "看中文释义，选日语单词" },
+  { value: 5 as const, title: "汉字→假名", description: "看汉字单词，选对应的平假名读音" },
+  { value: 6 as const, title: "假名→汉字", description: "看平假名和中文释义，选对应汉字" },
+  { value: 3 as const, title: "日→中 句子", description: "看日语单词，选合适的中文句子" },
+  { value: 4 as const, title: "中→日 句子", description: "看中文释义，选合适的日语句子" },
 ] as const;
 
 export const DEFAULT_SETTINGS = {
@@ -20,7 +22,6 @@ export const DEFAULT_SETTINGS = {
   sources: ["jlpt"],
   dailyGoal: 20,
   soundEnabled: true,
-  modeWeights: { 1: 1, 2: 1, 3: 1, 4: 1 },
 } as const;
 
 export const QUESTION_COUNT_OPTIONS = [5, 10, 15, 20, 30] as const;
@@ -31,6 +32,7 @@ export const SOURCES = [
   { value: "standard_jp", label: "标准日本语" },
 ] as const;
 
+// Textbook metadata — shown in the source selector cards
 export const TEXTBOOK_INFO: Record<string, {
   title: string;
   titleJP: string;
@@ -40,47 +42,54 @@ export const TEXTBOOK_INFO: Record<string, {
   levels: string;
   totalLessons: number;
   totalWords: number;
-  color: string;
+  coverColor: string;
+  coverAccent: string;
+  coverText: string;
+  isbn: string;
 }> = {
   jlpt: {
     title: "JLPT",
     titleJP: "日本語能力試験",
     author: "日本国際教育支援協会",
     publisher: "凡人社",
-    description: "日本语能力测试官方词库，覆盖N5到N1全部等级。按考试等级分类，适合备考。",
-    levels: "N5 ~ N1",
+    description: "日本语能力测试（JLPT）官方出题基准对应的词汇，整理自历年真题和参考书，按N5~N1难度分级。适合备考JLPT任一等级。",
+    levels: "N5 · N4 · N3 · N2 · N1",
     totalLessons: 0,
     totalWords: 14611,
-    color: "#2563eb",
+    coverColor: "#1e40af",
+    coverAccent: "#3b82f6",
+    coverText: "日本語能力試験\nJLPT\n公式語彙",
+    isbn: "",
   },
   minna_no_nihongo: {
     title: "みんなの日本語",
-    titleJP: "みんなの日本語",
+    titleJP: "みんなの日本語 初級 I · II",
     author: "スリーエーネットワーク",
     publisher: "スリーエーネットワーク",
-    description: "最经典的日语教材之一，全球广泛使用。初级I&II共50课，涵盖日常会话基础词汇。",
-    levels: "初级 I · II",
+    description: "全世界40+国家使用的经典日语教材。初级I·II共50课，涵盖日常会话、基础语法和核心词汇。",
+    levels: "初级 I · II（第2版）",
     totalLessons: 50,
     totalWords: 1496,
-    color: "#e11d48",
+    coverColor: "#b91c1c",
+    coverAccent: "#ef4444",
+    coverText: "みんなの\n日本語\n初級",
+    isbn: "978-4-88319-603-6",
   },
   standard_jp: {
     title: "标准日本语",
     titleJP: "中日交流標準日本語",
     author: "人民教育出版社",
     publisher: "人民教育出版社",
-    description: "中国大陆最广泛使用的日语教材，初级上册+下册共48课，词汇按课次编排。",
-    levels: "初级 上·下",
-    totalLessons: 48,
-    totalWords: 753,
-    color: "#7c3aed",
+    description: "中国大陆最广泛使用的日语教材。初级上下共48课，中级32课，高级24课。词汇按课次编排，循序渐进。",
+    levels: "初级 · 中级 · 高级",
+    totalLessons: 104,
+    totalWords: 3586,
+    coverColor: "#6d28d9",
+    coverAccent: "#8b5cf6",
+    coverText: "标准\n日本语\n中日交流",
+    isbn: "978-7-107-27830-2",
   },
 } as const;
-
-export const MINNA_LESSONS = [
-  { value: 0, label: "全部" },
-  ...Array.from({ length: 25 }, (_, i) => ({ value: i + 1, label: `第${i + 1}课` })),
-] as const;
 
 export const COLORS = {
   primary: "#2563eb",

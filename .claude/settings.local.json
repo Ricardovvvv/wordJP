@@ -29,7 +29,8 @@
       "Bash(curl -s -k \"https://raw.githubusercontent.com/vitto4/MinnaNoDS/main/minna-no-ds.yaml\" -o \"D:/Ricardo/Documents/apps/wordJP/assets/seed/minna-no-ds.yaml\")",
       "Bash(cmd //c \"start http://localhost:8081\")",
       "Bash(cp /tmp/biaori_words.json \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\" && echo \"copied\"; ls -la \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\")",
-      "Bash(git commit -m 'Add textbook source selector in settings page *)"
+      "Bash(git commit -m 'Add textbook source selector in settings page *)",
+      "WebFetch(domain:commons.wikimedia.org)"
     ]
   }
 }

@@ -1,14 +1,8 @@
-import { View, Text, ScrollView, Pressable, Switch, StyleSheet } from "react-native";
+import { View, Text, ScrollView, Pressable, Switch, StyleSheet, Image } from "react-native";
 import { useSettingsStore } from "../../src/stores/settingsStore";
 import { JLPT_LEVELS, QUESTION_COUNT_OPTIONS, SOURCES, TEXTBOOK_INFO } from "../../src/constants";
 
-const BOOK_COVERS: Record<string, string> = {
-  jlpt: "📋",
-  minna_no_nihongo: "📕",
-  standard_jp: "📘",
-};
-
-export default function SettingsPage() {
+export default function SettingsScreen() {
   const { settings, updateSettings, resetToDefaults } = useSettingsStore();
 
   const toggleJlptLevel = (level: number) => {
@@ -28,49 +22,58 @@ export default function SettingsPage() {
   return (
     <ScrollView style={s.container} contentContainerStyle={{ paddingBottom: 40 }}>
       {/* 教材选择 */}
-      <View style={s.section}>
-        <Text style={s.sectionTitle}>教材选择</Text>
-        <Text style={s.sectionHint}>选择一门或多门教材作为练习词库</Text>
+      <Text style={s.sectionHeader}>教材选择</Text>
+      <Text style={s.sectionHint}>选择一本或多本教材作为练习词库</Text>
 
-        {SOURCES.map((source) => {
-          const active = settings.sources.includes(source.value);
-          const info = TEXTBOOK_INFO[source.value];
-          if (!info) return null;
+      {SOURCES.map((src) => {
+        const active = settings.sources.includes(src.value);
+        const info = TEXTBOOK_INFO[src.value];
+        if (!info) return null;
 
-          return (
-            <Pressable
-              key={source.value}
-              onPress={() => toggleSource(source.value)}
-              style={[s.bookCard, active && s.bookCardActive]}
-            >
-              {/* Cover area */}
-              <View style={[s.bookCover, active && { backgroundColor: info.color }]}>
-                <Text style={s.bookCoverEmoji}>{BOOK_COVERS[source.value] || "📖"}</Text>
+        return (
+          <Pressable
+            key={src.value}
+            onPress={() => toggleSource(src.value)}
+            style={[s.bookCard, active && s.bookCardActive]}
+          >
+            {/* Book cover */}
+            <View style={[s.bookCover, { backgroundColor: info.coverColor }]}>
+              <View style={[s.coverStrip, { backgroundColor: info.coverAccent }]} />
+              <Text style={s.coverTitle} numberOfLines={3}>{info.coverText}</Text>
+              {info.isbn ? <Text style={s.coverIsbn}>ISBN {info.isbn}</Text> : null}
+            </View>
+
+            {/* Book info */}
+            <View style={s.bookInfo}>
+              <View style={s.bookTitleRow}>
+                <Text style={[s.bookTitle, active && { color: info.coverColor }]}>{src.label}</Text>
+                {active && <View style={[s.selectedBadge, { backgroundColor: info.coverAccent }]}>
+                  <Text style={s.badgeText}>✓ 已选</Text>
+                </View>}
               </View>
-
-              {/* Info */}
-              <View style={s.bookInfo}>
-                <View style={s.bookHeader}>
-                  <Text style={[s.bookTitle, active && { color: info.color }]}>{source.label}</Text>
-                  {active && <Text style={[s.activeBadge]}>已选</Text>}
-                </View>
-                {info.titleJP && <Text style={s.bookTitleJP}>{info.titleJP}</Text>}
-                <Text style={s.bookDesc} numberOfLines={2}>{info.description}</Text>
-                <View style={s.bookMeta}>
-                  <Text style={s.bookMetaText}>📝 {info.author}</Text>
-                  <Text style={s.bookMetaText}>📚 {info.totalLessons > 0 ? `${info.totalLessons}课` : `~${info.totalWords.toLocaleString()}词`}</Text>
-                </View>
-                <Text style={s.bookLevels}>{info.levels}</Text>
+              {info.titleJP ? <Text style={s.bookJP}>{info.titleJP}</Text> : null}
+              <Text style={s.bookDesc} numberOfLines={2}>{info.description}</Text>
+              <View style={s.bookMetaRow}>
+                <Text style={s.metaLabel}>出版</Text>
+                <Text style={s.metaValue}>{info.publisher}</Text>
               </View>
-            </Pressable>
-          );
-        })}
-      </View>
+              <View style={s.bookMetaRow}>
+                <Text style={s.metaLabel}>词量</Text>
+                <Text style={s.metaValue}>{info.totalWords.toLocaleString()} 词</Text>
+              </View>
+              <View style={s.bookMetaRow}>
+                <Text style={s.metaLabel}>难度</Text>
+                <Text style={[s.metaValue, { color: info.coverColor }]}>{info.levels}</Text>
+              </View>
+            </View>
+          </Pressable>
+        );
+      })}
 
       {/* JLPT 等级 */}
       <View style={s.section}>
         <Text style={s.sectionTitle}>JLPT 难度等级</Text>
-        <Text style={s.sectionHint}>仅在选择 JLPT 词库时生效</Text>
+        <Text style={s.sectionHintSmall}>仅在选择 JLPT 词库时按等级过滤</Text>
         <View style={s.chipRow}>
           {JLPT_LEVELS.map((level) => {
             const active = settings.jlptLevels.includes(level.value);
@@ -81,8 +84,9 @@ export default function SettingsPage() {
                 style={[s.chip, active && s.chipActive]}
               >
                 <Text style={[s.chipText, active && s.chipTextActive]}>
-                  {level.label} <Text style={s.chipDesc}>{level.description}</Text>
+                  {level.label}
                 </Text>
+                <Text style={[s.chipDesc, active && s.chipDescActive]}>{level.description}</Text>
               </Pressable>
             );
           })}
@@ -110,7 +114,7 @@ export default function SettingsPage() {
         <View style={s.switchRow}>
           <View style={{ flex: 1 }}>
             <Text style={s.switchLabel}>发音</Text>
-            <Text style={s.switchDesc}>点击单词旁的🔈按钮播放日语发音</Text>
+            <Text style={s.switchDesc}>点击单词旁的按钮播放日语发音</Text>
           </View>
           <Switch
             value={settings.soundEnabled}
@@ -126,30 +130,38 @@ export default function SettingsPage() {
         <Text style={s.resetText}>恢复默认设置</Text>
       </Pressable>
 
-      <Text style={s.version}>wordJP v1.0.0 · 16,860 词</Text>
+      <Text style={s.version}>wordJP v1.1 · 18,001 词</Text>
     </ScrollView>
   );
 }
 
 const s = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#f8fafc" },
+
+  // Section header (outside card)
+  sectionHeader: {
+    fontSize: 14, fontWeight: "500", color: "#94a3b8",
+    textTransform: "uppercase", letterSpacing: 1,
+    paddingHorizontal: 16, marginTop: 16, marginBottom: 4,
+  },
+  sectionHint: { fontSize: 12, color: "#cbd5e1", paddingHorizontal: 16, marginBottom: 8 },
   section: {
     backgroundColor: "#ffffff", marginHorizontal: 16, marginTop: 16,
     borderRadius: 16, padding: 20, borderWidth: 1, borderColor: "#f1f5f9",
   },
   sectionTitle: { fontSize: 14, fontWeight: "500", color: "#94a3b8", textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 },
-  sectionHint: { fontSize: 12, color: "#cbd5e1", marginBottom: 14 },
+  sectionHintSmall: { fontSize: 12, color: "#cbd5e1", marginBottom: 12 },
 
-  // Book cards
+  // ---- Book card ----
   bookCard: {
     flexDirection: "row",
-    padding: 14,
+    marginHorizontal: 16,
     marginBottom: 10,
     borderRadius: 14,
     borderWidth: 1.5,
     borderColor: "#e2e8f0",
     backgroundColor: "#fafafa",
-    alignItems: "center",
+    overflow: "hidden",
   },
   bookCardActive: {
     borderColor: "#93c5fd",
@@ -160,42 +172,60 @@ const s = StyleSheet.create({
     shadowRadius: 8,
     elevation: 2,
   },
+  // Realistic book cover
   bookCover: {
-    width: 56,
-    height: 76,
-    borderRadius: 8,
-    backgroundColor: "#cbd5e1",
+    width: 80,
+    minHeight: 120,
     alignItems: "center",
     justifyContent: "center",
-    marginRight: 14,
+    padding: 8,
+    position: "relative",
   },
-  bookCoverEmoji: { fontSize: 26 },
-  bookInfo: { flex: 1 },
-  bookHeader: { flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 2 },
-  bookTitle: { fontSize: 17, fontWeight: "700", color: "#1e293b" },
-  bookTitleJP: { fontSize: 12, color: "#94a3b8", marginBottom: 4 },
-  activeBadge: {
-    fontSize: 10, fontWeight: "700", color: "#2563eb",
-    backgroundColor: "#eff6ff", paddingHorizontal: 6, paddingVertical: 1,
-    borderRadius: 4, overflow: "hidden",
+  coverStrip: {
+    position: "absolute",
+    left: 0, top: 0, bottom: 0,
+    width: 6,
   },
+  coverTitle: {
+    color: "#ffffff",
+    fontSize: 11,
+    fontWeight: "700",
+    textAlign: "center",
+    lineHeight: 14,
+  },
+  coverIsbn: {
+    color: "rgba(255,255,255,0.5)",
+    fontSize: 7,
+    marginTop: 6,
+    textAlign: "center",
+  },
+
+  // Book info
+  bookInfo: { flex: 1, padding: 14 },
+  bookTitleRow: { flexDirection: "row", alignItems: "center", gap: 8 },
+  bookTitle: { fontSize: 16, fontWeight: "700", color: "#1e293b" },
+  selectedBadge: {
+    paddingHorizontal: 6, paddingVertical: 1,
+    borderRadius: 4,
+  },
+  badgeText: { fontSize: 10, fontWeight: "700", color: "#fff" },
+  bookJP: { fontSize: 11, color: "#94a3b8", marginTop: 1, marginBottom: 4 },
   bookDesc: { fontSize: 12, color: "#64748b", lineHeight: 17, marginBottom: 6 },
-  bookMeta: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 12,
-    marginBottom: 2,
-  },
-  bookMetaText: { fontSize: 11, color: "#94a3b8" },
-  bookLevels: { fontSize: 11, fontWeight: "600", color: "#64748b" },
+  bookMetaRow: { flexDirection: "row", alignItems: "center", marginTop: 2 },
+  metaLabel: { fontSize: 11, color: "#94a3b8", width: 32 },
+  metaValue: { fontSize: 11, color: "#475569", fontWeight: "500", flex: 1 },
 
   // Chips
   chipRow: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
-  chip: { paddingHorizontal: 16, paddingVertical: 8, borderRadius: 8, borderWidth: 1, borderColor: "#e2e8f0" },
+  chip: {
+    paddingHorizontal: 14, paddingVertical: 8, borderRadius: 8,
+    borderWidth: 1, borderColor: "#e2e8f0", flexDirection: "row", alignItems: "center", gap: 4,
+  },
   chipActive: { backgroundColor: "#eff6ff", borderColor: "#93c5fd" },
-  chipText: { fontSize: 14, fontWeight: "500", color: "#64748b" },
+  chipText: { fontSize: 14, fontWeight: "700", color: "#64748b" },
   chipTextActive: { color: "#2563eb" },
-  chipDesc: { fontSize: 12, fontWeight: "400" },
+  chipDesc: { fontSize: 11, fontWeight: "400", color: "#94a3b8" },
+  chipDescActive: { color: "#60a5fa" },
 
   // Count
   countChip: { flex: 1, paddingVertical: 8, borderRadius: 8, borderWidth: 1, borderColor: "#e2e8f0", alignItems: "center" },

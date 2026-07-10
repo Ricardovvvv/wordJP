@@ -175,15 +175,19 @@ export function generateQuestions(
   let availableWords = allWords;
 
   if (filters?.sources && filters.sources.length > 0) {
-    availableWords = availableWords.filter((w) => filters.sources!.includes(w.source));
+    availableWords = availableWords.filter((w) => {
+      const tags = (w.source || "").split(",");
+      return filters.sources!.some((s) => tags.includes(s));
+    });
   }
 
   if (filters?.jlptLevels && filters.jlptLevels.length > 0) {
     availableWords = availableWords.filter((w) => {
-      // Always include textbook words (no jlpt_level)
-      if (w.jlpt_level == null) return true;
-      // Filter JLPT words by selected levels
-      return filters.jlptLevels!.includes(w.jlpt_level);
+      // Textbook-only words (no jlpt_level): always include
+      const tags = (w.source || "").split(",");
+      if (tags.some((t) => t !== "jlpt")) return true;
+      // JLPT words: filter by level
+      return w.jlpt_level != null && filters.jlptLevels!.includes(w.jlpt_level);
     });
   }
 

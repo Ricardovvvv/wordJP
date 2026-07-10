@@ -85,7 +85,7 @@ export interface AppSettings {
   sources: string[];
   dailyGoal: number;
   soundEnabled: boolean;
-  modeWeights: Record<number, number>;
+  coverPaths?: Record<string, string>;
 }
 
 // Navigation types
