@@ -85,24 +85,38 @@ function generateKanaQuestion(
 // Generate a question for Quiz modes 3 & 4 (word-to-sentence)
 function generateSentenceQuestion(
   mode: QuizMode,
-  availableWords: Word[]
+  availableWords: Word[],
+  allWords: Word[]
 ): QuizQuestion | null {
   const { db } = getDatabase();
 
   // Get all word IDs that have sentences in one query
-  const wordIds = availableWords.map((w) => w.id);
-  if (wordIds.length === 0) return null;
+  const allWordIds = availableWords.map((w) => w.id);
+  if (allWordIds.length === 0) return null;
 
   const linkedIds = new Set(
     db
       .selectDistinct({ word_id: wordSentences.word_id })
       .from(wordSentences)
-      .where(inArray(wordSentences.word_id, wordIds))
+      .where(inArray(wordSentences.word_id, allWordIds))
       .all()
       .map((r) => r.word_id)
   );
 
-  const wordsWithSentences = availableWords.filter((w) => linkedIds.has(w.id));
+  let wordsWithSentences = availableWords.filter((w) => linkedIds.has(w.id));
+
+  // Fallback: if too few sentence-linked words, expand to all words with sentences
+  if (wordsWithSentences.length < 4) {
+    const allLinkedIds = new Set(
+      db
+        .selectDistinct({ word_id: wordSentences.word_id })
+        .from(wordSentences)
+        .all()
+        .map((r) => r.word_id)
+    );
+    wordsWithSentences = allWords.filter((w) => allLinkedIds.has(w.id));
+    if (wordsWithSentences.length < 4) return null;
+  }
 
   if (wordsWithSentences.length < 1) return null;
 
@@ -202,7 +216,7 @@ export function generateQuestions(
     } else if (mode === 5 || mode === 6) {
       question = generateKanaQuestion(mode, availableWords);
     } else {
-      question = generateSentenceQuestion(mode, availableWords);
+      question = generateSentenceQuestion(mode, availableWords, allWords);
     }
     if (question) questions.push(question);
   }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { View, Text, Pressable, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { WordCard } from "../../src/components/WordCard";
@@ -17,9 +17,30 @@ export default function QuizScreen() {
   const { mode: modeParam } = useLocalSearchParams<{ mode: string }>();
   const mode = Number(modeParam) as QuizMode;
 
-  const { questions, currentIndex, results, submitAnswer, nextQuestion, endQuiz } = useQuizStore();
+  const { questions, currentIndex, results, isActive, submitAnswer, nextQuestion, endQuiz } = useQuizStore();
   const [phase, setPhase] = useState<QuizPhase>("answering");
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+
+  // Clean up on unmount: always reset quiz state when leaving this page
+  useEffect(() => {
+    return () => {
+      endQuiz();
+    };
+  }, []);
+
+  // If the store has no active quiz (e.g., user navigated directly to /quiz/X), go home
+  useEffect(() => {
+    if (!isActive || questions.length === 0) {
+      // Give the store a moment to populate (startQuiz is called before router.push)
+      const timer = setTimeout(() => {
+        const s = useQuizStore.getState();
+        if (!s.isActive || s.questions.length === 0) {
+          router.replace("/(tabs)");
+        }
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const question = questions[currentIndex];
   const currentResult = results[currentIndex];
