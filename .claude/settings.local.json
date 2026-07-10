@@ -30,7 +30,8 @@
       "Bash(cmd //c \"start http://localhost:8081\")",
       "Bash(cp /tmp/biaori_words.json \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\" && echo \"copied\"; ls -la \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\")",
       "Bash(git commit -m 'Add textbook source selector in settings page *)",
-      "WebFetch(domain:commons.wikimedia.org)"
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8081)"
     ]
   }
 }

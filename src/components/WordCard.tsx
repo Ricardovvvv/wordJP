@@ -24,9 +24,9 @@ export function WordCard({ word, mode, showMeaning = false }: WordCardProps) {
     mainText = word.japanese;
     hintText = word.chinese_meaning;
   } else if (isKanaPrompt) {
-    label = "读音·释义";
+    label = "平假名读音";
     mainText = word.reading;
-    hintText = word.chinese_meaning;
+    hintText = "";
   } else if (isJpPrompt) {
     label = "日语单词";
     mainText = word.japanese;
