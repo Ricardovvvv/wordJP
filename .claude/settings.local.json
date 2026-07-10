@@ -31,7 +31,9 @@
       "Bash(cp /tmp/biaori_words.json \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\" && echo \"copied\"; ls -la \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\")",
       "Bash(git commit -m 'Add textbook source selector in settings page *)",
       "WebFetch(domain:commons.wikimedia.org)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8081)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8081)",
+      "Bash(cp /tmp/minna.yaml \"D:/Ricardo/Documents/apps/wordJP/assets/seed/minna.yaml\")",
+      "Bash(cp /tmp/genki1.csv \"D:/Ricardo/Documents/apps/wordJP/assets/seed/genki1.csv\")"
     ]
   }
 }

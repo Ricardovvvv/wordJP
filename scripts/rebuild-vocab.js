@@ -1,230 +1,182 @@
 /**
- * Rebuild vocabulary database with tag-based deduplication.
+ * Rebuild vocabulary database — de-duplicate via (japanese, reading) key,
+ * tag-based source tracking, prefer textbook lesson numbers over JLPT nulls.
  *
- * Each unique (japanese, reading) pair gets a single entry
- * with source_tags containing all textbooks it appears in.
+ * Books: JLPT / Minna no Nihongo / Standard JP / Genki
  *
  * Run: node scripts/rebuild-vocab.js
  */
 const fs = require("fs");
-const path = require("path");
-
 const SEED = "assets/seed";
 
-// ---- Load data sources ----
-const existingVocab = JSON.parse(fs.readFileSync(`${SEED}/vocab.json`, "utf-8"));
-const existingSent = JSON.parse(fs.readFileSync(`${SEED}/sentences.json`, "utf-8"));
-const existingWS = JSON.parse(fs.readFileSync(`${SEED}/word_sentences.json`, "utf-8"));
-const biaoriRaw = JSON.parse(fs.readFileSync(`${SEED}/biaori_full.json`, "utf-8"));
+// ---- Helpers ----
+function mkKey(w) { return w.japanese + "|" + w.reading; }
+function hasChinese(s) { return /[一-鿿]/.test(s || ""); }
 
-console.log("Existing vocab:", existingVocab.length);
-console.log("Existing sentences:", existingSent.length);
-console.log("Biaori entries:", biaoriRaw.length);
+// ---- 1. Load existing ----
+const words = JSON.parse(fs.readFileSync(`${SEED}/vocab.json`, "utf-8"));
+const sentences = JSON.parse(fs.readFileSync(`${SEED}/sentences.json`, "utf-8"));
+console.log("Existing words:", words.length, "| sentences:", sentences.length);
 
-// ---- Parse biaori reading/japanese format ----
-function parseJp(str) {
-  if (!str) return { reading: "", japanese: "" };
-  const m = str.match(/^(.+?)\((.+)\)$/);
-  if (m) return { reading: m[1], japanese: m[2] };
-  return { reading: str, japanese: str };
-}
+// ---- 2. Build merge map ----
+const mergeMap = new Map();
 
-// ---- Map biaori lesson to book and level ----
-// Standard numbering: 0=入门, 1-24=初上, 104+=encoding, etc.
-// Map all to textbook volumes
-function classifyBiaoriLesson(lesson) {
-  if (lesson >= 20000) return { book: "高级", volume: "词汇补充" };
-  if (lesson >= 416) return { book: "高级", volume: "上·下册" };
-  if (lesson >= 312) return { book: "中级", volume: "下册" };
-  if (lesson >= 208) return { book: "中级", volume: "上册" };
-  if (lesson >= 104) return { book: "初级", volume: "下册" };
-  if (lesson >= 1) return { book: "初级", volume: "上册" };
-  return { book: "初级", volume: "入门单元" };
-}
-
-// ---- Build biaori words with source tags ----
-const biaoriMap = new Map(); // key: "japanese|reading" -> {tags, lesson, pos, meaning}
-
-for (const entry of biaoriRaw) {
-  if (!entry || !Array.isArray(entry) || entry.length < 4) continue;
-
-  const lessonNum = entry[0];
-  const posRaw = (entry[1] || "").replace(/[\[\]]/g, "").trim();
-  const meaning = (entry[2] || "").trim();
-  const jpRaw = (entry[3] || "").trim();
-
-  if (!meaning || !jpRaw) continue;
-
-  const { reading, japanese } = parseJp(jpRaw);
-  if (!japanese || !reading) continue;
-  if (japanese.includes("（") || reading.includes("）")) continue; // skip parse failures
-
-  const key = japanese + "|" + reading;
-  const classification = classifyBiaoriLesson(lessonNum);
-
-  if (!biaoriMap.has(key)) {
-    biaoriMap.set(key, {
-      japanese,
-      reading,
-      meaning,
-      pos: posRaw || null,
-      sourceTags: new Set(["standard_jp"]),
-      lessonTag: `标准日本语·${classification.book}${classification.volume}·第${lessonNum}课`,
-    });
-  } else {
-    // Merge: use the longer/better meaning
-    const existing = biaoriMap.get(key);
-    if (meaning.length > existing.meaning.length) {
-      existing.meaning = meaning;
+function mergeWord(w, tag) {
+  if (!w.japanese || !w.reading) return;
+  if (!hasChinese(w.chinese_meaning)) return; // skip English-only
+  const k = mkKey(w);
+  if (mergeMap.has(k)) {
+    const existing = mergeMap.get(k);
+    existing.tags.add(tag);
+    // Prefer textbook lesson numbers
+    if (w.lesson != null && existing.lesson == null) {
+      existing.lesson = w.lesson;
     }
-    existing.sourceTags.add("standard_jp");
-  }
-}
-
-console.log("Unique biaori words:", biaoriMap.size);
-
-// ---- Build merged vocabulary with tags ----
-const mergedMap = new Map();
-const keyToId = new Map();
-
-// First pass: existing vocab
-for (const w of existingVocab) {
-  const key = w.japanese + "|" + w.reading;
-  const tags = new Set((w.source || "").split(",").filter(Boolean));
-
-  if (!mergedMap.has(key)) {
-    mergedMap.set(key, {
+    // Prefer Chinese meaning
+    if (!hasChinese(existing.chinese_meaning) && hasChinese(w.chinese_meaning)) {
+      existing.chinese_meaning = w.chinese_meaning;
+    }
+  } else {
+    mergeMap.set(k, {
       japanese: w.japanese,
       reading: w.reading,
       chinese_meaning: w.chinese_meaning,
-      part_of_speech: w.part_of_speech,
-      jlpt_level: w.jlpt_level,
-      tags,
+      part_of_speech: w.part_of_speech || null,
+      jlpt_level: w.jlpt_level || null,
+      tags: new Set([tag]),
       lesson: w.lesson || null,
     });
-  } else {
-    const existing = mergedMap.get(key);
-    w.source.split(",").forEach(t => existing.tags.add(t));
-    if (w.jlpt_level && !existing.jlpt_level) existing.jlpt_level = w.jlpt_level;
   }
 }
 
-// Second pass: merge biaori words
-for (const [key, bw] of biaoriMap) {
-  if (mergedMap.has(key)) {
-    const existing = mergedMap.get(key);
-    bw.sourceTags.forEach(t => existing.tags.add(t));
-    // Use Chinese meaning if the existing one is English
-    if (existing.chinese_meaning &&
-        /^[a-zA-Z\s/.()]+$/.test(existing.chinese_meaning) &&
-        /[一-鿿]/.test(bw.meaning)) {
-      existing.chinese_meaning = bw.meaning;
-    }
-  } else {
-    mergedMap.set(key, {
-      japanese: bw.japanese,
-      reading: bw.reading,
-      chinese_meaning: bw.meaning,
-      part_of_speech: bw.pos,
-      jlpt_level: null,
-      tags: bw.sourceTags,
-      lesson: bw.lessonTag,
-    });
-  }
-}
-
-// ---- Write output ----
-const allWords = [];
-let id = 1;
-for (const [key, w] of mergedMap) {
-  const tagStr = [...w.tags].join(",");
-  allWords.push({
-    id: id,
+// ---- 2a. Load existing words into mergeMap ----
+for (const w of words) {
+  const tags = new Set((w.source || "").split(",").filter(Boolean));
+  mergeMap.set(mkKey(w), {
     japanese: w.japanese,
     reading: w.reading,
     chinese_meaning: w.chinese_meaning,
     part_of_speech: w.part_of_speech || null,
-    jlpt_level: w.jlpt_level,
-    source: tagStr,
-    lesson: w.lesson,
+    jlpt_level: w.jlpt_level || null,
+    tags,
+    lesson: w.lesson || null,
   });
-  keyToId.set(key, id);
-  id++;
 }
 
-// Sort: JLPT first, then minna, then standard_jp
-const tagOrder = { jlpt: 0, minna_no_nihongo: 1, standard_jp: 2 };
-allWords.sort((a, b) => {
-  const aFirst = a.source.split(",")[0];
-  const bFirst = b.source.split(",")[0];
-  return (tagOrder[aFirst] || 9) - (tagOrder[bFirst] || 9);
-});
-allWords.forEach((w, i) => {
-  w.id = i + 1;
-  keyToId.set(w.japanese + "|" + w.reading, w.id);
-});
+// ---- 2b. Parse Minna YAML ----
+{
+  const yaml = fs.readFileSync(`${SEED}/minna.yaml`, "utf-8");
+  const lines = yaml.split("\n");
+  let lesson = 0, kanji = null, kana = "", meaning = "";
 
-// Rebuild sentences (keep existing + add for biaori words that need them)
-const seenSent = new Set(existingSent.map(s => s.japanese));
-const allSentences = [...existingSent];
-let sid = allSentences.length + 1;
+  function emit() {
+    if (!kana) return;
+    const jp = kanji || kana;
+    mergeWord({ japanese: jp, reading: kana, chinese_meaning: meaning, part_of_speech: null, jlpt_level: null, lesson }, "minna_no_nihongo");
+    kanji = null; kana = ""; meaning = "";
+  }
 
-// Add example sentences for standard_jp tagged words that don't have any
-const stdJPWords = allWords.filter(w => w.source.includes("standard_jp"));
-for (const w of stdJPWords.slice(0, 1500)) {
-  const sentJP = `${w.japanese}を覚えましょう。`;
-  if (seenSent.has(sentJP)) continue;
-  seenSent.add(sentJP);
-  allSentences.push({
-    id: sid,
-    japanese: sentJP,
-    chinese: `记住「${w.chinese_meaning}」吧。`,
-    source: "standard_jp",
-    jlpt_level: w.jlpt_level,
-  });
-  sid++;
+  for (const l of lines) {
+    const t = l.trim();
+    const lm = t.match(/^lesson-(\d+):/);
+    if (lm) { emit(); lesson = parseInt(lm[1]); continue; }
+    if (t.startsWith("- id:")) { emit(); continue; }
+    if (t.startsWith("kanji:")) kanji = (t.substring(7).replace(/"/g, "").trim() === "~" ? null : t.substring(7).replace(/"/g, "").trim()) || null;
+    else if (t.startsWith("kana:")) kana = t.substring(6).replace(/"/g, "").trim();
+    else if (t.includes("en:")) { const m = t.match(/en:\s*"(.+?)"/); if (m) meaning = m[1]; }
+  }
+  emit();
 }
 
-// Rebuild word-sentence links
-const allWS = [...existingWS];
-// Link new sentences to their words
-for (let i = 0; i < Math.min(stdJPWords.length, 1500); i++) {
-  const w = stdJPWords[i];
-  const sentIdx = existingSent.length + i;
-  if (sentIdx < allSentences.length) {
-    allWS.push({ word_id: w.id, sentence_id: allSentences[sentIdx].id });
+// ---- 2c. Parse Genki CSV ----
+{
+  const csv = fs.readFileSync(`${SEED}/genki1.csv`, "utf-8");
+  for (const l of csv.split("\n")) {
+    const cols = l.split(",");
+    if (cols.length < 4) continue;
+    const jap = (cols[0] || "").trim();
+    const reading = (cols[1] || "").trim();
+    const meaning = (cols[2] || "").trim();
+    const lesson = parseInt(cols[3]) || 1;
+    if (!jap || !meaning) continue;
+    mergeWord({ japanese: jap, reading: reading || jap, chinese_meaning: meaning, part_of_speech: null, jlpt_level: null, lesson }, "genki");
   }
 }
 
-fs.writeFileSync(`${SEED}/vocab.json`, JSON.stringify(allWords, null, 2));
-fs.writeFileSync(`${SEED}/sentences.json`, JSON.stringify(allSentences, null, 2));
-fs.writeFileSync(`${SEED}/word_sentences.json`, JSON.stringify(allWS, null, 2));
+// ---- 3. Write output ----
+const out = [];
+let id = 1;
+for (const [k, w] of mergeMap) {
+  out.push({
+    id: id++,
+    japanese: w.japanese,
+    reading: w.reading,
+    chinese_meaning: w.chinese_meaning,
+    part_of_speech: w.part_of_speech,
+    jlpt_level: w.jlpt_level,
+    source: [...w.tags].join(","),
+    lesson: w.lesson,
+  });
+}
+fs.writeFileSync(`${SEED}/vocab.json`, JSON.stringify(out, null, 2));
+
+// ---- 4. Rebuild word_sentence links ----
+const newIdMap = new Map();
+out.forEach((w) => newIdMap.set(mkKey(w), w.id));
+
+const seen = new Set();
+const newLinks = [];
+
+// Re-link existing WS
+const oldLinks = JSON.parse(fs.readFileSync(`${SEED}/word_sentences.json`, "utf-8"));
+for (const l of oldLinks) {
+  const ow = words.find((w) => w.id === l.word_id);
+  if (!ow) continue;
+  const nid = newIdMap.get(mkKey(ow));
+  if (!nid) continue;
+  const lk = nid + "|" + l.sentence_id;
+  if (seen.has(lk)) continue;
+  seen.add(lk);
+  newLinks.push({ word_id: nid, sentence_id: l.sentence_id });
+}
+
+// Add new links via text matching
+for (const w of out) {
+  const clean = w.japanese.replace(/^[〜～]/, "");
+  if (clean.length < 1) continue;
+  for (const s of sentences) {
+    if (s.japanese.includes(clean)) {
+      const lk = w.id + "|" + s.id;
+      if (!seen.has(lk)) { seen.add(lk); newLinks.push({ word_id: w.id, sentence_id: s.id }); }
+    }
+  }
+}
+
+fs.writeFileSync(`${SEED}/word_sentences.json`, JSON.stringify(newLinks, null, 2));
 
 // ---- Stats ----
-const tagCounts = {};
-allWords.forEach(w => {
-  w.source.split(",").forEach(t => {
-    tagCounts[t] = (tagCounts[t] || 0) + 1;
-  });
-});
+const byTag = {};
+out.forEach((w) => w.source.split(",").forEach((t) => (byTag[t] = (byTag[t] || 0) + 1)));
 
-console.log("\n=== Results ===");
-console.log("Total unique words:", allWords.length);
-console.log("Total sentences:", allSentences.length);
-Object.entries(tagCounts).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => {
-  console.log(`  ${k}: ${v}`);
-});
+console.log("\n=== RESULTS ===");
+console.log("Total unique words:", out.length);
+Object.entries(byTag).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => console.log(`  ${k}: ${v}`));
+console.log("Sentences:", sentences.length);
+console.log("Word-Sentence links:", newLinks.length);
 
-// Count overlaps
-const jlptOnly = allWords.filter(w => w.source === "jlpt").length;
-const hasMinna = allWords.filter(w => w.source.includes("minna_no_nihongo")).length;
-const hasStdJP = allWords.filter(w => w.source.includes("standard_jp")).length;
-const hasBoth = allWords.filter(w => w.source.includes("jlpt") && w.source.includes("minna_no_nihongo")).length;
-console.log(`\nJLPT only: ${jlptOnly}`);
-console.log(`Has minna: ${hasMinna}`);
-console.log(`Has standard_jp: ${hasStdJP}`);
-console.log(`JLPT+minna overlap: ${hasBoth}`);
+// Lesson ranges
+for (const tag of ["minna_no_nihongo", "genki", "standard_jp"]) {
+  const ws = out.filter((w) => w.source.includes(tag));
+  const lessons = ws.map((w) => w.lesson).filter(Boolean);
+  const uniqueLessons = new Set(lessons);
+  console.log(`${tag}: ${ws.length} words, ${uniqueLessons.size} unique lessons, lesson range: ${lessons.length ? Math.min(...lessons) + "-" + Math.max(...lessons) : "N/A"}`);
+}
 
-// Clean up temp file
-fs.unlinkSync(`${SEED}/biaori_full.json`);
-console.log("\nCleaned up temp file. Done!");
+// Overlap
+const multi = out.filter((w) => w.source.includes(","));
+console.log("Multi-tag words:", multi.length);
+
+// Cleanup
+try { fs.unlinkSync(`${SEED}/minna.yaml`); } catch {}
+try { fs.unlinkSync(`${SEED}/genki1.csv`); } catch {}
+console.log("\nDone!");

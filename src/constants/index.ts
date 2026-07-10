@@ -30,6 +30,7 @@ export const SOURCES = [
   { value: "jlpt", label: "JLPT" },
   { value: "minna_no_nihongo", label: "みんなの日本語" },
   { value: "standard_jp", label: "标准日本语" },
+  { value: "genki", label: "Genki" },
 ] as const;
 
 // Textbook metadata — shown in the source selector cards
@@ -69,7 +70,7 @@ export const TEXTBOOK_INFO: Record<string, {
     description: "全世界40+国家使用的经典日语教材。初级I·II共50课，涵盖日常会话、基础语法和核心词汇。",
     levels: "初级 I · II（第2版）",
     totalLessons: 50,
-    totalWords: 281,
+    totalWords: 1128,
     coverColor: "#b91c1c",
     coverAccent: "#ef4444",
     coverText: "みんなの\n日本語\n初級",
@@ -88,6 +89,20 @@ export const TEXTBOOK_INFO: Record<string, {
     coverAccent: "#8b5cf6",
     coverText: "标准\n日本语\n中日交流",
     isbn: "978-7-107-27830-2",
+  },
+  genki: {
+    title: "Genki",
+    titleJP: "げんき",
+    author: "坂野永理ほか",
+    publisher: "The Japan Times",
+    description: "北美大学最广泛使用的日语教材。Genki I 共12课+Genki II 共11课，以英语为媒介语的综合日语教程。",
+    levels: "初級 I · II（第3版）",
+    totalLessons: 23,
+    totalWords: 207,
+    coverColor: "#15803d",
+    coverAccent: "#22c55e",
+    coverText: "GENKI\nAn Integrated\nCourse in\nElementary\nJapanese",
+    isbn: "978-4-7890-1730-5",
   },
 } as const;
 
