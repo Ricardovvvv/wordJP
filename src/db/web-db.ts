@@ -2,54 +2,39 @@
  * Web-compatible database layer using in-memory storage.
  * Used when running on web (expo-sqlite not available on web).
  *
- * Exports objects that mimic Drizzle ORM's table/column API so existing
- * service code works without changes on both platforms.
+ * Drizzle-like chainable query builder. Each .select() / .insert() / .update()
+ * call implicitly resets the builder state so stale filters and limits
+ * cannot leak across queries.
  */
 import { Platform } from "react-native";
 
-// Column proxy — words.id returns "id", etc.
+// ---- Column helpers ----
 function table<T extends Record<string, string>>(name: string, cols: T): T & { _table: string } {
   return Object.assign(cols, { _table: name });
 }
 
 export const words = table("words", {
-  id: "id",
-  japanese: "japanese",
-  reading: "reading",
-  chinese_meaning: "chinese_meaning",
-  part_of_speech: "part_of_speech",
-  jlpt_level: "jlpt_level",
-  source: "source",
-  lesson: "lesson",
+  id: "id", japanese: "japanese", reading: "reading",
+  chinese_meaning: "chinese_meaning", part_of_speech: "part_of_speech",
+  jlpt_level: "jlpt_level", source: "source", lesson: "lesson",
 });
 
 export const sentences = table("sentences", {
-  id: "id",
-  japanese: "japanese",
-  chinese: "chinese",
-  source: "source",
-  jlpt_level: "jlpt_level",
+  id: "id", japanese: "japanese", chinese: "chinese",
+  source: "source", jlpt_level: "jlpt_level",
 });
 
 export const wordSentences = table("word_sentences", {
-  word_id: "word_id",
-  sentence_id: "sentence_id",
+  word_id: "word_id", sentence_id: "sentence_id",
 });
 
 export const userProgress = table("user_progress", {
-  id: "id",
-  word_id: "word_id",
-  quiz_mode: "quiz_mode",
-  correct_count: "correct_count",
-  wrong_count: "wrong_count",
-  last_reviewed_at: "last_reviewed_at",
-  next_review_at: "next_review_at",
+  id: "id", word_id: "word_id", quiz_mode: "quiz_mode",
+  correct_count: "correct_count", wrong_count: "wrong_count",
+  last_reviewed_at: "last_reviewed_at", next_review_at: "next_review_at",
 });
 
-export const settings = table("settings", {
-  key: "key",
-  value: "value",
-});
+export const settings = table("settings", { key: "key", value: "value" });
 
 // ---- Drizzle-compatible operators ----
 type Condition =
@@ -61,22 +46,16 @@ type Condition =
 export function eq(column: string, value: any): Condition {
   return { column, op: "eq", value };
 }
-
 export function ne(column: string, value: any): Condition {
   return { column, op: "ne", value };
 }
-
 export function and(...conditions: Condition[]): Condition {
   return { op: "and", conditions };
 }
-
 export function inArray(column: string, values: any[]): Condition {
   return { column, op: "in", values };
 }
-
-export function sql(): string {
-  return "";
-}
+export function sql(): string { return ""; }
 
 // ---- In-memory data store ----
 let wordsData: any[] = [];
@@ -88,21 +67,12 @@ let progressId = 1;
 
 function filterRows(rows: any[], cond: Condition): any[] {
   if (!cond) return rows;
-
-  if (cond.op === "eq") {
-    return rows.filter((r) => r[cond.column] === cond.value);
-  }
-  if (cond.op === "ne") {
-    return rows.filter((r) => r[cond.column] !== cond.value);
-  }
-  if (cond.op === "in") {
-    return rows.filter((r) => cond.values.includes(r[cond.column]));
-  }
+  if (cond.op === "eq") return rows.filter((r) => r[cond.column] === cond.value);
+  if (cond.op === "ne") return rows.filter((r) => r[cond.column] !== cond.value);
+  if (cond.op === "in") return rows.filter((r) => cond.values.includes(r[cond.column]));
   if (cond.op === "and") {
     let result = rows;
-    for (const c of cond.conditions) {
-      result = filterRows(result, c);
-    }
+    for (const c of cond.conditions) result = filterRows(result, c);
     return result;
   }
   return rows;
@@ -125,21 +95,32 @@ function getTableData(name: string): any[] {
   }
 }
 
-// ---- Query builder (mimics Drizzle chain) ----
+// ---- Query builder (singleton, stateful, but auto-reset on new chain) ----
 function createBuilder() {
-  let _table: string = "";
+  let _table = "";
   let _where: Condition | undefined;
   let _limit: number | undefined;
   let _columns: Record<string, any> | undefined;
   let _isDistinct = false;
 
+  // IMPORTANT: called at the START of every new query chain.
+  // This prevents stale where/limit/columns leaking from prior queries.
+  function reset() {
+    _table = "";
+    _where = undefined;
+    _limit = undefined;
+    _columns = undefined;
+    _isDistinct = false;
+  }
+
   const builder: any = {
     select: (cols?: any) => {
+      reset();
       _columns = cols;
-      _isDistinct = false;
       return builder;
     },
     selectDistinct: (cols: any) => {
+      reset();
       _columns = cols;
       _isDistinct = true;
       return builder;
@@ -148,8 +129,8 @@ function createBuilder() {
       _table = getTableName(tableRef);
       return builder;
     },
-    where: (cond: Condition) => {
-      _where = cond;
+    where: (cond: Condition | undefined) => {
+      if (cond) _where = cond;
       return builder;
     },
     limit: (n: number) => {
@@ -170,7 +151,7 @@ function createBuilder() {
       }
       if (_isDistinct && _columns) {
         const keys = Object.values(_columns);
-        const seen = new Set();
+        const seen = new Set<string>();
         rows = rows.filter((r) => {
           const sig = keys.map((k: any) => r[k]).join("|");
           if (seen.has(sig)) return false;
@@ -180,45 +161,53 @@ function createBuilder() {
       }
       return rows;
     },
-    insert: (tableRef: any) => ({
-      values: (data: any) => ({
-        onConflictDoUpdate: (_opts: any) => ({
-          set: () => ({ run: () => {} }),
-          run: () => {},
-        }),
-        run: () => {
-          const t = getTableName(tableRef);
-          if (t === "user_progress") {
-            data.id = progressId++;
-            progressData.push(data);
-          } else if (t === "settings") {
-            settingsMap.set(data.key, data.value);
-          } else if (t === "words") {
-            wordsData.push(data);
-          } else if (t === "sentences") {
-            sentencesData.push(data);
-          } else if (t === "word_sentences") {
-            wsData.push(data);
-          }
-        },
-      }),
-    }),
-    update: (tableRef: any) => ({
-      set: (data: any) => ({
-        where: (cond: Condition) => ({
+
+    // insert / update are not chainable in the same way, but we still
+    // reset the reading-related state on insert & update entry points.
+    insert: (tableRef: any) => {
+      reset();
+      return {
+        values: (data: any) => ({
+          onConflictDoUpdate: (_opts: any) => ({
+            set: () => ({ run: () => {} }),
+            run: () => {},
+          }),
           run: () => {
             const t = getTableName(tableRef);
             if (t === "user_progress") {
-              const matches = filterRows([...progressData], cond);
-              for (const m of matches) {
-                const idx = progressData.findIndex((r: any) => r.id === m.id);
-                if (idx >= 0) Object.assign(progressData[idx], data);
-              }
+              data.id = progressId++;
+              progressData.push(data);
+            } else if (t === "settings") {
+              settingsMap.set(data.key, data.value);
+            } else if (t === "words") {
+              wordsData.push(data);
+            } else if (t === "sentences") {
+              sentencesData.push(data);
+            } else if (t === "word_sentences") {
+              wsData.push(data);
             }
           },
         }),
-      }),
-    }),
+      };
+    },
+    update: (tableRef: any) => {
+      reset();
+      return {
+        set: (data: any) => ({
+          where: (cond: Condition) => ({
+            run: () => {
+              if (getTableName(tableRef) === "user_progress") {
+                const matches = filterRows([...progressData], cond);
+                for (const m of matches) {
+                  const idx = progressData.findIndex((r: any) => r.id === m.id);
+                  if (idx >= 0) Object.assign(progressData[idx], data);
+                }
+              }
+            },
+          }),
+        }),
+      };
+    },
   };
   return builder;
 }
@@ -240,34 +229,23 @@ export function initWebDatabase() {
 
   for (const w of vocabSeed) {
     wordsData.push({
-      id: w.id,
-      japanese: w.japanese,
-      reading: w.reading,
+      id: w.id, japanese: w.japanese, reading: w.reading,
       chinese_meaning: w.chinese_meaning,
       part_of_speech: w.part_of_speech ?? null,
       jlpt_level: w.jlpt_level ?? null,
-      source: w.source ?? null,
-      lesson: w.lesson ?? null,
+      source: w.source ?? null, lesson: w.lesson ?? null,
     });
   }
-
   for (const s of sentencesSeed) {
     sentencesData.push({
-      id: s.id,
-      japanese: s.japanese,
-      chinese: s.chinese,
-      source: s.source ?? null,
-      jlpt_level: s.jlpt_level ?? null,
+      id: s.id, japanese: s.japanese, chinese: s.chinese,
+      source: s.source ?? null, jlpt_level: s.jlpt_level ?? null,
     });
   }
-
   for (const ws of wordSentencesSeed) {
     wsData.push({ word_id: ws.word_id, sentence_id: ws.sentence_id });
   }
-
   console.log(`[WebDB] Loaded ${wordsData.length} words, ${sentencesData.length} sentences`);
 }
 
-export function isWebPlatform() {
-  return Platform.OS === "web";
-}
+export function isWebPlatform() { return Platform.OS === "web"; }
