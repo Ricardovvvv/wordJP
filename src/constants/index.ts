@@ -28,7 +28,54 @@ export const QUESTION_COUNT_OPTIONS = [5, 10, 15, 20, 30] as const;
 export const SOURCES = [
   { value: "jlpt", label: "JLPT" },
   { value: "minna_no_nihongo", label: "みんなの日本語" },
+  { value: "standard_jp", label: "标准日本语" },
 ] as const;
+
+export const TEXTBOOK_INFO: Record<string, {
+  title: string;
+  titleJP: string;
+  author: string;
+  publisher: string;
+  description: string;
+  levels: string;
+  totalLessons: number;
+  totalWords: number;
+  color: string;
+}> = {
+  jlpt: {
+    title: "JLPT",
+    titleJP: "日本語能力試験",
+    author: "日本国際教育支援協会",
+    publisher: "凡人社",
+    description: "日本语能力测试官方词库，覆盖N5到N1全部等级。按考试等级分类，适合备考。",
+    levels: "N5 ~ N1",
+    totalLessons: 0,
+    totalWords: 14611,
+    color: "#2563eb",
+  },
+  minna_no_nihongo: {
+    title: "みんなの日本語",
+    titleJP: "みんなの日本語",
+    author: "スリーエーネットワーク",
+    publisher: "スリーエーネットワーク",
+    description: "最经典的日语教材之一，全球广泛使用。初级I&II共50课，涵盖日常会话基础词汇。",
+    levels: "初级 I · II",
+    totalLessons: 50,
+    totalWords: 1496,
+    color: "#e11d48",
+  },
+  standard_jp: {
+    title: "标准日本语",
+    titleJP: "中日交流標準日本語",
+    author: "人民教育出版社",
+    publisher: "人民教育出版社",
+    description: "中国大陆最广泛使用的日语教材，初级上册+下册共48课，词汇按课次编排。",
+    levels: "初级 上·下",
+    totalLessons: 48,
+    totalWords: 753,
+    color: "#7c3aed",
+  },
+} as const;
 
 export const MINNA_LESSONS = [
   { value: 0, label: "全部" },

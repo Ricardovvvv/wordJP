@@ -26,7 +26,10 @@
       "Bash(curl -s -k \"https://raw.githubusercontent.com/vitto4/MinnaNoDS/main/minnanods.yaml\")",
       "Bash(curl -s -k \"https://api.github.com/repos/vitto4/MinnaNoDS/contents/\")",
       "Bash(node -e \"const d=[];process.stdin.on\\('data',c=>d.push\\(c\\)\\);process.stdin.on\\('end',\\(\\)=>{const r=JSON.parse\\(d.join\\(''\\)\\);if\\(Array.isArray\\(r\\)\\)r.forEach\\(f=>console.log\\(f.name,f.type\\)\\);else console.log\\(JSON.stringify\\(r\\).substring\\(0,500\\)\\)}\\)\")",
-      "Bash(curl -s -k \"https://raw.githubusercontent.com/vitto4/MinnaNoDS/main/minna-no-ds.yaml\" -o \"D:/Ricardo/Documents/apps/wordJP/assets/seed/minna-no-ds.yaml\")"
+      "Bash(curl -s -k \"https://raw.githubusercontent.com/vitto4/MinnaNoDS/main/minna-no-ds.yaml\" -o \"D:/Ricardo/Documents/apps/wordJP/assets/seed/minna-no-ds.yaml\")",
+      "Bash(cmd //c \"start http://localhost:8081\")",
+      "Bash(cp /tmp/biaori_words.json \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\" && echo \"copied\"; ls -la \"D:/Ricardo/Documents/apps/wordJP/assets/seed/biaori_words.json\")",
+      "Bash(git commit -m 'Add textbook source selector in settings page *)"
     ]
   }
 }

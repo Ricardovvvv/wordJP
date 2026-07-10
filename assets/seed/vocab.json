@@ -161068,5 +161068,7535 @@
     "jlpt_level": null,
     "source": "minna_no_nihongo",
     "lesson": 50
+  },
+  {
+    "id": 16108,
+    "japanese": "中国人",
+    "reading": "ちゅうごくじん",
+    "chinese_meaning": "中国人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16109,
+    "japanese": "韓国人",
+    "reading": "かんこくじん",
+    "chinese_meaning": "韩国人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16110,
+    "japanese": "～人",
+    "reading": "アメリカじん",
+    "chinese_meaning": "美国人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16111,
+    "japanese": "～人",
+    "reading": "フランスじん",
+    "chinese_meaning": "法国人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16112,
+    "japanese": "研修生",
+    "reading": "けんしゅうせい",
+    "chinese_meaning": "进修生",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16113,
+    "japanese": "あの人",
+    "reading": "あのひと",
+    "chinese_meaning": "那个人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16114,
+    "japanese": "あっ",
+    "reading": "あっ",
+    "chinese_meaning": "哎，哎呀",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16115,
+    "japanese": "李",
+    "reading": "り",
+    "chinese_meaning": "李",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16116,
+    "japanese": "張",
+    "reading": "ちょう",
+    "chinese_meaning": "张",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16117,
+    "japanese": "小野",
+    "reading": "おの",
+    "chinese_meaning": "小野",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16118,
+    "japanese": "吉田",
+    "reading": "よしだ",
+    "chinese_meaning": "吉田",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16119,
+    "japanese": "田中",
+    "reading": "たなか",
+    "chinese_meaning": "田中",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16120,
+    "japanese": "中村",
+    "reading": "なかむら",
+    "chinese_meaning": "中村",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16121,
+    "japanese": "太郎",
+    "reading": "たろう",
+    "chinese_meaning": "太郎",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16122,
+    "japanese": "金",
+    "reading": "キム",
+    "chinese_meaning": "金",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16123,
+    "japanese": "デュポン",
+    "reading": "デュポン",
+    "chinese_meaning": "迪蓬",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16124,
+    "japanese": "スミス",
+    "reading": "スミス",
+    "chinese_meaning": "史密斯",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16125,
+    "japanese": "ジョンソン",
+    "reading": "ジョンソン",
+    "chinese_meaning": "约翰逊",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16126,
+    "japanese": "北京大学",
+    "reading": "ペキンだいがく",
+    "chinese_meaning": "北京大学",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16127,
+    "japanese": "ＪＣ企画",
+    "reading": "ジェーシーきかく",
+    "chinese_meaning": "JC策划公司",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16128,
+    "japanese": "北京旅行社",
+    "reading": "ペキンりょこうしゃ",
+    "chinese_meaning": "北京旅行社",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16129,
+    "japanese": "日中商事",
+    "reading": "にっちゅうしょうじ",
+    "chinese_meaning": "日中商社",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16130,
+    "japanese": "～お願いします",
+    "reading": "よろしくおねがいします",
+    "chinese_meaning": "请多关照",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16131,
+    "japanese": "はじめまして",
+    "reading": "はじめまして",
+    "chinese_meaning": "初次见面",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16132,
+    "japanese": "こちらこそ",
+    "reading": "こちらこそ",
+    "chinese_meaning": "我才要(请您～)",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16133,
+    "japanese": "そうです",
+    "reading": "そうです",
+    "chinese_meaning": "是(这样)",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16134,
+    "japanese": "ちがいます",
+    "reading": "ちがいます",
+    "chinese_meaning": "不是",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16135,
+    "japanese": "分かりません",
+    "reading": "わかりません",
+    "chinese_meaning": "不知道",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16136,
+    "japanese": "どうもすみません",
+    "reading": "どうもすみません",
+    "chinese_meaning": "实在对不起",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16137,
+    "japanese": "～さん／～ちゃん／～君",
+    "reading": "～さん／～ちゃん／～君",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 0
+  },
+  {
+    "id": 16138,
+    "japanese": "名産品",
+    "reading": "めいさんひん",
+    "chinese_meaning": "特产，名产",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16139,
+    "japanese": "シルク",
+    "reading": "シルク",
+    "chinese_meaning": "丝绸",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16140,
+    "japanese": "だれ",
+    "reading": "だれ",
+    "chinese_meaning": "谁",
+    "part_of_speech": "疑",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16141,
+    "japanese": "長島",
+    "reading": "ながしま",
+    "chinese_meaning": "长岛",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16142,
+    "japanese": "スワトウ",
+    "reading": "スワトウ",
+    "chinese_meaning": "汕头",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16143,
+    "japanese": "ありがとうございます",
+    "reading": "ありがとうございます",
+    "chinese_meaning": "谢谢",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16144,
+    "japanese": "おいくつ",
+    "reading": "おいくつ",
+    "chinese_meaning": "多大",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16145,
+    "japanese": "何～／～歳",
+    "reading": "何～／～歳",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1
+  },
+  {
+    "id": 16146,
+    "japanese": "トイレ",
+    "reading": "トイレ",
+    "chinese_meaning": "厕所，盥洗室",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 2
+  },
+  {
+    "id": 16147,
+    "japanese": "～会場",
+    "reading": "バーゲンかいじょう",
+    "chinese_meaning": "降价处理大卖场",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 2
+  },
+  {
+    "id": 16148,
+    "japanese": "デジカメ",
+    "reading": "デジカメ",
+    "chinese_meaning": "数码相机",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 2
+  },
+  {
+    "id": 16149,
+    "japanese": "とうきょう",
+    "reading": "とうきょう",
+    "chinese_meaning": "东京",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 2
+  },
+  {
+    "id": 16150,
+    "japanese": "お～／～階／～円／～曜日",
+    "reading": "お～／～階／～円／～曜日",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 2
+  },
+  {
+    "id": 16151,
+    "japanese": "サッカーボール",
+    "reading": "サッカーボール",
+    "chinese_meaning": "足球",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16152,
+    "japanese": "ウイスキー",
+    "reading": "ウイスキー",
+    "chinese_meaning": "威士忌",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16153,
+    "japanese": "花屋",
+    "reading": "はなや",
+    "chinese_meaning": "花店",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16154,
+    "japanese": "横浜",
+    "reading": "よこはま",
+    "chinese_meaning": "横滨",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16155,
+    "japanese": "名古屋",
+    "reading": "なごや",
+    "chinese_meaning": "名古屋",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16156,
+    "japanese": "大阪",
+    "reading": "おおさか",
+    "chinese_meaning": "大阪",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16157,
+    "japanese": "JR",
+    "reading": "ジェーアール",
+    "chinese_meaning": "JR",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16158,
+    "japanese": "ご～",
+    "reading": "ご～",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 3
+  },
+  {
+    "id": 16159,
+    "japanese": "昨日",
+    "reading": "きのう",
+    "chinese_meaning": "昨天",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16160,
+    "japanese": "明日",
+    "reading": "あした",
+    "chinese_meaning": "明天",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16161,
+    "japanese": "午前)/エーエム(am",
+    "reading": "ごぜん",
+    "chinese_meaning": "上午",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16162,
+    "japanese": "午後)/ピーエム(pm",
+    "reading": "ごご",
+    "chinese_meaning": "下午",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16163,
+    "japanese": "始まります",
+    "reading": "はじまります",
+    "chinese_meaning": "开始",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16164,
+    "japanese": "勉強～",
+    "reading": "べんきょうします",
+    "chinese_meaning": "学习",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16165,
+    "japanese": "北京支社",
+    "reading": "ペキンししゃ",
+    "chinese_meaning": "北京分社",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16166,
+    "japanese": "神戸",
+    "reading": "こうべ",
+    "chinese_meaning": "神户",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16167,
+    "japanese": "～時／～分／～半／～月/～日／～年／～ごろ",
+    "reading": "～時／～分／～半／～月/～日／～年／～ごろ",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 104
+  },
+  {
+    "id": 16168,
+    "japanese": "こどもの日",
+    "reading": "こどものひ",
+    "chinese_meaning": "儿童节",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16169,
+    "japanese": "フェリー",
+    "reading": "フェリー",
+    "chinese_meaning": "渡轮",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16170,
+    "japanese": "たしか",
+    "reading": "たしか",
+    "chinese_meaning": "好像是，大概；的确",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16171,
+    "japanese": "佐藤",
+    "reading": "さとう",
+    "chinese_meaning": "佐藤",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16172,
+    "japanese": "北京",
+    "reading": "ペキン",
+    "chinese_meaning": "北京",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16173,
+    "japanese": "広島",
+    "reading": "ひろしま",
+    "chinese_meaning": "广岛",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16174,
+    "japanese": "京都",
+    "reading": "きょうと",
+    "chinese_meaning": "京都",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16175,
+    "japanese": "渋谷",
+    "reading": "しぶや",
+    "chinese_meaning": "涩谷",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16176,
+    "japanese": "お疲れ様でした",
+    "reading": "おつかれさまでした",
+    "chinese_meaning": "够累的",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16177,
+    "japanese": "お先に失礼します",
+    "reading": "おさきにしつれいします",
+    "chinese_meaning": "我先走了，我先告辞了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16178,
+    "japanese": "大変ですね",
+    "reading": "たいへんですね",
+    "chinese_meaning": "真不容易，够受的，不得了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 105
+  },
+  {
+    "id": 16179,
+    "japanese": "コーラ",
+    "reading": "コーラ",
+    "chinese_meaning": "可乐",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16180,
+    "japanese": "お粥",
+    "reading": "おかゆ",
+    "chinese_meaning": "粥",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16181,
+    "japanese": "お弁当",
+    "reading": "おべんとう",
+    "chinese_meaning": "盒饭",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16182,
+    "japanese": "そば　　　[名]",
+    "reading": "そば　　　[名]",
+    "chinese_meaning": "荞麦面",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16183,
+    "japanese": "親子丼",
+    "reading": "おやこどん",
+    "chinese_meaning": "鸡肉鸡蛋盖饭",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16184,
+    "japanese": "カレー",
+    "reading": "カレー",
+    "chinese_meaning": "咖喱(饭)",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16185,
+    "japanese": "チーズ",
+    "reading": "チーズ",
+    "chinese_meaning": "干酪",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16186,
+    "japanese": "リンゴ",
+    "reading": "リンゴ",
+    "chinese_meaning": "苹果",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16187,
+    "japanese": "イチゴ",
+    "reading": "イチゴ",
+    "chinese_meaning": "草莓",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16188,
+    "japanese": "そば屋",
+    "reading": "そばや",
+    "chinese_meaning": "荞麦面馆",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16189,
+    "japanese": "申込書",
+    "reading": "もうしこみしょ",
+    "chinese_meaning": "申请书",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16190,
+    "japanese": "ＣＤ",
+    "reading": "シーディー",
+    "chinese_meaning": "ＣＤ",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16191,
+    "japanese": "撮ります",
+    "reading": "とります",
+    "chinese_meaning": "拍照，拍摄",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16192,
+    "japanese": "掃除～",
+    "reading": "そうじします",
+    "chinese_meaning": "打扫，扫除",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16193,
+    "japanese": "じゃあ／では",
+    "reading": "じゃあ／では",
+    "chinese_meaning": "那么",
+    "part_of_speech": "连",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16194,
+    "japanese": "失礼します",
+    "reading": "しつれいします",
+    "chinese_meaning": "告辞了，我走了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16195,
+    "japanese": "失礼しました",
+    "reading": "しつれいしました",
+    "chinese_meaning": "打搅了，失礼了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16196,
+    "japanese": "いってまいります",
+    "reading": "いってまいります",
+    "chinese_meaning": "我走了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16197,
+    "japanese": "いってきます",
+    "reading": "いってきます",
+    "chinese_meaning": "我走了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16198,
+    "japanese": "いってらっしゃい",
+    "reading": "いってらっしゃい",
+    "chinese_meaning": "你走好",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16199,
+    "japanese": "ただいま",
+    "reading": "ただいま",
+    "chinese_meaning": "我回来了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16200,
+    "japanese": "お帰りなさい",
+    "reading": "おかえりなさい",
+    "chinese_meaning": "你回来了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16201,
+    "japanese": "かしこまりました",
+    "reading": "かしこまりました",
+    "chinese_meaning": "我知道了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16202,
+    "japanese": "お邪魔します",
+    "reading": "おじゃまします",
+    "chinese_meaning": "打扰了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16203,
+    "japanese": "午前中",
+    "reading": "ごぜんちゅう",
+    "chinese_meaning": "上午",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 106
+  },
+  {
+    "id": 16204,
+    "japanese": "～表",
+    "reading": "スケジュールひょう",
+    "chinese_meaning": "日程表",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16205,
+    "japanese": "写真集",
+    "reading": "しゃしんしゅう",
+    "chinese_meaning": "影集",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16206,
+    "japanese": "ファックス",
+    "reading": "ファックス",
+    "chinese_meaning": "传真",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16207,
+    "japanese": "紙飛行機",
+    "reading": "かみひこうき",
+    "chinese_meaning": "纸折的飞机",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16208,
+    "japanese": "会います",
+    "reading": "あいます",
+    "chinese_meaning": "见",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16209,
+    "japanese": "作ります",
+    "reading": "つくります",
+    "chinese_meaning": "做，制造",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16210,
+    "japanese": "届きます",
+    "reading": "とどきます",
+    "chinese_meaning": "收到，送到，寄到",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16211,
+    "japanese": "かきます",
+    "reading": "かきます",
+    "chinese_meaning": "画",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16212,
+    "japanese": "かけます",
+    "reading": "かけます",
+    "chinese_meaning": "打(电话)",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16213,
+    "japanese": "もう一度",
+    "reading": "もういちど",
+    "chinese_meaning": "再一次",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16214,
+    "japanese": "前に",
+    "reading": "まえに",
+    "chinese_meaning": "以前",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16215,
+    "japanese": "陳",
+    "reading": "ちん",
+    "chinese_meaning": "陈",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16216,
+    "japanese": "どうですか",
+    "reading": "どうですか",
+    "chinese_meaning": "怎样，如何",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16217,
+    "japanese": "お願いします",
+    "reading": "おねがいします",
+    "chinese_meaning": "拜托了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16218,
+    "japanese": "分かりました",
+    "reading": "わかりました",
+    "chinese_meaning": "明白了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16219,
+    "japanese": "よかったです",
+    "reading": "よかったです",
+    "chinese_meaning": "太好了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16220,
+    "japanese": "～様",
+    "reading": "～様",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 107
+  },
+  {
+    "id": 16221,
+    "japanese": "四川料理",
+    "reading": "しせんりょうり",
+    "chinese_meaning": "四川菜",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16222,
+    "japanese": "スープ",
+    "reading": "スープ",
+    "chinese_meaning": "汤",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16223,
+    "japanese": "北京～",
+    "reading": "ペキンダック",
+    "chinese_meaning": "北京烤鸭",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16224,
+    "japanese": "お湯",
+    "reading": "おゆ",
+    "chinese_meaning": "热水，开水",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16225,
+    "japanese": "グラス",
+    "reading": "グラス",
+    "chinese_meaning": "玻璃杯",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16226,
+    "japanese": "しおからい(塩辛い)／しょっぱい",
+    "reading": "しおからい(塩辛い)／しょっぱい",
+    "chinese_meaning": "咸",
+    "part_of_speech": "形1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16227,
+    "japanese": "本当に",
+    "reading": "ほんとうに",
+    "chinese_meaning": "真的，实在是",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16228,
+    "japanese": "とても／たいへん",
+    "reading": "とても／たいへん",
+    "chinese_meaning": "很，非常",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16229,
+    "japanese": "すこし(少し)／ちょっと",
+    "reading": "すこし(少し)／ちょっと",
+    "chinese_meaning": "一点儿",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16230,
+    "japanese": "あら／あれ",
+    "reading": "あら／あれ",
+    "chinese_meaning": "哎呀，咦",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16231,
+    "japanese": "天安門",
+    "reading": "てんあんもん",
+    "chinese_meaning": "天安门",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16232,
+    "japanese": "万里の長城",
+    "reading": "ばんりのちょうじょう",
+    "chinese_meaning": "万里长城",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16233,
+    "japanese": "気持ちがいい",
+    "reading": "きもちがいい",
+    "chinese_meaning": "感觉舒服，心情愉快",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16234,
+    "japanese": "～用",
+    "reading": "～用",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 208
+  },
+  {
+    "id": 16235,
+    "japanese": "お店",
+    "reading": "おみせ",
+    "chinese_meaning": "餐馆；商店",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16236,
+    "japanese": "お菓子",
+    "reading": "おかし",
+    "chinese_meaning": "点心",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16237,
+    "japanese": "シーズン",
+    "reading": "シーズン",
+    "chinese_meaning": "季节",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16238,
+    "japanese": "修学旅行",
+    "reading": "しゅうがくりょこう",
+    "chinese_meaning": "修学旅行",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16239,
+    "japanese": "観光客",
+    "reading": "かんこうきゃく",
+    "chinese_meaning": "游客",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16240,
+    "japanese": "ハンサム",
+    "reading": "ハンサム",
+    "chinese_meaning": "英俊，帅气",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16241,
+    "japanese": "あれえ",
+    "reading": "あれえ",
+    "chinese_meaning": "咦",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16242,
+    "japanese": "奈良",
+    "reading": "なら",
+    "chinese_meaning": "奈良",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16243,
+    "japanese": "～中",
+    "reading": "～中",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 209
+  },
+  {
+    "id": 16244,
+    "japanese": "ロック",
+    "reading": "ロック",
+    "chinese_meaning": "摇滚乐",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16245,
+    "japanese": "ポップス",
+    "reading": "ポップス",
+    "chinese_meaning": "流行音乐",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16246,
+    "japanese": "～語",
+    "reading": "スペインご",
+    "chinese_meaning": "西班牙语",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16247,
+    "japanese": "お酒",
+    "reading": "おさけ",
+    "chinese_meaning": "酒，酒类",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16248,
+    "japanese": "ヒマワリ",
+    "reading": "ヒマワリ",
+    "chinese_meaning": "向日葵",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16249,
+    "japanese": "バラ",
+    "reading": "バラ",
+    "chinese_meaning": "蔷薇，玫瑰",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16250,
+    "japanese": "コンピュータ",
+    "reading": "コンピュータ",
+    "chinese_meaning": "计算机，电脑",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16251,
+    "japanese": "写真展",
+    "reading": "しゃしんてん",
+    "chinese_meaning": "摄影展",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16252,
+    "japanese": "寄木細工",
+    "reading": "よせぎざいく",
+    "chinese_meaning": "木片儿拼花工艺品",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16253,
+    "japanese": "脚",
+    "reading": "あし",
+    "chinese_meaning": "腿",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16254,
+    "japanese": "ぼく",
+    "reading": "ぼく",
+    "chinese_meaning": "我(男性自称)",
+    "part_of_speech": "代",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16255,
+    "japanese": "分かります",
+    "reading": "わかります",
+    "chinese_meaning": "懂，明白",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16256,
+    "japanese": "迷います",
+    "reading": "まよいます",
+    "chinese_meaning": "犹豫，难以决定",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16257,
+    "japanese": "散歩～",
+    "reading": "さんぽします",
+    "chinese_meaning": "散步",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16258,
+    "japanese": "だから　/ですから",
+    "reading": "だから　/ですから",
+    "chinese_meaning": "所以，因此",
+    "part_of_speech": "连",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16259,
+    "japanese": "結構です",
+    "reading": "けっこうです",
+    "chinese_meaning": "不用，不要",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16260,
+    "japanese": "気に入ります",
+    "reading": "きにいります",
+    "chinese_meaning": "中意，喜欢",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 210
+  },
+  {
+    "id": 16261,
+    "japanese": "日本料理",
+    "reading": "にほんりょうり",
+    "chinese_meaning": "日式饭菜",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16262,
+    "japanese": "寿司",
+    "reading": "すし",
+    "chinese_meaning": "寿司",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16263,
+    "japanese": "ナシ",
+    "reading": "ナシ",
+    "chinese_meaning": "梨",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16264,
+    "japanese": "バナナ",
+    "reading": "バナナ",
+    "chinese_meaning": "香蕉",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16265,
+    "japanese": "ミカン",
+    "reading": "ミカン",
+    "chinese_meaning": "橘子",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16266,
+    "japanese": "日本酒",
+    "reading": "にほんしゅ",
+    "chinese_meaning": "日本酒",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16267,
+    "japanese": "～茶",
+    "reading": "ウーロンちゃ",
+    "chinese_meaning": "乌龙茶",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16268,
+    "japanese": "～茶",
+    "reading": "ジャスミンちゃ",
+    "chinese_meaning": "茉莉花茶",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16269,
+    "japanese": "降ります",
+    "reading": "ふります",
+    "chinese_meaning": "下(雨，雪)，降(雨，雪)",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16270,
+    "japanese": "やはり／やっぱり",
+    "reading": "やはり／やっぱり",
+    "chinese_meaning": "仍然，还是",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16271,
+    "japanese": "チョモランマ",
+    "reading": "チョモランマ",
+    "chinese_meaning": "珠穆朗玛峰",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16272,
+    "japanese": "人気があります",
+    "reading": "にんきがあります",
+    "chinese_meaning": "受欢迎",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16273,
+    "japanese": "～年間",
+    "reading": "～年間",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 211
+  },
+  {
+    "id": 16274,
+    "japanese": "タバコ",
+    "reading": "タバコ",
+    "chinese_meaning": "烟，烟草",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16275,
+    "japanese": "ガレージ",
+    "reading": "ガレージ",
+    "chinese_meaning": "车库，汽车房",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16276,
+    "japanese": "生～",
+    "reading": "なまビール",
+    "chinese_meaning": "生啤",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16277,
+    "japanese": "焼き鳥",
+    "reading": "やきとり",
+    "chinese_meaning": "烤鸡肉串",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16278,
+    "japanese": "肉じゃが",
+    "reading": "にくじゃが",
+    "chinese_meaning": "土豆炖肉",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16279,
+    "japanese": "ボーリング",
+    "reading": "ボーリング",
+    "chinese_meaning": "保龄球",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16280,
+    "japanese": "咲きます",
+    "reading": "さきます",
+    "chinese_meaning": "花开",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16281,
+    "japanese": "吸います",
+    "reading": "すいます",
+    "chinese_meaning": "吸(烟)",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16282,
+    "japanese": "どのぐらい／どれぐらい",
+    "reading": "どのぐらい／どれぐらい",
+    "chinese_meaning": "多久，多少钱",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16283,
+    "japanese": "～冊／～回／～枚／～個／～杯／～人／～台 ～本／～頭／～匹/　～つ／～着／～羽／～番 ～足／～度／～キロメートル／～皿 ／～時間／～週間／～か月／～たち",
+    "reading": "～冊／～回／～枚／～個／～杯／～人／～台 ～本／～頭／～匹/　～つ／～着／～羽／～番 ～足／～度／～キロメートル／～皿 ／～時間／～週間／～か月／～たち",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 312
+  },
+  {
+    "id": 16284,
+    "japanese": "メモ",
+    "reading": "メモ",
+    "chinese_meaning": "记录",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16285,
+    "japanese": "太極拳",
+    "reading": "たいきょくけん",
+    "chinese_meaning": "太极拳",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16286,
+    "japanese": "バーベキュー",
+    "reading": "バーベキュー",
+    "chinese_meaning": "户外烧烤",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16287,
+    "japanese": "通ります",
+    "reading": "とおります",
+    "chinese_meaning": "通过，经过",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16288,
+    "japanese": "渡ります",
+    "reading": "わたります",
+    "chinese_meaning": "过(桥，河)，穿过(马路)",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16289,
+    "japanese": "下ろします",
+    "reading": "おろします",
+    "chinese_meaning": "取，卸货",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16290,
+    "japanese": "曲がります",
+    "reading": "まがります",
+    "chinese_meaning": "拐弯，曲折",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16291,
+    "japanese": "出ます",
+    "reading": "でます",
+    "chinese_meaning": "离开",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16292,
+    "japanese": "過ぎます",
+    "reading": "すぎます",
+    "chinese_meaning": "过",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16293,
+    "japanese": "降ります",
+    "reading": "おります",
+    "chinese_meaning": "下(车，山)",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16294,
+    "japanese": "買い物～",
+    "reading": "かいものします",
+    "chinese_meaning": "买东西",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16295,
+    "japanese": "卒業～",
+    "reading": "そつぎょうします",
+    "chinese_meaning": "毕业",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16296,
+    "japanese": "食事～",
+    "reading": "しょくじします",
+    "chinese_meaning": "吃饭，用餐",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16297,
+    "japanese": "整理～",
+    "reading": "せいりします",
+    "chinese_meaning": "整理",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16298,
+    "japanese": "そう／ああ",
+    "reading": "そう／ああ",
+    "chinese_meaning": "那样",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16299,
+    "japanese": "後で",
+    "reading": "あとで",
+    "chinese_meaning": "过会儿",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16300,
+    "japanese": "すみませんが",
+    "reading": "すみませんが",
+    "chinese_meaning": "对不起……，劳驾……",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 313
+  },
+  {
+    "id": 16301,
+    "japanese": "ボート",
+    "reading": "ボート",
+    "chinese_meaning": "小船，小艇",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16302,
+    "japanese": "ベンチ",
+    "reading": "ベンチ",
+    "chinese_meaning": "长椅，长凳",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16303,
+    "japanese": "お風呂",
+    "reading": "おふろ",
+    "chinese_meaning": "澡堂，浴室",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16304,
+    "japanese": "クーラー",
+    "reading": "クーラー",
+    "chinese_meaning": "空调",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16305,
+    "japanese": "駐車禁止",
+    "reading": "ちゅうしゃきんし",
+    "chinese_meaning": "禁止停车",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16306,
+    "japanese": "火気厳禁",
+    "reading": "かきげんきん",
+    "chinese_meaning": "严禁烟火",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16307,
+    "japanese": "撮影禁止",
+    "reading": "さつえいきんし",
+    "chinese_meaning": "禁止拍照",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16308,
+    "japanese": "乗ります",
+    "reading": "のります",
+    "chinese_meaning": "乘坐，乘",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16309,
+    "japanese": "入ります",
+    "reading": "はいります",
+    "chinese_meaning": "进入，加入",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16310,
+    "japanese": "伝えます",
+    "reading": "つたえます",
+    "chinese_meaning": "说，传达，转告",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16311,
+    "japanese": "だめ",
+    "reading": "だめ",
+    "chinese_meaning": "不行，不可以",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16312,
+    "japanese": "いえ",
+    "reading": "いえ",
+    "chinese_meaning": "不，不是",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16313,
+    "japanese": "お大事に",
+    "reading": "おだいじに",
+    "chinese_meaning": "请多保重",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16314,
+    "japanese": "いけません",
+    "reading": "いけません",
+    "chinese_meaning": "不行，不可以",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16315,
+    "japanese": "かまいません",
+    "reading": "かまいません",
+    "chinese_meaning": "没关系，不要紧",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16316,
+    "japanese": "まだです",
+    "reading": "まだです",
+    "chinese_meaning": "还没有，仍然……没有",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16317,
+    "japanese": "気をつけます",
+    "reading": "きをつけます",
+    "chinese_meaning": "注意",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16318,
+    "japanese": "無理をします",
+    "reading": "むりをします",
+    "chinese_meaning": "勉强",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16319,
+    "japanese": "睡眠をとります",
+    "reading": "すいみんをとります",
+    "chinese_meaning": "睡觉",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16320,
+    "japanese": "お風呂に入ります",
+    "reading": "おふろにはいります",
+    "chinese_meaning": "洗澡",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 314
+  },
+  {
+    "id": 16321,
+    "japanese": "旅行会社",
+    "reading": "りょこうがいしゃ",
+    "chinese_meaning": "旅行社",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16322,
+    "japanese": "航空会社",
+    "reading": "こうくうがいしゃ",
+    "chinese_meaning": "航空公司",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16323,
+    "japanese": "IT産業",
+    "reading": "アイティーさんぎょう",
+    "chinese_meaning": "IT产业，信息技术产业",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16324,
+    "japanese": "足",
+    "reading": "あし　",
+    "chinese_meaning": "脚",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16325,
+    "japanese": "ID～",
+    "reading": "アイディーカード",
+    "chinese_meaning": "身份证件",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16326,
+    "japanese": "展示場",
+    "reading": "てんじじょう",
+    "chinese_meaning": "展览会场",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16327,
+    "japanese": "入場料",
+    "reading": "にゅうじょうりょう",
+    "chinese_meaning": "门票，进场费",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16328,
+    "japanese": "クリスマスツリー",
+    "reading": "クリスマスツリー",
+    "chinese_meaning": "圣诞树",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16329,
+    "japanese": "～人",
+    "reading": "オーストラリアじん",
+    "chinese_meaning": "澳大利亚人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16330,
+    "japanese": "片づけます",
+    "reading": "かたづけます",
+    "chinese_meaning": "收拾，整理",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16331,
+    "japanese": "練習～",
+    "reading": "れんしゅうします",
+    "chinese_meaning": "练习",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16332,
+    "japanese": "結婚～",
+    "reading": "けっこんします",
+    "chinese_meaning": "结婚",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16333,
+    "japanese": "安心～",
+    "reading": "あんしんします",
+    "chinese_meaning": "安心，放心",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16334,
+    "japanese": "ユニーク",
+    "reading": "ユニーク",
+    "chinese_meaning": "独特",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16335,
+    "japanese": "まじめ",
+    "reading": "まじめ",
+    "chinese_meaning": "认真；严肃",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16336,
+    "japanese": "日中電気",
+    "reading": "にっちゅうでんき",
+    "chinese_meaning": "日中电器",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16337,
+    "japanese": "頭がいい",
+    "reading": "あたまがいい",
+    "chinese_meaning": "脑子好，聪明",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16338,
+    "japanese": "～製／～料／～費／～代",
+    "reading": "～製／～料／～費／～代",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 315
+  },
+  {
+    "id": 16339,
+    "japanese": "ノートパソコン",
+    "reading": "ノートパソコン",
+    "chinese_meaning": "笔记本电脑",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16340,
+    "japanese": "バイク",
+    "reading": "バイク",
+    "chinese_meaning": "摩托车",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16341,
+    "japanese": "お汁粉",
+    "reading": "おしるこ",
+    "chinese_meaning": "年糕小豆汤",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16342,
+    "japanese": "連絡～",
+    "reading": "れんらくします",
+    "chinese_meaning": "联系",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16343,
+    "japanese": "立派",
+    "reading": "りっぱ　",
+    "chinese_meaning": "美观，杰出",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16344,
+    "japanese": "今度",
+    "reading": "こんど　",
+    "chinese_meaning": "下次；这回",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16345,
+    "japanese": "故宮",
+    "reading": "こきゅう",
+    "chinese_meaning": "故宫",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16346,
+    "japanese": "～中に",
+    "reading": "～中に",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 416
+  },
+  {
+    "id": 16347,
+    "japanese": "旅行～",
+    "reading": "りょこうガイド",
+    "chinese_meaning": "旅行导游",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16348,
+    "japanese": "パイロット",
+    "reading": "パイロット",
+    "chinese_meaning": "飞行员",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16349,
+    "japanese": "デザイナー",
+    "reading": "デザイナー",
+    "chinese_meaning": "设计者，设计家",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16350,
+    "japanese": "タイムサービス",
+    "reading": "タイムサービス",
+    "chinese_meaning": "时段廉价销售",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16351,
+    "japanese": "新春～",
+    "reading": "しんしゅんセール",
+    "chinese_meaning": "新年大甩卖",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16352,
+    "japanese": "３割引",
+    "reading": "さんわりびき",
+    "chinese_meaning": "七折",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16353,
+    "japanese": "スカート",
+    "reading": "スカート",
+    "chinese_meaning": "裙子",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16354,
+    "japanese": "お正月",
+    "reading": "おしょうがつ",
+    "chinese_meaning": "过年，新年",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16355,
+    "japanese": "開きます",
+    "reading": "あきます",
+    "chinese_meaning": "开",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16356,
+    "japanese": "似合います",
+    "reading": "にあいます",
+    "chinese_meaning": "适合，相称",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16357,
+    "japanese": "シンプル",
+    "reading": "シンプル",
+    "chinese_meaning": "单纯　，简洁",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16358,
+    "japanese": "間もなく",
+    "reading": "まもなく",
+    "chinese_meaning": "马上，一会儿，不久",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16359,
+    "japanese": "さらに/もっと",
+    "reading": "さらに/もっと",
+    "chinese_meaning": "更加，更",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16360,
+    "japanese": "まとめて",
+    "reading": "まとめて",
+    "chinese_meaning": "一下子，一起，汇总，汇集",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16361,
+    "japanese": "今から",
+    "reading": "いまから",
+    "chinese_meaning": "从现在起",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 417
+  },
+  {
+    "id": 16362,
+    "japanese": "お皿",
+    "reading": "おさら",
+    "chinese_meaning": "盘子",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16363,
+    "japanese": "上級者",
+    "reading": "じょうきゅうしゃ",
+    "chinese_meaning": "熟练者",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16364,
+    "japanese": "上級～",
+    "reading": "じょうきゅうクラス",
+    "chinese_meaning": "高级班",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16365,
+    "japanese": "英会話",
+    "reading": "えいかいわ",
+    "chinese_meaning": "英语会话",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16366,
+    "japanese": "触ります",
+    "reading": "さわります",
+    "chinese_meaning": "触，碰",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16367,
+    "japanese": "渇きます",
+    "reading": "かわきます",
+    "chinese_meaning": "渴",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16368,
+    "japanese": "治ります",
+    "reading": "なおります",
+    "chinese_meaning": "痊愈，医好",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16369,
+    "japanese": "慌てます",
+    "reading": "あわてます",
+    "chinese_meaning": "惊慌，慌张，着急",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16370,
+    "japanese": "残業～",
+    "reading": "ざんぎょうします",
+    "chinese_meaning": "加班",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16371,
+    "japanese": "心配～",
+    "reading": "しんぱいします",
+    "chinese_meaning": "担心",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16372,
+    "japanese": "早く",
+    "reading": "はやく",
+    "chinese_meaning": "早点儿",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16373,
+    "japanese": "山田",
+    "reading": "やまだ",
+    "chinese_meaning": "山田",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 418
+  },
+  {
+    "id": 16374,
+    "japanese": "夢",
+    "reading": "ゆめ　",
+    "chinese_meaning": "梦；理想",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16375,
+    "japanese": "ギター",
+    "reading": "ギター",
+    "chinese_meaning": "吉他",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16376,
+    "japanese": "胡弓",
+    "reading": "こきゅう",
+    "chinese_meaning": "胡琴",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16377,
+    "japanese": "餃子",
+    "reading": "ギョーザ",
+    "chinese_meaning": "饺子",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16378,
+    "japanese": "獅子舞",
+    "reading": "ししまい",
+    "chinese_meaning": "狮子舞",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16379,
+    "japanese": "～語",
+    "reading": "フランスご",
+    "chinese_meaning": "法语",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16380,
+    "japanese": "すきます",
+    "reading": "すきます",
+    "chinese_meaning": "(肚子)饿，空",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16381,
+    "japanese": "登ります",
+    "reading": "のぼります",
+    "chinese_meaning": "登，上",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16382,
+    "japanese": "浴びます",
+    "reading": "あびます",
+    "chinese_meaning": "淋；浇",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16383,
+    "japanese": "ごちそうします",
+    "reading": "ごちそうします",
+    "chinese_meaning": "请客，摆盛宴",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16384,
+    "japanese": "帰国～",
+    "reading": "きこくします",
+    "chinese_meaning": "回国",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16385,
+    "japanese": "おなかがすきます",
+    "reading": "おなかがすきます",
+    "chinese_meaning": "肚子饿",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 419
+  },
+  {
+    "id": 16386,
+    "japanese": "ゴールデンウィーク",
+    "reading": "ゴールデンウィーク",
+    "chinese_meaning": "黄金周",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16387,
+    "japanese": "休憩時間",
+    "reading": "きゅうけいじかん",
+    "chinese_meaning": "休息时间",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16388,
+    "japanese": "京劇",
+    "reading": "きょうげき",
+    "chinese_meaning": "京剧",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16389,
+    "japanese": "地震",
+    "reading": "じしん　",
+    "chinese_meaning": "地震",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16390,
+    "japanese": "泥棒　",
+    "reading": "どろぼう",
+    "chinese_meaning": "小偷，盗贼",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16391,
+    "japanese": "遅れます",
+    "reading": "おくれます　",
+    "chinese_meaning": "迟到",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16392,
+    "japanese": "予約～",
+    "reading": "よやくします",
+    "chinese_meaning": "预约，预定",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16393,
+    "japanese": "感謝～",
+    "reading": "かんしゃします",
+    "chinese_meaning": "感谢",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16394,
+    "japanese": "運動～",
+    "reading": "うんどうします",
+    "chinese_meaning": "运动",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16395,
+    "japanese": "洗濯～",
+    "reading": "せんたくします",
+    "chinese_meaning": "洗涤，洗",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16396,
+    "japanese": "報告～",
+    "reading": "ほうこくします",
+    "chinese_meaning": "报告",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16397,
+    "japanese": "東京～",
+    "reading": "とうきょうタワー",
+    "chinese_meaning": "东京塔",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16398,
+    "japanese": "～過ぎ",
+    "reading": "～過ぎ",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 520
+  },
+  {
+    "id": 16399,
+    "japanese": "～場",
+    "reading": "スキーじょう",
+    "chinese_meaning": "滑雪场",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16400,
+    "japanese": "送別会",
+    "reading": "そうべつかい",
+    "chinese_meaning": "欢送会",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16401,
+    "japanese": "バドミントン",
+    "reading": "バドミントン",
+    "chinese_meaning": "羽毛球",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16402,
+    "japanese": "ラケット",
+    "reading": "ラケット",
+    "chinese_meaning": "球拍",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16403,
+    "japanese": "ごめん",
+    "reading": "ごめん",
+    "chinese_meaning": "抱歉，请原谅",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16404,
+    "japanese": "ううん/いや",
+    "reading": "ううん/いや",
+    "chinese_meaning": "不",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16405,
+    "japanese": "清水",
+    "reading": "しみず",
+    "chinese_meaning": "清水",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16406,
+    "japanese": "太田",
+    "reading": "おおた",
+    "chinese_meaning": "太田",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16407,
+    "japanese": "モーツアルト",
+    "reading": "モーツアルト",
+    "chinese_meaning": "莫扎特",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16408,
+    "japanese": "ディズニーランド",
+    "reading": "ディズニーランド",
+    "chinese_meaning": "迪士尼乐园",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16409,
+    "japanese": "～以外/　～方",
+    "reading": "～以外/　～方",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 521
+  },
+  {
+    "id": 16410,
+    "japanese": "スケート",
+    "reading": "スケート",
+    "chinese_meaning": "滑冰，溜冰",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16411,
+    "japanese": "閉店時刻",
+    "reading": "へいてんじこく",
+    "chinese_meaning": "关门时间",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16412,
+    "japanese": "卒業式",
+    "reading": "そつぎょうしき",
+    "chinese_meaning": "毕业典礼",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16413,
+    "japanese": "込みます",
+    "reading": "こみます",
+    "chinese_meaning": "拥挤，混杂",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16414,
+    "japanese": "決まります",
+    "reading": "きまります",
+    "chinese_meaning": "定，决定",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16415,
+    "japanese": "はやい　早い",
+    "reading": "はやい　早い",
+    "chinese_meaning": "早",
+    "part_of_speech": "形1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16416,
+    "japanese": "東京駅",
+    "reading": "とうきょうえき",
+    "chinese_meaning": "东京站",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16417,
+    "japanese": "～によって／～によります",
+    "reading": "～によって／～によります",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 522
+  },
+  {
+    "id": 16418,
+    "japanese": "お別れ",
+    "reading": "おわかれ",
+    "chinese_meaning": "分别，分手",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16419,
+    "japanese": "探します",
+    "reading": "さがします",
+    "chinese_meaning": "找，寻找，寻求",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16420,
+    "japanese": "やめます",
+    "reading": "やめます",
+    "chinese_meaning": "戒，停止，放弃",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16421,
+    "japanese": "寝坊～",
+    "reading": "ねぼうします",
+    "chinese_meaning": "睡懒觉",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16422,
+    "japanese": "外出～",
+    "reading": "がいしゅつします",
+    "chinese_meaning": "外出，出去",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16423,
+    "japanese": "研究～",
+    "reading": "けんきゅうします",
+    "chinese_meaning": "研究",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16424,
+    "japanese": "とうとう",
+    "reading": "とうとう",
+    "chinese_meaning": "终于，终究，到底",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16425,
+    "japanese": "絶対に",
+    "reading": "ぜったいに",
+    "chinese_meaning": "绝对",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16426,
+    "japanese": "馬",
+    "reading": "ば",
+    "chinese_meaning": "马",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16427,
+    "japanese": "お世話になりました",
+    "reading": "おせわになりました",
+    "chinese_meaning": "承蒙照顾",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16428,
+    "japanese": "～お伝えください",
+    "reading": "よろしくおつたえください",
+    "chinese_meaning": "请代问好",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16429,
+    "japanese": "お元気で",
+    "reading": "おげんきで",
+    "chinese_meaning": "请多保重",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16430,
+    "japanese": "お気をつけて",
+    "reading": "おきをつけて",
+    "chinese_meaning": "小心点儿",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16431,
+    "japanese": "役に立ちます",
+    "reading": "やくにたちます",
+    "chinese_meaning": "有用",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16432,
+    "japanese": "おなかがいっぱいです",
+    "reading": "おなかがいっぱいです",
+    "chinese_meaning": "吃饱，饱",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16433,
+    "japanese": "～中／～について",
+    "reading": "～中／～について",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 523
+  },
+  {
+    "id": 16434,
+    "japanese": "営業課",
+    "reading": "えいぎょうか",
+    "chinese_meaning": "营业科",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16435,
+    "japanese": "交通量",
+    "reading": "こうつうりょう",
+    "chinese_meaning": "交通流量，通行量",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16436,
+    "japanese": "部品工場",
+    "reading": "ぶひんこうじょう",
+    "chinese_meaning": "零件制造厂",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16437,
+    "japanese": "泊まります",
+    "reading": "とまります",
+    "chinese_meaning": "住，过夜，住宿",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16438,
+    "japanese": "結びます",
+    "reading": "むすびます",
+    "chinese_meaning": "连接，系",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16439,
+    "japanese": "倒産～",
+    "reading": "とうさんします",
+    "chinese_meaning": "倒闭，破产",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16440,
+    "japanese": "渋滞～",
+    "reading": "じゅうたいします",
+    "chinese_meaning": "堵车，停滞",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16441,
+    "japanese": "チェックします",
+    "reading": "チェックします",
+    "chinese_meaning": "确认",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16442,
+    "japanese": "戴",
+    "reading": "たい",
+    "chinese_meaning": "戴",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16443,
+    "japanese": "周",
+    "reading": "しゅう",
+    "chinese_meaning": "周",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16444,
+    "japanese": "唐",
+    "reading": "とう",
+    "chinese_meaning": "唐",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16445,
+    "japanese": "中国航空",
+    "reading": "ちゅうごくこうくう",
+    "chinese_meaning": "中国航空",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16446,
+    "japanese": "天安飯店",
+    "reading": "てんあんはんてん",
+    "chinese_meaning": "天安饭店",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16447,
+    "japanese": "三環路",
+    "reading": "さんかんろ",
+    "chinese_meaning": "三环路",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16448,
+    "japanese": "このあたり",
+    "reading": "このあたり",
+    "chinese_meaning": "这一带，这附近",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 624
+  },
+  {
+    "id": 16449,
+    "japanese": "表",
+    "reading": "ひょう",
+    "chinese_meaning": "表",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16450,
+    "japanese": "お客さん",
+    "reading": "おきゃくさん",
+    "chinese_meaning": "顾客，客人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16451,
+    "japanese": "バーゲン",
+    "reading": "バーゲン",
+    "chinese_meaning": "降价出售",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16452,
+    "japanese": "クレジットカード",
+    "reading": "クレジットカード",
+    "chinese_meaning": "信用卡",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16453,
+    "japanese": "防ぎます",
+    "reading": "ふせぎます",
+    "chinese_meaning": "防御，防备，防守",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16454,
+    "japanese": "回ります",
+    "reading": "まわります",
+    "chinese_meaning": "走访；转；绕弯",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16455,
+    "japanese": "走ります",
+    "reading": "はしります",
+    "chinese_meaning": "跑，奔跑",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16456,
+    "japanese": "吹きます",
+    "reading": "ふきます",
+    "chinese_meaning": "吹",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16457,
+    "japanese": "挙げます",
+    "reading": "あげます",
+    "chinese_meaning": "举，举起",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16458,
+    "japanese": "スケッチします",
+    "reading": "スケッチします",
+    "chinese_meaning": "素描，写生",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16459,
+    "japanese": "発言～",
+    "reading": "はつげんします",
+    "chinese_meaning": "发言",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16460,
+    "japanese": "優勝～",
+    "reading": "ゆうしょうします",
+    "chinese_meaning": "得冠军",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16461,
+    "japanese": "合格～",
+    "reading": "ごうかくします",
+    "chinese_meaning": "及格，合格",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16462,
+    "japanese": "約束～",
+    "reading": "やくそくします",
+    "chinese_meaning": "约定",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16463,
+    "japanese": "すぐに",
+    "reading": "すぐに",
+    "chinese_meaning": "就要，立刻，马上",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16464,
+    "japanese": "鈴木",
+    "reading": "すずき",
+    "chinese_meaning": "铃木",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16465,
+    "japanese": "楊",
+    "reading": "よう",
+    "chinese_meaning": "杨",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16466,
+    "japanese": "加藤",
+    "reading": "かとう",
+    "chinese_meaning": "加藤",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16467,
+    "japanese": "葉子",
+    "reading": "ようこ",
+    "chinese_meaning": "叶子",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16468,
+    "japanese": "光～",
+    "reading": "ひかりデパート",
+    "chinese_meaning": "阳光百货公司",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16469,
+    "japanese": "北京～",
+    "reading": "ペキンタイガース",
+    "chinese_meaning": "北京猛虎队〈棒球队名称〉",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16470,
+    "japanese": "あいさつ回り",
+    "reading": "あいさつまわり",
+    "chinese_meaning": "寒暄拜访",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16471,
+    "japanese": "いけない",
+    "reading": "いけない",
+    "chinese_meaning": "不行，不好，不可以",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16472,
+    "japanese": "～社",
+    "reading": "～社",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 625
+  },
+  {
+    "id": 16473,
+    "japanese": "国際関係学",
+    "reading": "こくさいかんけいがく",
+    "chinese_meaning": "国际关系学",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16474,
+    "japanese": "お年寄り",
+    "reading": "おとしより",
+    "chinese_meaning": "老年人",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16475,
+    "japanese": "～体操",
+    "reading": "ラジオたいそう",
+    "chinese_meaning": "广播体操",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16476,
+    "japanese": "社交～",
+    "reading": "しゃこうダンス",
+    "chinese_meaning": "交际舞",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16477,
+    "japanese": "バスケットボール",
+    "reading": "バスケットボール",
+    "chinese_meaning": "篮球",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16478,
+    "japanese": "スポーツセンター",
+    "reading": "スポーツセンター",
+    "chinese_meaning": "体育中心",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16479,
+    "japanese": "入園料",
+    "reading": "にゅうえんりょう",
+    "chinese_meaning": "门票，入园费",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16480,
+    "japanese": "グラフ",
+    "reading": "グラフ",
+    "chinese_meaning": "图表",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16481,
+    "japanese": "海外旅行",
+    "reading": "かいがいりょこう",
+    "chinese_meaning": "海外旅行",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16482,
+    "japanese": "通います",
+    "reading": "かよいます",
+    "chinese_meaning": "上学，来往",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16483,
+    "japanese": "要ります",
+    "reading": "いります",
+    "chinese_meaning": "要",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16484,
+    "japanese": "たたきます",
+    "reading": "たたきます",
+    "chinese_meaning": "拍，敲，打",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16485,
+    "japanese": "看病～",
+    "reading": "かんびょうします",
+    "chinese_meaning": "护理",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16486,
+    "japanese": "利用～",
+    "reading": "りようします",
+    "chinese_meaning": "利用",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16487,
+    "japanese": "相談～",
+    "reading": "そうだんします",
+    "chinese_meaning": "商谈",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16488,
+    "japanese": "木下",
+    "reading": "きのした",
+    "chinese_meaning": "木下",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16489,
+    "japanese": "田村",
+    "reading": "たむら",
+    "chinese_meaning": "田村",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16490,
+    "japanese": "気がつきます",
+    "reading": "きがつきます",
+    "chinese_meaning": "察觉",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16491,
+    "japanese": "しばらくです",
+    "reading": "しばらくです",
+    "chinese_meaning": "好久不见",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16492,
+    "japanese": "～行き〳～便",
+    "reading": "～行き〳～便",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 626
+  },
+  {
+    "id": 16493,
+    "japanese": "マフラー",
+    "reading": "マフラー",
+    "chinese_meaning": "围巾",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16494,
+    "japanese": "ネックレス",
+    "reading": "ネックレス",
+    "chinese_meaning": "项链",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16495,
+    "japanese": "不動産屋",
+    "reading": "ふどうさんや",
+    "chinese_meaning": "房产公司",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16496,
+    "japanese": "新居",
+    "reading": "しんきょ",
+    "chinese_meaning": "新居",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16497,
+    "japanese": "支社長",
+    "reading": "ししゃちょう",
+    "chinese_meaning": "分公司经理",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16498,
+    "japanese": "訳します",
+    "reading": "やくします",
+    "chinese_meaning": "翻译",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16499,
+    "japanese": "届けます",
+    "reading": "とどけます",
+    "chinese_meaning": "送到，送去",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16500,
+    "japanese": "案内～",
+    "reading": "あんないします",
+    "chinese_meaning": "向导，导游",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16501,
+    "japanese": "交換～",
+    "reading": "こうかんします",
+    "chinese_meaning": "换，交换",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16502,
+    "japanese": "紹介～",
+    "reading": "しょうかいします",
+    "chinese_meaning": "介绍",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16503,
+    "japanese": "すてき",
+    "reading": "すてき",
+    "chinese_meaning": "漂亮，极好",
+    "part_of_speech": "形２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16504,
+    "japanese": "中田",
+    "reading": "なかた",
+    "chinese_meaning": "中田",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16505,
+    "japanese": "国際貿易～)／こくぼう(国貿",
+    "reading": "こくさいぼうえきセンター　",
+    "chinese_meaning": "国际贸易中心，国贸",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16506,
+    "japanese": "どの辺",
+    "reading": "どのへん",
+    "chinese_meaning": "哪儿",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16507,
+    "japanese": "～先",
+    "reading": "～先",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 627
+  },
+  {
+    "id": 16508,
+    "japanese": "フジ",
+    "reading": "フジ",
+    "chinese_meaning": "紫藤",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16509,
+    "japanese": "カササギ",
+    "reading": "カササギ",
+    "chinese_meaning": "喜鹊",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16510,
+    "japanese": "横断禁止",
+    "reading": "おうだんきんし",
+    "chinese_meaning": "禁止横穿",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16511,
+    "japanese": "免許証",
+    "reading": "めんきょしょう",
+    "chinese_meaning": "许可证，执照",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16512,
+    "japanese": "企画書",
+    "reading": "きかくしょ",
+    "chinese_meaning": "计划书",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16513,
+    "japanese": "野球場",
+    "reading": "やきゅうじょう",
+    "chinese_meaning": "棒球场",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16514,
+    "japanese": "～講座",
+    "reading": "テレビこうざ",
+    "chinese_meaning": "电视讲座",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16515,
+    "japanese": "止まります",
+    "reading": "とまります",
+    "chinese_meaning": "停，停住",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16516,
+    "japanese": "変わります",
+    "reading": "かわります",
+    "chinese_meaning": "变，转变",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16517,
+    "japanese": "サボります",
+    "reading": "サボります",
+    "chinese_meaning": "逃学，怠工",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16518,
+    "japanese": "破ります",
+    "reading": "やぶります",
+    "chinese_meaning": "爽约，打破",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16519,
+    "japanese": "答えます",
+    "reading": "こたえます",
+    "chinese_meaning": "回答",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16520,
+    "japanese": "提出～",
+    "reading": "ていしゅつします",
+    "chinese_meaning": "提交，提出",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16521,
+    "japanese": "遠慮～",
+    "reading": "えんりょします",
+    "chinese_meaning": "客气",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16522,
+    "japanese": "シュートします",
+    "reading": "シュートします",
+    "chinese_meaning": "(足球)射门，投篮",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16523,
+    "japanese": "注意～",
+    "reading": "ちゅういします",
+    "chinese_meaning": "注意",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16524,
+    "japanese": "丁寧に",
+    "reading": "ていねいに",
+    "chinese_meaning": "恭敬地；细心地",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16525,
+    "japanese": "周恩来",
+    "reading": "しゅうおんらい",
+    "chinese_meaning": "周恩来",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16526,
+    "japanese": "魯迅",
+    "reading": "ろじん",
+    "chinese_meaning": "鲁迅",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16527,
+    "japanese": "世田谷",
+    "reading": "せたがや",
+    "chinese_meaning": "世田谷",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16528,
+    "japanese": "富士",
+    "reading": "ふじ",
+    "chinese_meaning": "富士",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16529,
+    "japanese": "変わった",
+    "reading": "かわった",
+    "chinese_meaning": "怪",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16530,
+    "japanese": "風邪を引きます",
+    "reading": "かぜをひきます",
+    "chinese_meaning": "感冒",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 728
+  },
+  {
+    "id": 16531,
+    "japanese": "報告書",
+    "reading": "ほうこくしょ",
+    "chinese_meaning": "报告书",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16532,
+    "japanese": "ピクニック",
+    "reading": "ピクニック",
+    "chinese_meaning": "郊游",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16533,
+    "japanese": "行楽地",
+    "reading": "こうらくち",
+    "chinese_meaning": "景点，游览地",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16534,
+    "japanese": "ピザ",
+    "reading": "ピザ",
+    "chinese_meaning": "比萨饼",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16535,
+    "japanese": "吸殻",
+    "reading": "すいがら",
+    "chinese_meaning": "烟头，烟灰，烟蒂",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16536,
+    "japanese": "そろいます",
+    "reading": "そろいます",
+    "chinese_meaning": "到齐，齐全",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16537,
+    "japanese": "寄ります",
+    "reading": "よります",
+    "chinese_meaning": "顺便去；靠近",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16538,
+    "japanese": "開きます",
+    "reading": "ひらきます",
+    "chinese_meaning": "开，开张",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16539,
+    "japanese": "引っ越します",
+    "reading": "ひっこします",
+    "chinese_meaning": "搬迁，搬家",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16540,
+    "japanese": "壊れます",
+    "reading": "こわれます",
+    "chinese_meaning": "出故障，坏",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16541,
+    "japanese": "間違えます",
+    "reading": "まちがえます",
+    "chinese_meaning": "搞错",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16542,
+    "japanese": "出発～",
+    "reading": "しゅっぱつします",
+    "chinese_meaning": "出发",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16543,
+    "japanese": "転職～",
+    "reading": "てんしょくします",
+    "chinese_meaning": "换工作",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16544,
+    "japanese": "パンクします",
+    "reading": "パンクします",
+    "chinese_meaning": "轮胎爆裂，撑破",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16545,
+    "japanese": "それでは〳それじゃ",
+    "reading": "それでは〳それじゃ",
+    "chinese_meaning": "那么",
+    "part_of_speech": "连",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16546,
+    "japanese": "そうか",
+    "reading": "そうか",
+    "chinese_meaning": "是吗",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16547,
+    "japanese": "パク",
+    "reading": "パク",
+    "chinese_meaning": "朴",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16548,
+    "japanese": "長江下り",
+    "reading": "ちょうこうくだり",
+    "chinese_meaning": "坐船游览长江两岸风光",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16549,
+    "japanese": "香山",
+    "reading": "こうざん",
+    "chinese_meaning": "香山",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16550,
+    "japanese": "北京植物園",
+    "reading": "ペキンしょくぶつえん",
+    "chinese_meaning": "北京植物园",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 729
+  },
+  {
+    "id": 16551,
+    "japanese": "ブローチ",
+    "reading": "ブローチ",
+    "chinese_meaning": "胸针",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16552,
+    "japanese": "コンクリート",
+    "reading": "コンクリート",
+    "chinese_meaning": "混凝土，水泥",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16553,
+    "japanese": "プラスチック",
+    "reading": "プラスチック",
+    "chinese_meaning": "塑胶，塑料",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16554,
+    "japanese": "ひすい",
+    "reading": "ひすい",
+    "chinese_meaning": "翡翠",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16555,
+    "japanese": "サービスセンター",
+    "reading": "サービスセンター",
+    "chinese_meaning": "维修服务中心",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16556,
+    "japanese": "お手洗い",
+    "reading": "おてあらい",
+    "chinese_meaning": "洗手间，厕所",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16557,
+    "japanese": "そば",
+    "reading": "そば",
+    "chinese_meaning": "旁边",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16558,
+    "japanese": "卓球台",
+    "reading": "たっきゅうだい",
+    "chinese_meaning": "乒乓球台",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16559,
+    "japanese": "白鳥",
+    "reading": "はくちょう",
+    "chinese_meaning": "天鹅",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16560,
+    "japanese": "スイカ",
+    "reading": "スイカ",
+    "chinese_meaning": "西瓜",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16561,
+    "japanese": "つきます",
+    "reading": "つきます",
+    "chinese_meaning": "灯亮，灯开",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16562,
+    "japanese": "下がります",
+    "reading": "さがります",
+    "chinese_meaning": "下降，降低",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16563,
+    "japanese": "怒ります",
+    "reading": "おこります",
+    "chinese_meaning": "生气",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16564,
+    "japanese": "生きます",
+    "reading": "いきます",
+    "chinese_meaning": "活，生存",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16565,
+    "japanese": "下ります",
+    "reading": "おります",
+    "chinese_meaning": "下，下来",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16566,
+    "japanese": "フリーズします",
+    "reading": "フリーズします",
+    "chinese_meaning": "死机",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16567,
+    "japanese": "故障～",
+    "reading": "こしょうします",
+    "chinese_meaning": "故障",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16568,
+    "japanese": "気持ち悪い",
+    "reading": "きもちわるい",
+    "chinese_meaning": "不舒服",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16569,
+    "japanese": "～メートル/～つ目",
+    "reading": "～メートル/～つ目",
+    "chinese_meaning": "~米/第一个",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 730
+  },
+  {
+    "id": 16570,
+    "japanese": "高速～",
+    "reading": "こうそくバス",
+    "chinese_meaning": "走高速的公共汽车",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16571,
+    "japanese": "出発時刻",
+    "reading": "しゅっぱつじこく",
+    "chinese_meaning": "出发时间",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16572,
+    "japanese": "旅行予定",
+    "reading": "りょこうよてい",
+    "chinese_meaning": "旅行计划",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16573,
+    "japanese": "うわさ",
+    "reading": "うわさ",
+    "chinese_meaning": "传说，风言风语",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16574,
+    "japanese": "ラーメン",
+    "reading": "ラーメン",
+    "chinese_meaning": "面条",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16575,
+    "japanese": "餃子～",
+    "reading": "ギョーザパーティー",
+    "chinese_meaning": "饺子宴",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16576,
+    "japanese": "正月休み",
+    "reading": "しょうがつやすみ",
+    "chinese_meaning": "新年假日",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16577,
+    "japanese": "～用品",
+    "reading": "スポーツようひん",
+    "chinese_meaning": "体育用品",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16578,
+    "japanese": "上がります",
+    "reading": "あがります",
+    "chinese_meaning": "提高，涨",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16579,
+    "japanese": "辞めます",
+    "reading": "やめます",
+    "chinese_meaning": "辞去",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16580,
+    "japanese": "留学～",
+    "reading": "りゅうがくします",
+    "chinese_meaning": "留学",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16581,
+    "japanese": "入学～",
+    "reading": "にゅうがくします",
+    "chinese_meaning": "入学",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16582,
+    "japanese": "流行～",
+    "reading": "りゅうこうします",
+    "chinese_meaning": "流行",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16583,
+    "japanese": "入院～",
+    "reading": "にゅういんします",
+    "chinese_meaning": "住院",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16584,
+    "japanese": "お邪魔～",
+    "reading": "おじゃまします",
+    "chinese_meaning": "打扰，拜访",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16585,
+    "japanese": "担当～",
+    "reading": "たんとうします",
+    "chinese_meaning": "承担",
+    "part_of_speech": "动３",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16586,
+    "japanese": "劉英",
+    "reading": "りゅうえい",
+    "chinese_meaning": "刘英",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16587,
+    "japanese": "京都～",
+    "reading": "きょうとホテル",
+    "chinese_meaning": "京都宾馆",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16588,
+    "japanese": "お邪魔しました",
+    "reading": "おじゃましました",
+    "chinese_meaning": "打扰了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16589,
+    "japanese": "風が強い",
+    "reading": "かぜがつよい",
+    "chinese_meaning": "风大",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 731
+  },
+  {
+    "id": 16590,
+    "japanese": "スーツケース",
+    "reading": "スーツケース",
+    "chinese_meaning": "旅行箱",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16591,
+    "japanese": "トランク",
+    "reading": "トランク",
+    "chinese_meaning": "后备箱；手提箱，皮箱",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16592,
+    "japanese": "Ｔ～",
+    "reading": "ティーシャツ",
+    "chinese_meaning": "Ｔ恤衫",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16593,
+    "japanese": "サンダル",
+    "reading": "サンダル",
+    "chinese_meaning": "凉鞋",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16594,
+    "japanese": "空",
+    "reading": "から",
+    "chinese_meaning": "空",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16595,
+    "japanese": "カキ",
+    "reading": "カキ",
+    "chinese_meaning": "柿子",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16596,
+    "japanese": "清涼飲料水",
+    "reading": "せいりょういんりょうすい",
+    "chinese_meaning": "清凉饮料",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16597,
+    "japanese": "閉まります",
+    "reading": "しまります",
+    "chinese_meaning": "关闭，关",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16598,
+    "japanese": "付きます",
+    "reading": "つきます",
+    "chinese_meaning": "附带，附加",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16599,
+    "japanese": "掛かります",
+    "reading": "かかります",
+    "chinese_meaning": "挂，悬挂",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16600,
+    "japanese": "やみます",
+    "reading": "やみます",
+    "chinese_meaning": "停，停息，停止",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16601,
+    "japanese": "建ちます",
+    "reading": "たちます",
+    "chinese_meaning": "盖，建",
+    "part_of_speech": "动１",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16602,
+    "japanese": "消えます",
+    "reading": "きえます",
+    "chinese_meaning": "熄灭，消失",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16603,
+    "japanese": "落ちます",
+    "reading": "おちます",
+    "chinese_meaning": "落下，掉",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16604,
+    "japanese": "割れます",
+    "reading": "われます",
+    "chinese_meaning": "裂开，破裂",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16605,
+    "japanese": "汚れます",
+    "reading": "よごれます",
+    "chinese_meaning": "脏",
+    "part_of_speech": "动２",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16606,
+    "japanese": "お久しぶりです",
+    "reading": "おひさしぶりです",
+    "chinese_meaning": "好久不见",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 832
+  },
+  {
+    "id": 16607,
+    "japanese": "ハードスケジュール",
+    "reading": "ハードスケジュール",
+    "chinese_meaning": "紧张的日程",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16608,
+    "japanese": "カレーライス",
+    "reading": "カレーライス",
+    "chinese_meaning": "咖喱饭",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16609,
+    "japanese": "ロッカー",
+    "reading": "ロッカー",
+    "chinese_meaning": "橱柜，文件柜",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16610,
+    "japanese": "視察団",
+    "reading": "しさつだん",
+    "chinese_meaning": "视察团",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16611,
+    "japanese": "あちこち/あっちこっち",
+    "reading": "あちこち/あっちこっち",
+    "chinese_meaning": "到处，处处",
+    "part_of_speech": "代",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16612,
+    "japanese": "稼ぎます",
+    "reading": "かせぎます",
+    "chinese_meaning": "挣钱，赚钱",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16613,
+    "japanese": "ためます",
+    "reading": "ためます",
+    "chinese_meaning": "积攒，储存",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16614,
+    "japanese": "預けます",
+    "reading": "あずけます",
+    "chinese_meaning": "寄存，托付",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16615,
+    "japanese": "訪問～",
+    "reading": "ほうもんします",
+    "chinese_meaning": "拜访，访问",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16616,
+    "japanese": "貯金～",
+    "reading": "ちょきんします",
+    "chinese_meaning": "存钱，储蓄",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16617,
+    "japanese": "歓迎～",
+    "reading": "かんげいします",
+    "chinese_meaning": "欢迎",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16618,
+    "japanese": "用意～",
+    "reading": "よういします",
+    "chinese_meaning": "准备",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16619,
+    "japanese": "非常に",
+    "reading": "ひじょうに",
+    "chinese_meaning": "非常",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16620,
+    "japanese": "うわあ",
+    "reading": "うわあ",
+    "chinese_meaning": "哇",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16621,
+    "japanese": "このまま",
+    "reading": "このまま",
+    "chinese_meaning": "就这样，照这样，如此",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16622,
+    "japanese": "～　部",
+    "reading": "～　部",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 833
+  },
+  {
+    "id": 16623,
+    "japanese": "～大会",
+    "reading": "マラソンたいかい",
+    "chinese_meaning": "马拉松大赛",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16624,
+    "japanese": "ホームパーティー",
+    "reading": "ホームパーティー",
+    "chinese_meaning": "家庭聚会",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16625,
+    "japanese": "ゴーカート",
+    "reading": "ゴーカート",
+    "chinese_meaning": "游戏汽车，玩具汽车",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16626,
+    "japanese": "テレビゲーム",
+    "reading": "テレビゲーム",
+    "chinese_meaning": "电子游戏",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16627,
+    "japanese": "消し～",
+    "reading": "けしゴム",
+    "chinese_meaning": "橡皮",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16628,
+    "japanese": "～剤",
+    "reading": "ビタミンざい",
+    "chinese_meaning": "维生素片剂",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16629,
+    "japanese": "最終点検",
+    "reading": "さいしゅうてんけん",
+    "chinese_meaning": "最终检查",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16630,
+    "japanese": "効きます",
+    "reading": "ききます",
+    "chinese_meaning": "有效，起作用",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16631,
+    "japanese": "祝います",
+    "reading": "いわいます",
+    "chinese_meaning": "祝贺",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16632,
+    "japanese": "当たります",
+    "reading": "あたります",
+    "chinese_meaning": "中(彩)，抽中",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16633,
+    "japanese": "空きます",
+    "reading": "あきます",
+    "chinese_meaning": "空，有空",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16634,
+    "japanese": "腐ります",
+    "reading": "くさります",
+    "chinese_meaning": "腐烂，腐败",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16635,
+    "japanese": "訪ねます",
+    "reading": "たずねます",
+    "chinese_meaning": "访问，拜访",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16636,
+    "japanese": "滞在～",
+    "reading": "たいざいします",
+    "chinese_meaning": "停留，滞留",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16637,
+    "japanese": "休憩～",
+    "reading": "きゅうけいします",
+    "chinese_meaning": "休息",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16638,
+    "japanese": "参加～",
+    "reading": "さんかします",
+    "chinese_meaning": "参加",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16639,
+    "japanese": "乾杯～",
+    "reading": "かんぱいします",
+    "chinese_meaning": "干杯",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16640,
+    "japanese": "あと～/～曲",
+    "reading": "あと～/～曲",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 834
+  },
+  {
+    "id": 16641,
+    "japanese": "フライパン",
+    "reading": "フライパン",
+    "chinese_meaning": "平底锅",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16642,
+    "japanese": "卵焼き",
+    "reading": "たまごやき",
+    "chinese_meaning": "煎鸡蛋",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16643,
+    "japanese": "グラウンド",
+    "reading": "グラウンド",
+    "chinese_meaning": "操场，运动场",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16644,
+    "japanese": "凧",
+    "reading": "たこ",
+    "chinese_meaning": "风筝",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16645,
+    "japanese": "テープ",
+    "reading": "テープ",
+    "chinese_meaning": "磁带，音像带",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16646,
+    "japanese": "関西弁",
+    "reading": "かんさいべん",
+    "chinese_meaning": "关西话，关西方言",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16647,
+    "japanese": "日常会話",
+    "reading": "にちじょうかいわ",
+    "chinese_meaning": "日常会话",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16648,
+    "japanese": "日本文化",
+    "reading": "にほんぶんか",
+    "chinese_meaning": "日本文化",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16649,
+    "japanese": "生産～",
+    "reading": "せいさんコスト",
+    "chinese_meaning": "生产成本",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16650,
+    "japanese": "量り売り",
+    "reading": "はかりうり",
+    "chinese_meaning": "称斤卖，论重量卖",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16651,
+    "japanese": "持ち歩きます",
+    "reading": "もちあるきます",
+    "chinese_meaning": "携带，拿着走",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16652,
+    "japanese": "繰り返します",
+    "reading": "くりかえします",
+    "chinese_meaning": "反复",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16653,
+    "japanese": "間に合います",
+    "reading": "まにあいます",
+    "chinese_meaning": "来得及，赶得上",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16654,
+    "japanese": "鳴きます",
+    "reading": "なきます",
+    "chinese_meaning": "叫，鸣，啼",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16655,
+    "japanese": "喜びます",
+    "reading": "よろこびます",
+    "chinese_meaning": "喜悦，高兴",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16656,
+    "japanese": "役立ちます",
+    "reading": "やくだちます",
+    "chinese_meaning": "有用，有益",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16657,
+    "japanese": "雇います",
+    "reading": "やといます",
+    "chinese_meaning": "雇佣",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16658,
+    "japanese": "振ります",
+    "reading": "ふります",
+    "chinese_meaning": "挥动，摆动",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16659,
+    "japanese": "見えます",
+    "reading": "みえます",
+    "chinese_meaning": "看到，看得见",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16660,
+    "japanese": "聞こえます",
+    "reading": "きこえます",
+    "chinese_meaning": "听到，听得见",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16661,
+    "japanese": "通じます",
+    "reading": "つうじます",
+    "chinese_meaning": "通过，相通",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16662,
+    "japanese": "揚げます",
+    "reading": "あげます",
+    "chinese_meaning": "放(风筝)；扬起",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16663,
+    "japanese": "慣れます",
+    "reading": "なれます",
+    "chinese_meaning": "习惯",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16664,
+    "japanese": "ぬれます",
+    "reading": "ぬれます",
+    "chinese_meaning": "淋湿，打湿",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16665,
+    "japanese": "焼けます",
+    "reading": "やけます",
+    "chinese_meaning": "着火，燃烧",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16666,
+    "japanese": "失敗～",
+    "reading": "しっぱいします",
+    "chinese_meaning": "出岔子，失败",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16667,
+    "japanese": "苦労～",
+    "reading": "くろうします",
+    "chinese_meaning": "辛苦，辛劳",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16668,
+    "japanese": "出席～",
+    "reading": "しゅっせきします",
+    "chinese_meaning": "出席",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16669,
+    "japanese": "ほんと",
+    "reading": "ほんと",
+    "chinese_meaning": "真的",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16670,
+    "japanese": "ワンワン",
+    "reading": "ワンワン",
+    "chinese_meaning": "(狗)汪汪(叫)",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16671,
+    "japanese": "ザーザー",
+    "reading": "ザーザー",
+    "chinese_meaning": "(雨)哗啦哗啦",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16672,
+    "japanese": "～斤",
+    "reading": "～斤",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 835
+  },
+  {
+    "id": 16673,
+    "japanese": "メダル",
+    "reading": "メダル",
+    "chinese_meaning": "纪念章，奖牌",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16674,
+    "japanese": "全長",
+    "reading": "ぜんちょう",
+    "chinese_meaning": "全长",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16675,
+    "japanese": "小さじ",
+    "reading": "こさじ",
+    "chinese_meaning": "小匙，小勺",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16676,
+    "japanese": "ボリューム",
+    "reading": "ボリューム",
+    "chinese_meaning": "音量",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16677,
+    "japanese": "直通列車",
+    "reading": "ちょくつうれっしゃ",
+    "chinese_meaning": "直达列车",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16678,
+    "japanese": "観光～",
+    "reading": "かんこうスポット",
+    "chinese_meaning": "旅游点",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16679,
+    "japanese": "超えます",
+    "reading": "こえます",
+    "chinese_meaning": "超过",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16680,
+    "japanese": "出場～",
+    "reading": "しゅつじょうします",
+    "chinese_meaning": "参加，出场",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16681,
+    "japanese": "釈放～",
+    "reading": "しゃくほうします",
+    "chinese_meaning": "释放",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16682,
+    "japanese": "つまみ食い～",
+    "reading": "つまみぐいします",
+    "chinese_meaning": "偷吃",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16683,
+    "japanese": "換算～",
+    "reading": "かんさんします",
+    "chinese_meaning": "换算",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16684,
+    "japanese": "復習～",
+    "reading": "ふくしゅうします",
+    "chinese_meaning": "复习",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16685,
+    "japanese": "成功～",
+    "reading": "せいこうします",
+    "chinese_meaning": "成功",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16686,
+    "japanese": "ぜいたく",
+    "reading": "ぜいたく",
+    "chinese_meaning": "奢望，奢侈，过分",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16687,
+    "japanese": "実際に",
+    "reading": "じっさいに",
+    "chinese_meaning": "实地，实际上",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16688,
+    "japanese": "東大",
+    "reading": "とうだい",
+    "chinese_meaning": "东大，东京大学",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16689,
+    "japanese": "八達嶺",
+    "reading": "はったつれい",
+    "chinese_meaning": "八达岭",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16690,
+    "japanese": "北京北駅",
+    "reading": "ペキンきたえき",
+    "chinese_meaning": "北京北站",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16691,
+    "japanese": "～ちょっと/～以上/～里/～万里",
+    "reading": "～ちょっと/～以上/～里/～万里",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 936
+  },
+  {
+    "id": 16692,
+    "japanese": "ペットボトル",
+    "reading": "ペットボトル",
+    "chinese_meaning": "塑料瓶",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16693,
+    "japanese": "タイヤ",
+    "reading": "タイヤ",
+    "chinese_meaning": "轮胎",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16694,
+    "japanese": "胡同",
+    "reading": "フートン",
+    "chinese_meaning": "胡同",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16695,
+    "japanese": "油条",
+    "reading": "ヨウティアオ",
+    "chinese_meaning": "油条",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16696,
+    "japanese": "日本食",
+    "reading": "にほんしょく",
+    "chinese_meaning": "日本食品",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16697,
+    "japanese": "刺し身",
+    "reading": "さしみ",
+    "chinese_meaning": "生鲜鱼、贝片",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16698,
+    "japanese": "英字新聞",
+    "reading": "えいじしんぶん",
+    "chinese_meaning": "英文报纸",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16699,
+    "japanese": "衛星放送",
+    "reading": "えいせいほうそう",
+    "chinese_meaning": "卫星广播",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16700,
+    "japanese": "伝統的",
+    "reading": "でんとうてき",
+    "chinese_meaning": "传统的",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16701,
+    "japanese": "入り組みます",
+    "reading": "いりくみます",
+    "chinese_meaning": "错综复杂",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16702,
+    "japanese": "減ります",
+    "reading": "へります",
+    "chinese_meaning": "减少",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16703,
+    "japanese": "通り抜けます",
+    "reading": "とおりぬけます",
+    "chinese_meaning": "走得出去，穿过，通过",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16704,
+    "japanese": "感じます",
+    "reading": "かんじます",
+    "chinese_meaning": "感觉，觉得",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16705,
+    "japanese": "徹夜～",
+    "reading": "てつやします",
+    "chinese_meaning": "熬通宵，彻夜",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16706,
+    "japanese": "火傷～",
+    "reading": "やけどします",
+    "chinese_meaning": "烫伤，烧伤",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16707,
+    "japanese": "なんだか",
+    "reading": "なんだか",
+    "chinese_meaning": "总觉得，总有点",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16708,
+    "japanese": "上野動物園",
+    "reading": "うえのどうぶつえん",
+    "chinese_meaning": "上野动物园",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16709,
+    "japanese": "急いで",
+    "reading": "いそいで",
+    "chinese_meaning": "急急忙忙地，匆忙地",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 937
+  },
+  {
+    "id": 16710,
+    "japanese": "瑠璃瓦",
+    "reading": "るりがわら",
+    "chinese_meaning": "琉璃瓦",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16711,
+    "japanese": "バック",
+    "reading": "バック",
+    "chinese_meaning": "背景",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16712,
+    "japanese": "音楽会",
+    "reading": "おんがくかい",
+    "chinese_meaning": "音乐会",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16713,
+    "japanese": "野外～",
+    "reading": "やがいコンサート",
+    "chinese_meaning": "露天音乐会",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16714,
+    "japanese": "クジラ",
+    "reading": "クジラ",
+    "chinese_meaning": "鲸",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16715,
+    "japanese": "サメ",
+    "reading": "サメ",
+    "chinese_meaning": "鲨鱼",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16716,
+    "japanese": "UFO",
+    "reading": "ユーフォー",
+    "chinese_meaning": "不明飞行物",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16717,
+    "japanese": "別名",
+    "reading": "べつめい",
+    "chinese_meaning": "别名",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16718,
+    "japanese": "道路工事",
+    "reading": "どうろこうじ",
+    "chinese_meaning": "道路施工",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16719,
+    "japanese": "通勤～",
+    "reading": "つうきんラッシュ",
+    "chinese_meaning": "上下班高峰",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16720,
+    "japanese": "通行禁止",
+    "reading": "つうこうきんし",
+    "chinese_meaning": "禁止通行",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16721,
+    "japanese": "見渡します",
+    "reading": "みわたします",
+    "chinese_meaning": "眺望，远眺",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16722,
+    "japanese": "続きます",
+    "reading": "つづきます",
+    "chinese_meaning": "继续，持续",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16723,
+    "japanese": "なくなります",
+    "reading": "なくなります",
+    "chinese_meaning": "完，丢失",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16724,
+    "japanese": "育ちます",
+    "reading": "そだちます",
+    "chinese_meaning": "生长，成长",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16725,
+    "japanese": "増えます",
+    "reading": "ふえます",
+    "chinese_meaning": "增加，增多",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16726,
+    "japanese": "連れます",
+    "reading": "つれます",
+    "chinese_meaning": "带，领",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16727,
+    "japanese": "欠席～",
+    "reading": "けっせきします",
+    "chinese_meaning": "缺席",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16728,
+    "japanese": "輸入～",
+    "reading": "ゆにゅうします",
+    "chinese_meaning": "进口，输入",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16729,
+    "japanese": "そうそう",
+    "reading": "そうそう",
+    "chinese_meaning": "是的是的",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16730,
+    "japanese": "紫禁城",
+    "reading": "しきんじょう",
+    "chinese_meaning": "紫禁城",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16731,
+    "japanese": "～リットル",
+    "reading": "～リットル",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 938
+  },
+  {
+    "id": 16732,
+    "japanese": "モノレール",
+    "reading": "モノレール",
+    "chinese_meaning": "单轨铁路，单轨电车",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16733,
+    "japanese": "オイル",
+    "reading": "オイル",
+    "chinese_meaning": "油，润滑油",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16734,
+    "japanese": "子犬",
+    "reading": "こいぬ",
+    "chinese_meaning": "小狗",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16735,
+    "japanese": "試写会",
+    "reading": "ししゃかい",
+    "chinese_meaning": "试映会，预映会",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16736,
+    "japanese": "～機",
+    "reading": "コピーき",
+    "chinese_meaning": "复印机",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16737,
+    "japanese": "最終便",
+    "reading": "さいしゅうびん",
+    "chinese_meaning": "最晚航班",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16738,
+    "japanese": "入場券",
+    "reading": "にゅうじょうけん",
+    "chinese_meaning": "入场券，门票",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16739,
+    "japanese": "招待券",
+    "reading": "しょうたいけん",
+    "chinese_meaning": "招待券，请帖",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16740,
+    "japanese": "そろえます",
+    "reading": "そろえます",
+    "chinese_meaning": "备齐，凑齐；使一致",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16741,
+    "japanese": "漏れます",
+    "reading": "もれます",
+    "chinese_meaning": "漏，泄漏",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16742,
+    "japanese": "開通～",
+    "reading": "かいつうします",
+    "chinese_meaning": "开通",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16743,
+    "japanese": "改築～",
+    "reading": "かいちくします",
+    "chinese_meaning": "改建",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16744,
+    "japanese": "完成～",
+    "reading": "かんせいします",
+    "chinese_meaning": "完成",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16745,
+    "japanese": "入社～",
+    "reading": "にゅうしゃします",
+    "chinese_meaning": "进公司，入社",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16746,
+    "japanese": "清",
+    "reading": "しん",
+    "chinese_meaning": "清，清代",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16747,
+    "japanese": "お待たせしました",
+    "reading": "おまたせしました",
+    "chinese_meaning": "让您久等了",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 939
+  },
+  {
+    "id": 16748,
+    "japanese": "万博",
+    "reading": "ばんぱく",
+    "chinese_meaning": "世博会，万国博览会",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16749,
+    "japanese": "市場",
+    "reading": "しじょう",
+    "chinese_meaning": "市场",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16750,
+    "japanese": "ダイナマイト",
+    "reading": "ダイナマイト",
+    "chinese_meaning": "炸药",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16751,
+    "japanese": "ネーミング",
+    "reading": "ネーミング",
+    "chinese_meaning": "名称，命名，取名",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16752,
+    "japanese": "コストダウン",
+    "reading": "コストダウン",
+    "chinese_meaning": "降低成本",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16753,
+    "japanese": "低価格",
+    "reading": "ていかかく",
+    "chinese_meaning": "低价(格)",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16754,
+    "japanese": "いっさくねん(一昨年)/おととし",
+    "reading": "いっさくねん(一昨年)/おととし",
+    "chinese_meaning": "前年",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16755,
+    "japanese": "すべて",
+    "reading": "すべて",
+    "chinese_meaning": "全部，所有",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16756,
+    "japanese": "びしょぬれ",
+    "reading": "びしょぬれ",
+    "chinese_meaning": "落汤鸡，湿透，濡湿",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16757,
+    "japanese": "汚職事件",
+    "reading": "おしょくじけん",
+    "chinese_meaning": "贪污事件",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16758,
+    "japanese": "交通事情",
+    "reading": "こうつじじょう",
+    "chinese_meaning": "交通状况",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16759,
+    "japanese": "合弁会社",
+    "reading": "ごうべんがいしゃ",
+    "chinese_meaning": "合资公司",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16760,
+    "japanese": "巻き込みます",
+    "reading": "まきこみます",
+    "chinese_meaning": "卷入，卷进",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16761,
+    "japanese": "至ります",
+    "reading": "いたります",
+    "chinese_meaning": "到达，达到",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16762,
+    "japanese": "見つかります",
+    "reading": "みつかります",
+    "chinese_meaning": "找到，发现",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16763,
+    "japanese": "図ります",
+    "reading": "はかります",
+    "chinese_meaning": "谋求；考虑",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16764,
+    "japanese": "見込みます",
+    "reading": "みこみます",
+    "chinese_meaning": "预料，估计",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16765,
+    "japanese": "盗みます",
+    "reading": "ぬすみます",
+    "chinese_meaning": "盗取，偷盗",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16766,
+    "japanese": "ほめます",
+    "reading": "ほめます",
+    "chinese_meaning": "表扬，赞扬",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16767,
+    "japanese": "求めます",
+    "reading": "もとめます",
+    "chinese_meaning": "要求；追求，寻求",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16768,
+    "japanese": "ぶつけます",
+    "reading": "ぶつけます",
+    "chinese_meaning": "碰上，撞上；扔，投，掷",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16769,
+    "japanese": "発見～",
+    "reading": "はっけんします",
+    "chinese_meaning": "发现",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16770,
+    "japanese": "辞職～",
+    "reading": "じしょくします",
+    "chinese_meaning": "辞职",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16771,
+    "japanese": "創立～",
+    "reading": "そうりつします",
+    "chinese_meaning": "成立，创立",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16772,
+    "japanese": "依頼～",
+    "reading": "いらいします",
+    "chinese_meaning": "委托，请求",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16773,
+    "japanese": "発売～",
+    "reading": "はつばいします",
+    "chinese_meaning": "上市，发售，出售",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16774,
+    "japanese": "開発～",
+    "reading": "かいはつします",
+    "chinese_meaning": "开发",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16775,
+    "japanese": "製造～",
+    "reading": "せいぞうします",
+    "chinese_meaning": "生产，制造",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16776,
+    "japanese": "管理～",
+    "reading": "かんりします",
+    "chinese_meaning": "管理",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16777,
+    "japanese": "実現～",
+    "reading": "じつげんします",
+    "chinese_meaning": "实现",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16778,
+    "japanese": "洗練～",
+    "reading": "せんれんします",
+    "chinese_meaning": "精炼，洗练",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16779,
+    "japanese": "放送～",
+    "reading": "ほうそうします",
+    "chinese_meaning": "广播，播送",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16780,
+    "japanese": "生産～",
+    "reading": "せいさんします",
+    "chinese_meaning": "生产",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16781,
+    "japanese": "翻訳～",
+    "reading": "ほんやくします",
+    "chinese_meaning": "翻译，笔译",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16782,
+    "japanese": "発明～",
+    "reading": "はつめいします",
+    "chinese_meaning": "发明",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16783,
+    "japanese": "いやあ",
+    "reading": "いやあ",
+    "chinese_meaning": "哎呀",
+    "part_of_speech": "叹",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16784,
+    "japanese": "ニュートン",
+    "reading": "ニュートン",
+    "chinese_meaning": "牛顿",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16785,
+    "japanese": "ノーベル",
+    "reading": "ノーベル",
+    "chinese_meaning": "诺贝尔",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16786,
+    "japanese": "CS公司",
+    "reading": "シーエスコンス",
+    "chinese_meaning": "CS公司",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16787,
+    "japanese": "青島～",
+    "reading": "チンタオビール",
+    "chinese_meaning": "青岛啤酒",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16788,
+    "japanese": "阿Q正伝",
+    "reading": "あキューせいでん",
+    "chinese_meaning": "阿Q正传",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16789,
+    "japanese": "参りました",
+    "reading": "まいりました",
+    "chinese_meaning": "真糟糕，真倒霉",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16790,
+    "japanese": "万有引力の法則",
+    "reading": "ばんゆういんりょくのほうそく",
+    "chinese_meaning": "万有引力定律",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1040
+  },
+  {
+    "id": 16791,
+    "japanese": "アラーム",
+    "reading": "アラーム",
+    "chinese_meaning": "闹钟，闹铃",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16792,
+    "japanese": "企画案",
+    "reading": "きかくあん",
+    "chinese_meaning": "策划方案",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16793,
+    "japanese": "お返事",
+    "reading": "おへんじ",
+    "chinese_meaning": "回信",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16794,
+    "japanese": "気づきます",
+    "reading": "きづきます",
+    "chinese_meaning": "发觉，发现",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16795,
+    "japanese": "告げます",
+    "reading": "つげます",
+    "chinese_meaning": "说，告诉",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16796,
+    "japanese": "冷えます",
+    "reading": "ひえます",
+    "chinese_meaning": "变冷；感觉凉",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16797,
+    "japanese": "折れます",
+    "reading": "おれます",
+    "chinese_meaning": "折，断；拐弯",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16798,
+    "japanese": "出勤～",
+    "reading": "しゅっきんします",
+    "chinese_meaning": "上班，出勤",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16799,
+    "japanese": "検討～",
+    "reading": "けんとうします",
+    "chinese_meaning": "讨论",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16800,
+    "japanese": "早速",
+    "reading": "さっそく",
+    "chinese_meaning": "马上，立即",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16801,
+    "japanese": "西長安街",
+    "reading": "にしちょうあんがい",
+    "chinese_meaning": "西长安街",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16802,
+    "japanese": "留守にします",
+    "reading": "るすにします",
+    "chinese_meaning": "不在家，无人在家",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1041
+  },
+  {
+    "id": 16803,
+    "japanese": "お手伝い",
+    "reading": "おてつだい",
+    "chinese_meaning": "帮忙，帮助",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16804,
+    "japanese": "女性向け",
+    "reading": "じょせいむけ",
+    "chinese_meaning": "女性专用，专为女性",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16805,
+    "japanese": "案内役",
+    "reading": "あんないやく",
+    "chinese_meaning": "向导，导游",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16806,
+    "japanese": "プレゼンテーション/プレゼン",
+    "reading": "プレゼンテーション/プレゼン",
+    "chinese_meaning": "策划方案说明(会)",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16807,
+    "japanese": "アルファベット",
+    "reading": "アルファベット",
+    "chinese_meaning": "英语字母，拉丁字母",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16808,
+    "japanese": "イメージ",
+    "reading": "イメージ",
+    "chinese_meaning": "形象，印象",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16809,
+    "japanese": "インパクト",
+    "reading": "インパクト",
+    "chinese_meaning": "冲击力，力量感",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16810,
+    "japanese": "免税店",
+    "reading": "めんぜいてん",
+    "chinese_meaning": "免税店",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16811,
+    "japanese": "もの",
+    "reading": "もの",
+    "chinese_meaning": "东西，事物",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16812,
+    "japanese": "引っ張ります",
+    "reading": "ひっぱります",
+    "chinese_meaning": "拉，拽",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16813,
+    "japanese": "浮かびます",
+    "reading": "うかびます",
+    "chinese_meaning": "想起，浮，浮现",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16814,
+    "japanese": "整います",
+    "reading": "ととのいます",
+    "chinese_meaning": "齐备，完备",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16815,
+    "japanese": "乾きます",
+    "reading": "かわきます",
+    "chinese_meaning": "干，干燥",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16816,
+    "japanese": "避けます",
+    "reading": "さけます",
+    "chinese_meaning": "回避，避免",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16817,
+    "japanese": "売れます",
+    "reading": "うれます",
+    "chinese_meaning": "好卖，畅销",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16818,
+    "japanese": "受けます",
+    "reading": "うけます",
+    "chinese_meaning": "感受，受到",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16819,
+    "japanese": "温めます",
+    "reading": "あたためます",
+    "chinese_meaning": "热，温",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16820,
+    "japanese": "理解～",
+    "reading": "りかいします",
+    "chinese_meaning": "理解",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16821,
+    "japanese": "提案～",
+    "reading": "ていあんします",
+    "chinese_meaning": "建议，提案",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16822,
+    "japanese": "試作～",
+    "reading": "しさくします",
+    "chinese_meaning": "试作，试制",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16823,
+    "japanese": "経験～",
+    "reading": "けいけんします",
+    "chinese_meaning": "经验，经历",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16824,
+    "japanese": "暗記～",
+    "reading": "あんきします",
+    "chinese_meaning": "熟记，背诵",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16825,
+    "japanese": "早退～",
+    "reading": "そうたいします",
+    "chinese_meaning": "早退",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16826,
+    "japanese": "休職～",
+    "reading": "きゅうしょくします",
+    "chinese_meaning": "(暂时)停职",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16827,
+    "japanese": "理想的",
+    "reading": "りそうてき",
+    "chinese_meaning": "理想",
+    "part_of_speech": "形2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16828,
+    "japanese": "言うまでもなく",
+    "reading": "いうまでもなく",
+    "chinese_meaning": "不言而喻",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16829,
+    "japanese": "～なんか",
+    "reading": "～なんか",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1042
+  },
+  {
+    "id": 16830,
+    "japanese": "社員旅行",
+    "reading": "しゃいんりょこう",
+    "chinese_meaning": "员工旅行",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16831,
+    "japanese": "新入社員",
+    "reading": "しんにゅうしゃいん",
+    "chinese_meaning": "新来的职员",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16832,
+    "japanese": "会議場",
+    "reading": "かいぎじょう",
+    "chinese_meaning": "会场",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16833,
+    "japanese": "国際会議",
+    "reading": "こくさいかいぎ",
+    "chinese_meaning": "国际会议",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16834,
+    "japanese": "ビアガーデン",
+    "reading": "ビアガーデン",
+    "chinese_meaning": "庭院式的啤酒店",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16835,
+    "japanese": "大型～",
+    "reading": "おおがたスーパー",
+    "chinese_meaning": "大型超市",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16836,
+    "japanese": "パトカー",
+    "reading": "パトカー",
+    "chinese_meaning": "警车，巡逻车",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16837,
+    "japanese": "サイレン",
+    "reading": "サイレン",
+    "chinese_meaning": "警笛，警报器",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16838,
+    "japanese": "パワー",
+    "reading": "パワー",
+    "chinese_meaning": "能力，力量",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16839,
+    "japanese": "中国全土",
+    "reading": "ちゅうごくぜんど",
+    "chinese_meaning": "全中国",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16840,
+    "japanese": "長期予報",
+    "reading": "ちょうきよほう",
+    "chinese_meaning": "长期预报",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16841,
+    "japanese": "暑さ",
+    "reading": "あつさ",
+    "chinese_meaning": "暑热，暑气",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16842,
+    "japanese": "美しさ",
+    "reading": "うつくしさ",
+    "chinese_meaning": "美好，美丽程度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16843,
+    "japanese": "おもしろさ",
+    "reading": "おもしろさ",
+    "chinese_meaning": "趣味，有趣程度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16844,
+    "japanese": "深さ",
+    "reading": "ふかさ",
+    "chinese_meaning": "深度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16845,
+    "japanese": "太さ",
+    "reading": "ふとさ",
+    "chinese_meaning": "粗(度)",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16846,
+    "japanese": "厚さ",
+    "reading": "あつさ",
+    "chinese_meaning": "厚度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16847,
+    "japanese": "速さ",
+    "reading": "はやさ",
+    "chinese_meaning": "速度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16848,
+    "japanese": "便利さ",
+    "reading": "べんりさ",
+    "chinese_meaning": "方便程度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16849,
+    "japanese": "複雑さ",
+    "reading": "ふくざつさ",
+    "chinese_meaning": "复杂程度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16850,
+    "japanese": "おいしさ",
+    "reading": "おいしさ",
+    "chinese_meaning": "美味，好吃程度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16851,
+    "japanese": "重要さ",
+    "reading": "じゅうようさ",
+    "chinese_meaning": "重要性，重要程度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16852,
+    "japanese": "甘さ",
+    "reading": "あまさ",
+    "chinese_meaning": "甜度",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16853,
+    "japanese": "広がります",
+    "reading": "ひろがります",
+    "chinese_meaning": "蔓延，拓宽",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16854,
+    "japanese": "驚きます",
+    "reading": "おどろきます",
+    "chinese_meaning": "惊讶，吃惊",
+    "part_of_speech": "动1",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16855,
+    "japanese": "しゃれます",
+    "reading": "しゃれます",
+    "chinese_meaning": "别致，风趣；打扮得漂亮",
+    "part_of_speech": "动2",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16856,
+    "japanese": "実感～",
+    "reading": "じっかんします",
+    "chinese_meaning": "切实感受，真切感受",
+    "part_of_speech": "动3",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16857,
+    "japanese": "けっこう",
+    "reading": "けっこう",
+    "chinese_meaning": "很，相当",
+    "part_of_speech": "副",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16858,
+    "japanese": "佐々木",
+    "reading": "ささき",
+    "chinese_meaning": "佐佐木",
+    "part_of_speech": "专",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16859,
+    "japanese": "～キロ/～キログラム/～センチ",
+    "reading": "～キロ/～キログラム/～センチ",
+    "chinese_meaning": "/",
+    "part_of_speech": "/",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1043
+  },
+  {
+    "id": 16860,
+    "japanese": "平均年齢",
+    "reading": "へいきんねんれい",
+    "chinese_meaning": "平均年龄",
+    "part_of_speech": "名",
+    "jlpt_level": null,
+    "source": "standard_jp",
+    "lesson": 1144
   }
 ]

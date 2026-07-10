@@ -168,21 +168,24 @@ export function generateQuestions(
 ): QuizQuestion[] {
   const { db } = getDatabase();
 
-  const conditions = [];
-  if (filters?.jlptLevels && filters.jlptLevels.length > 0) {
-    conditions.push(inArray(words.jlpt_level, filters.jlptLevels));
-  }
+  // Fetch all words first
+  const allWords = db.select().from(words).all();
+
+  // Filter in-memory for precise control
+  let availableWords = allWords;
+
   if (filters?.sources && filters.sources.length > 0) {
-    conditions.push(inArray(words.source, filters.sources));
+    availableWords = availableWords.filter((w) => filters.sources!.includes(w.source));
   }
 
-  const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
-
-  const availableWords = db
-    .select()
-    .from(words)
-    .where(whereClause)
-    .all();
+  if (filters?.jlptLevels && filters.jlptLevels.length > 0) {
+    availableWords = availableWords.filter((w) => {
+      // Always include textbook words (no jlpt_level)
+      if (w.jlpt_level == null) return true;
+      // Filter JLPT words by selected levels
+      return filters.jlptLevels!.includes(w.jlpt_level);
+    });
+  }
 
   if (availableWords.length === 0) return [];
 

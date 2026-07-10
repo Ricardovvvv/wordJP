@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { View, Text, Pressable, ScrollView, StyleSheet } from "react-native";
 import { router } from "expo-router";
-import { QUIZ_MODES } from "../../src/constants";
+import { QUIZ_MODES, SOURCES } from "../../src/constants";
 import { useSettingsStore } from "../../src/stores/settingsStore";
 import { getProgressStats } from "../../src/services/spaced-repetition";
 import { generateQuestions } from "../../src/services/quiz";
@@ -71,7 +71,7 @@ export default function HomeScreen() {
 
       <View style={styles.info}>
         <Text style={styles.infoText}>
-          当前词库: {settings.jlptLevels.map((l) => `N${l}`).join(", ")} · 每日 {settings.dailyGoal} 题
+          {settings.sources.map((s) => SOURCES.find((x) => x.value === s)?.label || s).join(" + ")} · 每日 {settings.dailyGoal} 题
         </Text>
       </View>
     </ScrollView>

@@ -34998,5 +34998,5276 @@
     "chinese": "发货",
     "source": "anki",
     "jlpt_level": 1
+  },
+  {
+    "id": 5001,
+    "japanese": "中国人を勉強しています。",
+    "chinese": "学习：中国人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5002,
+    "japanese": "韓国人を勉強しています。",
+    "chinese": "学习：韩国人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5003,
+    "japanese": "～人を勉強しています。",
+    "chinese": "学习：美国人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5004,
+    "japanese": "～人を勉強しています。",
+    "chinese": "学习：法国人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5005,
+    "japanese": "研修生を勉強しています。",
+    "chinese": "学习：进修生",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5006,
+    "japanese": "あの人を勉強しています。",
+    "chinese": "学习：那个人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5007,
+    "japanese": "あっを勉強しています。",
+    "chinese": "学习：哎，哎呀",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5008,
+    "japanese": "李を勉強しています。",
+    "chinese": "学习：李",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5009,
+    "japanese": "張を勉強しています。",
+    "chinese": "学习：张",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5010,
+    "japanese": "小野を勉強しています。",
+    "chinese": "学习：小野",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5011,
+    "japanese": "吉田を勉強しています。",
+    "chinese": "学习：吉田",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5012,
+    "japanese": "田中を勉強しています。",
+    "chinese": "学习：田中",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5013,
+    "japanese": "中村を勉強しています。",
+    "chinese": "学习：中村",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5014,
+    "japanese": "太郎を勉強しています。",
+    "chinese": "学习：太郎",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5015,
+    "japanese": "金を勉強しています。",
+    "chinese": "学习：金",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5016,
+    "japanese": "デュポンを勉強しています。",
+    "chinese": "学习：迪蓬",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5017,
+    "japanese": "スミスを勉強しています。",
+    "chinese": "学习：史密斯",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5018,
+    "japanese": "ジョンソンを勉強しています。",
+    "chinese": "学习：约翰逊",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5019,
+    "japanese": "北京大学を勉強しています。",
+    "chinese": "学习：北京大学",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5020,
+    "japanese": "ＪＣ企画を勉強しています。",
+    "chinese": "学习：JC策划公司",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5021,
+    "japanese": "北京旅行社を勉強しています。",
+    "chinese": "学习：北京旅行社",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5022,
+    "japanese": "日中商事を勉強しています。",
+    "chinese": "学习：日中商社",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5023,
+    "japanese": "～お願いしますを勉強しています。",
+    "chinese": "学习：请多关照",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5024,
+    "japanese": "はじめましてを勉強しています。",
+    "chinese": "学习：初次见面",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5025,
+    "japanese": "こちらこそを勉強しています。",
+    "chinese": "学习：我才要(请您～)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5026,
+    "japanese": "そうですを勉強しています。",
+    "chinese": "学习：是(这样)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5027,
+    "japanese": "ちがいますを勉強しています。",
+    "chinese": "学习：不是",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5028,
+    "japanese": "分かりませんを勉強しています。",
+    "chinese": "学习：不知道",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5029,
+    "japanese": "どうもすみませんを勉強しています。",
+    "chinese": "学习：实在对不起",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5030,
+    "japanese": "～さん／～ちゃん／～君を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5031,
+    "japanese": "名産品を勉強しています。",
+    "chinese": "学习：特产，名产",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5032,
+    "japanese": "シルクを勉強しています。",
+    "chinese": "学习：丝绸",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5033,
+    "japanese": "だれを勉強しています。",
+    "chinese": "学习：谁",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5034,
+    "japanese": "長島を勉強しています。",
+    "chinese": "学习：长岛",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5035,
+    "japanese": "スワトウを勉強しています。",
+    "chinese": "学习：汕头",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5036,
+    "japanese": "ありがとうございますを勉強しています。",
+    "chinese": "学习：谢谢",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5037,
+    "japanese": "おいくつを勉強しています。",
+    "chinese": "学习：多大",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5038,
+    "japanese": "何～／～歳を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5039,
+    "japanese": "トイレを勉強しています。",
+    "chinese": "学习：厕所，盥洗室",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5040,
+    "japanese": "～会場を勉強しています。",
+    "chinese": "学习：降价处理大卖场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5041,
+    "japanese": "デジカメを勉強しています。",
+    "chinese": "学习：数码相机",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5042,
+    "japanese": "とうきょうを勉強しています。",
+    "chinese": "学习：东京",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5043,
+    "japanese": "お～／～階／～円／～曜日を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5044,
+    "japanese": "サッカーボールを勉強しています。",
+    "chinese": "学习：足球",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5045,
+    "japanese": "ウイスキーを勉強しています。",
+    "chinese": "学习：威士忌",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5046,
+    "japanese": "花屋を勉強しています。",
+    "chinese": "学习：花店",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5047,
+    "japanese": "横浜を勉強しています。",
+    "chinese": "学习：横滨",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5048,
+    "japanese": "名古屋を勉強しています。",
+    "chinese": "学习：名古屋",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5049,
+    "japanese": "大阪を勉強しています。",
+    "chinese": "学习：大阪",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5050,
+    "japanese": "JRを勉強しています。",
+    "chinese": "学习：JR",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5051,
+    "japanese": "ご～を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5052,
+    "japanese": "昨日を勉強しています。",
+    "chinese": "学习：昨天",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5053,
+    "japanese": "明日を勉強しています。",
+    "chinese": "学习：明天",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5054,
+    "japanese": "午前)/エーエム(amを勉強しています。",
+    "chinese": "学习：上午",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5055,
+    "japanese": "午後)/ピーエム(pmを勉強しています。",
+    "chinese": "学习：下午",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5056,
+    "japanese": "始まりますを勉強しています。",
+    "chinese": "学习：开始",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5057,
+    "japanese": "勉強～を勉強しています。",
+    "chinese": "学习：学习",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5058,
+    "japanese": "北京支社を勉強しています。",
+    "chinese": "学习：北京分社",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5059,
+    "japanese": "神戸を勉強しています。",
+    "chinese": "学习：神户",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5060,
+    "japanese": "～時／～分／～半／～月/～日／～年／～ごろを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5061,
+    "japanese": "こどもの日を勉強しています。",
+    "chinese": "学习：儿童节",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5062,
+    "japanese": "フェリーを勉強しています。",
+    "chinese": "学习：渡轮",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5063,
+    "japanese": "たしかを勉強しています。",
+    "chinese": "学习：好像是，大概；的确",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5064,
+    "japanese": "佐藤を勉強しています。",
+    "chinese": "学习：佐藤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5065,
+    "japanese": "北京を勉強しています。",
+    "chinese": "学习：北京",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5066,
+    "japanese": "広島を勉強しています。",
+    "chinese": "学习：广岛",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5067,
+    "japanese": "京都を勉強しています。",
+    "chinese": "学习：京都",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5068,
+    "japanese": "渋谷を勉強しています。",
+    "chinese": "学习：涩谷",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5069,
+    "japanese": "お疲れ様でしたを勉強しています。",
+    "chinese": "学习：够累的",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5070,
+    "japanese": "お先に失礼しますを勉強しています。",
+    "chinese": "学习：我先走了，我先告辞了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5071,
+    "japanese": "大変ですねを勉強しています。",
+    "chinese": "学习：真不容易，够受的，不得了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5072,
+    "japanese": "コーラを勉強しています。",
+    "chinese": "学习：可乐",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5073,
+    "japanese": "お粥を勉強しています。",
+    "chinese": "学习：粥",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5074,
+    "japanese": "お弁当を勉強しています。",
+    "chinese": "学习：盒饭",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5075,
+    "japanese": "そば　　　[名]を勉強しています。",
+    "chinese": "学习：荞麦面",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5076,
+    "japanese": "親子丼を勉強しています。",
+    "chinese": "学习：鸡肉鸡蛋盖饭",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5077,
+    "japanese": "カレーを勉強しています。",
+    "chinese": "学习：咖喱(饭)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5078,
+    "japanese": "チーズを勉強しています。",
+    "chinese": "学习：干酪",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5079,
+    "japanese": "リンゴを勉強しています。",
+    "chinese": "学习：苹果",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5080,
+    "japanese": "イチゴを勉強しています。",
+    "chinese": "学习：草莓",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5081,
+    "japanese": "そば屋を勉強しています。",
+    "chinese": "学习：荞麦面馆",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5082,
+    "japanese": "申込書を勉強しています。",
+    "chinese": "学习：申请书",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5083,
+    "japanese": "ＣＤを勉強しています。",
+    "chinese": "学习：ＣＤ",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5084,
+    "japanese": "撮りますを勉強しています。",
+    "chinese": "学习：拍照，拍摄",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5085,
+    "japanese": "掃除～を勉強しています。",
+    "chinese": "学习：打扫，扫除",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5086,
+    "japanese": "じゃあ／ではを勉強しています。",
+    "chinese": "学习：那么",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5087,
+    "japanese": "失礼しますを勉強しています。",
+    "chinese": "学习：告辞了，我走了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5088,
+    "japanese": "失礼しましたを勉強しています。",
+    "chinese": "学习：打搅了，失礼了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5089,
+    "japanese": "いってまいりますを勉強しています。",
+    "chinese": "学习：我走了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5090,
+    "japanese": "いってきますを勉強しています。",
+    "chinese": "学习：我走了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5091,
+    "japanese": "いってらっしゃいを勉強しています。",
+    "chinese": "学习：你走好",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5092,
+    "japanese": "ただいまを勉強しています。",
+    "chinese": "学习：我回来了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5093,
+    "japanese": "お帰りなさいを勉強しています。",
+    "chinese": "学习：你回来了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5094,
+    "japanese": "かしこまりましたを勉強しています。",
+    "chinese": "学习：我知道了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5095,
+    "japanese": "お邪魔しますを勉強しています。",
+    "chinese": "学习：打扰了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5096,
+    "japanese": "午前中を勉強しています。",
+    "chinese": "学习：上午",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5097,
+    "japanese": "～表を勉強しています。",
+    "chinese": "学习：日程表",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5098,
+    "japanese": "写真集を勉強しています。",
+    "chinese": "学习：影集",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5099,
+    "japanese": "ファックスを勉強しています。",
+    "chinese": "学习：传真",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5100,
+    "japanese": "紙飛行機を勉強しています。",
+    "chinese": "学习：纸折的飞机",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5101,
+    "japanese": "会いますを勉強しています。",
+    "chinese": "学习：见",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5102,
+    "japanese": "作りますを勉強しています。",
+    "chinese": "学习：做，制造",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5103,
+    "japanese": "届きますを勉強しています。",
+    "chinese": "学习：收到，送到，寄到",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5104,
+    "japanese": "かきますを勉強しています。",
+    "chinese": "学习：画",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5105,
+    "japanese": "かけますを勉強しています。",
+    "chinese": "学习：打(电话)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5106,
+    "japanese": "もう一度を勉強しています。",
+    "chinese": "学习：再一次",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5107,
+    "japanese": "前にを勉強しています。",
+    "chinese": "学习：以前",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5108,
+    "japanese": "陳を勉強しています。",
+    "chinese": "学习：陈",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5109,
+    "japanese": "どうですかを勉強しています。",
+    "chinese": "学习：怎样，如何",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5110,
+    "japanese": "お願いしますを勉強しています。",
+    "chinese": "学习：拜托了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5111,
+    "japanese": "分かりましたを勉強しています。",
+    "chinese": "学习：明白了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5112,
+    "japanese": "よかったですを勉強しています。",
+    "chinese": "学习：太好了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5113,
+    "japanese": "～様を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5114,
+    "japanese": "四川料理を勉強しています。",
+    "chinese": "学习：四川菜",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5115,
+    "japanese": "スープを勉強しています。",
+    "chinese": "学习：汤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5116,
+    "japanese": "北京～を勉強しています。",
+    "chinese": "学习：北京烤鸭",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5117,
+    "japanese": "お湯を勉強しています。",
+    "chinese": "学习：热水，开水",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5118,
+    "japanese": "グラスを勉強しています。",
+    "chinese": "学习：玻璃杯",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5119,
+    "japanese": "しおからい(塩辛い)／しょっぱいを勉強しています。",
+    "chinese": "学习：咸",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5120,
+    "japanese": "本当にを勉強しています。",
+    "chinese": "学习：真的，实在是",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5121,
+    "japanese": "とても／たいへんを勉強しています。",
+    "chinese": "学习：很，非常",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5122,
+    "japanese": "すこし(少し)／ちょっとを勉強しています。",
+    "chinese": "学习：一点儿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5123,
+    "japanese": "あら／あれを勉強しています。",
+    "chinese": "学习：哎呀，咦",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5124,
+    "japanese": "天安門を勉強しています。",
+    "chinese": "学习：天安门",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5125,
+    "japanese": "万里の長城を勉強しています。",
+    "chinese": "学习：万里长城",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5126,
+    "japanese": "気持ちがいいを勉強しています。",
+    "chinese": "学习：感觉舒服，心情愉快",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5127,
+    "japanese": "～用を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5128,
+    "japanese": "お店を勉強しています。",
+    "chinese": "学习：餐馆；商店",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5129,
+    "japanese": "お菓子を勉強しています。",
+    "chinese": "学习：点心",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5130,
+    "japanese": "シーズンを勉強しています。",
+    "chinese": "学习：季节",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5131,
+    "japanese": "修学旅行を勉強しています。",
+    "chinese": "学习：修学旅行",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5132,
+    "japanese": "観光客を勉強しています。",
+    "chinese": "学习：游客",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5133,
+    "japanese": "ハンサムを勉強しています。",
+    "chinese": "学习：英俊，帅气",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5134,
+    "japanese": "あれえを勉強しています。",
+    "chinese": "学习：咦",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5135,
+    "japanese": "奈良を勉強しています。",
+    "chinese": "学习：奈良",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5136,
+    "japanese": "～中を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5137,
+    "japanese": "ロックを勉強しています。",
+    "chinese": "学习：摇滚乐",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5138,
+    "japanese": "ポップスを勉強しています。",
+    "chinese": "学习：流行音乐",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5139,
+    "japanese": "～語を勉強しています。",
+    "chinese": "学习：西班牙语",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5140,
+    "japanese": "お酒を勉強しています。",
+    "chinese": "学习：酒，酒类",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5141,
+    "japanese": "ヒマワリを勉強しています。",
+    "chinese": "学习：向日葵",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5142,
+    "japanese": "バラを勉強しています。",
+    "chinese": "学习：蔷薇，玫瑰",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5143,
+    "japanese": "コンピュータを勉強しています。",
+    "chinese": "学习：计算机，电脑",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5144,
+    "japanese": "写真展を勉強しています。",
+    "chinese": "学习：摄影展",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5145,
+    "japanese": "寄木細工を勉強しています。",
+    "chinese": "学习：木片儿拼花工艺品",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5146,
+    "japanese": "脚を勉強しています。",
+    "chinese": "学习：腿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5147,
+    "japanese": "ぼくを勉強しています。",
+    "chinese": "学习：我(男性自称)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5148,
+    "japanese": "分かりますを勉強しています。",
+    "chinese": "学习：懂，明白",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5149,
+    "japanese": "迷いますを勉強しています。",
+    "chinese": "学习：犹豫，难以决定",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5150,
+    "japanese": "散歩～を勉強しています。",
+    "chinese": "学习：散步",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5151,
+    "japanese": "だから　/ですからを勉強しています。",
+    "chinese": "学习：所以，因此",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5152,
+    "japanese": "結構ですを勉強しています。",
+    "chinese": "学习：不用，不要",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5153,
+    "japanese": "気に入りますを勉強しています。",
+    "chinese": "学习：中意，喜欢",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5154,
+    "japanese": "日本料理を勉強しています。",
+    "chinese": "学习：日式饭菜",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5155,
+    "japanese": "寿司を勉強しています。",
+    "chinese": "学习：寿司",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5156,
+    "japanese": "ナシを勉強しています。",
+    "chinese": "学习：梨",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5157,
+    "japanese": "バナナを勉強しています。",
+    "chinese": "学习：香蕉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5158,
+    "japanese": "ミカンを勉強しています。",
+    "chinese": "学习：橘子",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5159,
+    "japanese": "日本酒を勉強しています。",
+    "chinese": "学习：日本酒",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5160,
+    "japanese": "～茶を勉強しています。",
+    "chinese": "学习：乌龙茶",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5161,
+    "japanese": "～茶を勉強しています。",
+    "chinese": "学习：茉莉花茶",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5162,
+    "japanese": "降りますを勉強しています。",
+    "chinese": "学习：下(雨，雪)，降(雨，雪)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5163,
+    "japanese": "やはり／やっぱりを勉強しています。",
+    "chinese": "学习：仍然，还是",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5164,
+    "japanese": "チョモランマを勉強しています。",
+    "chinese": "学习：珠穆朗玛峰",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5165,
+    "japanese": "人気がありますを勉強しています。",
+    "chinese": "学习：受欢迎",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5166,
+    "japanese": "～年間を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5167,
+    "japanese": "タバコを勉強しています。",
+    "chinese": "学习：烟，烟草",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5168,
+    "japanese": "ガレージを勉強しています。",
+    "chinese": "学习：车库，汽车房",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5169,
+    "japanese": "生～を勉強しています。",
+    "chinese": "学习：生啤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5170,
+    "japanese": "焼き鳥を勉強しています。",
+    "chinese": "学习：烤鸡肉串",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5171,
+    "japanese": "肉じゃがを勉強しています。",
+    "chinese": "学习：土豆炖肉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5172,
+    "japanese": "ボーリングを勉強しています。",
+    "chinese": "学习：保龄球",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5173,
+    "japanese": "咲きますを勉強しています。",
+    "chinese": "学习：花开",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5174,
+    "japanese": "吸いますを勉強しています。",
+    "chinese": "学习：吸(烟)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5175,
+    "japanese": "どのぐらい／どれぐらいを勉強しています。",
+    "chinese": "学习：多久，多少钱",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5176,
+    "japanese": "～冊／～回／～枚／～個／～杯／～人／～台 ～本／～頭／～匹/　～つ／～着／～羽／～番 ～足／～度／～キロメートル／～皿 ／～時間／～週間／～か月／～たちを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5177,
+    "japanese": "メモを勉強しています。",
+    "chinese": "学习：记录",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5178,
+    "japanese": "太極拳を勉強しています。",
+    "chinese": "学习：太极拳",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5179,
+    "japanese": "バーベキューを勉強しています。",
+    "chinese": "学习：户外烧烤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5180,
+    "japanese": "通りますを勉強しています。",
+    "chinese": "学习：通过，经过",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5181,
+    "japanese": "渡りますを勉強しています。",
+    "chinese": "学习：过(桥，河)，穿过(马路)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5182,
+    "japanese": "下ろしますを勉強しています。",
+    "chinese": "学习：取，卸货",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5183,
+    "japanese": "曲がりますを勉強しています。",
+    "chinese": "学习：拐弯，曲折",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5184,
+    "japanese": "出ますを勉強しています。",
+    "chinese": "学习：离开",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5185,
+    "japanese": "過ぎますを勉強しています。",
+    "chinese": "学习：过",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5186,
+    "japanese": "降りますを勉強しています。",
+    "chinese": "学习：下(车，山)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5187,
+    "japanese": "買い物～を勉強しています。",
+    "chinese": "学习：买东西",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5188,
+    "japanese": "卒業～を勉強しています。",
+    "chinese": "学习：毕业",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5189,
+    "japanese": "食事～を勉強しています。",
+    "chinese": "学习：吃饭，用餐",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5190,
+    "japanese": "整理～を勉強しています。",
+    "chinese": "学习：整理",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5191,
+    "japanese": "そう／ああを勉強しています。",
+    "chinese": "学习：那样",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5192,
+    "japanese": "後でを勉強しています。",
+    "chinese": "学习：过会儿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5193,
+    "japanese": "すみませんがを勉強しています。",
+    "chinese": "学习：对不起……，劳驾……",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5194,
+    "japanese": "ボートを勉強しています。",
+    "chinese": "学习：小船，小艇",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5195,
+    "japanese": "ベンチを勉強しています。",
+    "chinese": "学习：长椅，长凳",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5196,
+    "japanese": "お風呂を勉強しています。",
+    "chinese": "学习：澡堂，浴室",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5197,
+    "japanese": "クーラーを勉強しています。",
+    "chinese": "学习：空调",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5198,
+    "japanese": "駐車禁止を勉強しています。",
+    "chinese": "学习：禁止停车",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5199,
+    "japanese": "火気厳禁を勉強しています。",
+    "chinese": "学习：严禁烟火",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5200,
+    "japanese": "撮影禁止を勉強しています。",
+    "chinese": "学习：禁止拍照",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5201,
+    "japanese": "乗りますを勉強しています。",
+    "chinese": "学习：乘坐，乘",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5202,
+    "japanese": "入りますを勉強しています。",
+    "chinese": "学习：进入，加入",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5203,
+    "japanese": "伝えますを勉強しています。",
+    "chinese": "学习：说，传达，转告",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5204,
+    "japanese": "だめを勉強しています。",
+    "chinese": "学习：不行，不可以",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5205,
+    "japanese": "いえを勉強しています。",
+    "chinese": "学习：不，不是",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5206,
+    "japanese": "お大事にを勉強しています。",
+    "chinese": "学习：请多保重",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5207,
+    "japanese": "いけませんを勉強しています。",
+    "chinese": "学习：不行，不可以",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5208,
+    "japanese": "かまいませんを勉強しています。",
+    "chinese": "学习：没关系，不要紧",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5209,
+    "japanese": "まだですを勉強しています。",
+    "chinese": "学习：还没有，仍然……没有",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5210,
+    "japanese": "気をつけますを勉強しています。",
+    "chinese": "学习：注意",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5211,
+    "japanese": "無理をしますを勉強しています。",
+    "chinese": "学习：勉强",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5212,
+    "japanese": "睡眠をとりますを勉強しています。",
+    "chinese": "学习：睡觉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5213,
+    "japanese": "お風呂に入りますを勉強しています。",
+    "chinese": "学习：洗澡",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5214,
+    "japanese": "旅行会社を勉強しています。",
+    "chinese": "学习：旅行社",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5215,
+    "japanese": "航空会社を勉強しています。",
+    "chinese": "学习：航空公司",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5216,
+    "japanese": "IT産業を勉強しています。",
+    "chinese": "学习：IT产业，信息技术产业",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5217,
+    "japanese": "足を勉強しています。",
+    "chinese": "学习：脚",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5218,
+    "japanese": "ID～を勉強しています。",
+    "chinese": "学习：身份证件",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5219,
+    "japanese": "展示場を勉強しています。",
+    "chinese": "学习：展览会场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5220,
+    "japanese": "入場料を勉強しています。",
+    "chinese": "学习：门票，进场费",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5221,
+    "japanese": "クリスマスツリーを勉強しています。",
+    "chinese": "学习：圣诞树",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5222,
+    "japanese": "～人を勉強しています。",
+    "chinese": "学习：澳大利亚人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5223,
+    "japanese": "片づけますを勉強しています。",
+    "chinese": "学习：收拾，整理",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5224,
+    "japanese": "練習～を勉強しています。",
+    "chinese": "学习：练习",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5225,
+    "japanese": "結婚～を勉強しています。",
+    "chinese": "学习：结婚",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5226,
+    "japanese": "安心～を勉強しています。",
+    "chinese": "学习：安心，放心",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5227,
+    "japanese": "ユニークを勉強しています。",
+    "chinese": "学习：独特",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5228,
+    "japanese": "まじめを勉強しています。",
+    "chinese": "学习：认真；严肃",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5229,
+    "japanese": "日中電気を勉強しています。",
+    "chinese": "学习：日中电器",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5230,
+    "japanese": "頭がいいを勉強しています。",
+    "chinese": "学习：脑子好，聪明",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5231,
+    "japanese": "～製／～料／～費／～代を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5232,
+    "japanese": "ノートパソコンを勉強しています。",
+    "chinese": "学习：笔记本电脑",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5233,
+    "japanese": "バイクを勉強しています。",
+    "chinese": "学习：摩托车",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5234,
+    "japanese": "お汁粉を勉強しています。",
+    "chinese": "学习：年糕小豆汤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5235,
+    "japanese": "連絡～を勉強しています。",
+    "chinese": "学习：联系",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5236,
+    "japanese": "立派を勉強しています。",
+    "chinese": "学习：美观，杰出",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5237,
+    "japanese": "今度を勉強しています。",
+    "chinese": "学习：下次；这回",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5238,
+    "japanese": "故宮を勉強しています。",
+    "chinese": "学习：故宫",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5239,
+    "japanese": "～中にを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5240,
+    "japanese": "旅行～を勉強しています。",
+    "chinese": "学习：旅行导游",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5241,
+    "japanese": "パイロットを勉強しています。",
+    "chinese": "学习：飞行员",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5242,
+    "japanese": "デザイナーを勉強しています。",
+    "chinese": "学习：设计者，设计家",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5243,
+    "japanese": "タイムサービスを勉強しています。",
+    "chinese": "学习：时段廉价销售",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5244,
+    "japanese": "新春～を勉強しています。",
+    "chinese": "学习：新年大甩卖",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5245,
+    "japanese": "３割引を勉強しています。",
+    "chinese": "学习：七折",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5246,
+    "japanese": "スカートを勉強しています。",
+    "chinese": "学习：裙子",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5247,
+    "japanese": "お正月を勉強しています。",
+    "chinese": "学习：过年，新年",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5248,
+    "japanese": "開きますを勉強しています。",
+    "chinese": "学习：开",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5249,
+    "japanese": "似合いますを勉強しています。",
+    "chinese": "学习：适合，相称",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5250,
+    "japanese": "シンプルを勉強しています。",
+    "chinese": "学习：单纯　，简洁",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5251,
+    "japanese": "間もなくを勉強しています。",
+    "chinese": "学习：马上，一会儿，不久",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5252,
+    "japanese": "さらに/もっとを勉強しています。",
+    "chinese": "学习：更加，更",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5253,
+    "japanese": "まとめてを勉強しています。",
+    "chinese": "学习：一下子，一起，汇总，汇集",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5254,
+    "japanese": "今からを勉強しています。",
+    "chinese": "学习：从现在起",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5255,
+    "japanese": "お皿を勉強しています。",
+    "chinese": "学习：盘子",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5256,
+    "japanese": "上級者を勉強しています。",
+    "chinese": "学习：熟练者",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5257,
+    "japanese": "上級～を勉強しています。",
+    "chinese": "学习：高级班",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5258,
+    "japanese": "英会話を勉強しています。",
+    "chinese": "学习：英语会话",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5259,
+    "japanese": "触りますを勉強しています。",
+    "chinese": "学习：触，碰",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5260,
+    "japanese": "渇きますを勉強しています。",
+    "chinese": "学习：渴",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5261,
+    "japanese": "治りますを勉強しています。",
+    "chinese": "学习：痊愈，医好",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5262,
+    "japanese": "慌てますを勉強しています。",
+    "chinese": "学习：惊慌，慌张，着急",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5263,
+    "japanese": "残業～を勉強しています。",
+    "chinese": "学习：加班",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5264,
+    "japanese": "心配～を勉強しています。",
+    "chinese": "学习：担心",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5265,
+    "japanese": "早くを勉強しています。",
+    "chinese": "学习：早点儿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5266,
+    "japanese": "山田を勉強しています。",
+    "chinese": "学习：山田",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5267,
+    "japanese": "夢を勉強しています。",
+    "chinese": "学习：梦；理想",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5268,
+    "japanese": "ギターを勉強しています。",
+    "chinese": "学习：吉他",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5269,
+    "japanese": "胡弓を勉強しています。",
+    "chinese": "学习：胡琴",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5270,
+    "japanese": "餃子を勉強しています。",
+    "chinese": "学习：饺子",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5271,
+    "japanese": "獅子舞を勉強しています。",
+    "chinese": "学习：狮子舞",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5272,
+    "japanese": "～語を勉強しています。",
+    "chinese": "学习：法语",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5273,
+    "japanese": "すきますを勉強しています。",
+    "chinese": "学习：(肚子)饿，空",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5274,
+    "japanese": "登りますを勉強しています。",
+    "chinese": "学习：登，上",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5275,
+    "japanese": "浴びますを勉強しています。",
+    "chinese": "学习：淋；浇",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5276,
+    "japanese": "ごちそうしますを勉強しています。",
+    "chinese": "学习：请客，摆盛宴",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5277,
+    "japanese": "帰国～を勉強しています。",
+    "chinese": "学习：回国",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5278,
+    "japanese": "おなかがすきますを勉強しています。",
+    "chinese": "学习：肚子饿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5279,
+    "japanese": "ゴールデンウィークを勉強しています。",
+    "chinese": "学习：黄金周",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5280,
+    "japanese": "休憩時間を勉強しています。",
+    "chinese": "学习：休息时间",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5281,
+    "japanese": "京劇を勉強しています。",
+    "chinese": "学习：京剧",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5282,
+    "japanese": "地震を勉強しています。",
+    "chinese": "学习：地震",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5283,
+    "japanese": "泥棒　を勉強しています。",
+    "chinese": "学习：小偷，盗贼",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5284,
+    "japanese": "遅れますを勉強しています。",
+    "chinese": "学习：迟到",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5285,
+    "japanese": "予約～を勉強しています。",
+    "chinese": "学习：预约，预定",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5286,
+    "japanese": "感謝～を勉強しています。",
+    "chinese": "学习：感谢",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5287,
+    "japanese": "運動～を勉強しています。",
+    "chinese": "学习：运动",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5288,
+    "japanese": "洗濯～を勉強しています。",
+    "chinese": "学习：洗涤，洗",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5289,
+    "japanese": "報告～を勉強しています。",
+    "chinese": "学习：报告",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5290,
+    "japanese": "東京～を勉強しています。",
+    "chinese": "学习：东京塔",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5291,
+    "japanese": "～過ぎを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5292,
+    "japanese": "～場を勉強しています。",
+    "chinese": "学习：滑雪场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5293,
+    "japanese": "送別会を勉強しています。",
+    "chinese": "学习：欢送会",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5294,
+    "japanese": "バドミントンを勉強しています。",
+    "chinese": "学习：羽毛球",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5295,
+    "japanese": "ラケットを勉強しています。",
+    "chinese": "学习：球拍",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5296,
+    "japanese": "ごめんを勉強しています。",
+    "chinese": "学习：抱歉，请原谅",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5297,
+    "japanese": "ううん/いやを勉強しています。",
+    "chinese": "学习：不",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5298,
+    "japanese": "清水を勉強しています。",
+    "chinese": "学习：清水",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5299,
+    "japanese": "太田を勉強しています。",
+    "chinese": "学习：太田",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5300,
+    "japanese": "モーツアルトを勉強しています。",
+    "chinese": "学习：莫扎特",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5301,
+    "japanese": "ディズニーランドを勉強しています。",
+    "chinese": "学习：迪士尼乐园",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5302,
+    "japanese": "～以外/　～方を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5303,
+    "japanese": "スケートを勉強しています。",
+    "chinese": "学习：滑冰，溜冰",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5304,
+    "japanese": "閉店時刻を勉強しています。",
+    "chinese": "学习：关门时间",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5305,
+    "japanese": "卒業式を勉強しています。",
+    "chinese": "学习：毕业典礼",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5306,
+    "japanese": "込みますを勉強しています。",
+    "chinese": "学习：拥挤，混杂",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5307,
+    "japanese": "決まりますを勉強しています。",
+    "chinese": "学习：定，决定",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5308,
+    "japanese": "はやい　早いを勉強しています。",
+    "chinese": "学习：早",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5309,
+    "japanese": "東京駅を勉強しています。",
+    "chinese": "学习：东京站",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5310,
+    "japanese": "～によって／～によりますを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5311,
+    "japanese": "お別れを勉強しています。",
+    "chinese": "学习：分别，分手",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5312,
+    "japanese": "探しますを勉強しています。",
+    "chinese": "学习：找，寻找，寻求",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5313,
+    "japanese": "やめますを勉強しています。",
+    "chinese": "学习：戒，停止，放弃",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5314,
+    "japanese": "寝坊～を勉強しています。",
+    "chinese": "学习：睡懒觉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5315,
+    "japanese": "外出～を勉強しています。",
+    "chinese": "学习：外出，出去",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5316,
+    "japanese": "研究～を勉強しています。",
+    "chinese": "学习：研究",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5317,
+    "japanese": "とうとうを勉強しています。",
+    "chinese": "学习：终于，终究，到底",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5318,
+    "japanese": "絶対にを勉強しています。",
+    "chinese": "学习：绝对",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5319,
+    "japanese": "馬を勉強しています。",
+    "chinese": "学习：马",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5320,
+    "japanese": "お世話になりましたを勉強しています。",
+    "chinese": "学习：承蒙照顾",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5321,
+    "japanese": "～お伝えくださいを勉強しています。",
+    "chinese": "学习：请代问好",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5322,
+    "japanese": "お元気でを勉強しています。",
+    "chinese": "学习：请多保重",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5323,
+    "japanese": "お気をつけてを勉強しています。",
+    "chinese": "学习：小心点儿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5324,
+    "japanese": "役に立ちますを勉強しています。",
+    "chinese": "学习：有用",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5325,
+    "japanese": "おなかがいっぱいですを勉強しています。",
+    "chinese": "学习：吃饱，饱",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5326,
+    "japanese": "～中／～についてを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5327,
+    "japanese": "営業課を勉強しています。",
+    "chinese": "学习：营业科",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5328,
+    "japanese": "交通量を勉強しています。",
+    "chinese": "学习：交通流量，通行量",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5329,
+    "japanese": "部品工場を勉強しています。",
+    "chinese": "学习：零件制造厂",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5330,
+    "japanese": "泊まりますを勉強しています。",
+    "chinese": "学习：住，过夜，住宿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5331,
+    "japanese": "結びますを勉強しています。",
+    "chinese": "学习：连接，系",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5332,
+    "japanese": "倒産～を勉強しています。",
+    "chinese": "学习：倒闭，破产",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5333,
+    "japanese": "渋滞～を勉強しています。",
+    "chinese": "学习：堵车，停滞",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5334,
+    "japanese": "チェックしますを勉強しています。",
+    "chinese": "学习：确认",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5335,
+    "japanese": "戴を勉強しています。",
+    "chinese": "学习：戴",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5336,
+    "japanese": "周を勉強しています。",
+    "chinese": "学习：周",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5337,
+    "japanese": "唐を勉強しています。",
+    "chinese": "学习：唐",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5338,
+    "japanese": "中国航空を勉強しています。",
+    "chinese": "学习：中国航空",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5339,
+    "japanese": "天安飯店を勉強しています。",
+    "chinese": "学习：天安饭店",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5340,
+    "japanese": "三環路を勉強しています。",
+    "chinese": "学习：三环路",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5341,
+    "japanese": "このあたりを勉強しています。",
+    "chinese": "学习：这一带，这附近",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5342,
+    "japanese": "表を勉強しています。",
+    "chinese": "学习：表",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5343,
+    "japanese": "お客さんを勉強しています。",
+    "chinese": "学习：顾客，客人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5344,
+    "japanese": "バーゲンを勉強しています。",
+    "chinese": "学习：降价出售",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5345,
+    "japanese": "クレジットカードを勉強しています。",
+    "chinese": "学习：信用卡",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5346,
+    "japanese": "防ぎますを勉強しています。",
+    "chinese": "学习：防御，防备，防守",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5347,
+    "japanese": "回りますを勉強しています。",
+    "chinese": "学习：走访；转；绕弯",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5348,
+    "japanese": "走りますを勉強しています。",
+    "chinese": "学习：跑，奔跑",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5349,
+    "japanese": "吹きますを勉強しています。",
+    "chinese": "学习：吹",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5350,
+    "japanese": "挙げますを勉強しています。",
+    "chinese": "学习：举，举起",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5351,
+    "japanese": "スケッチしますを勉強しています。",
+    "chinese": "学习：素描，写生",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5352,
+    "japanese": "発言～を勉強しています。",
+    "chinese": "学习：发言",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5353,
+    "japanese": "優勝～を勉強しています。",
+    "chinese": "学习：得冠军",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5354,
+    "japanese": "合格～を勉強しています。",
+    "chinese": "学习：及格，合格",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5355,
+    "japanese": "約束～を勉強しています。",
+    "chinese": "学习：约定",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5356,
+    "japanese": "すぐにを勉強しています。",
+    "chinese": "学习：就要，立刻，马上",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5357,
+    "japanese": "鈴木を勉強しています。",
+    "chinese": "学习：铃木",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5358,
+    "japanese": "楊を勉強しています。",
+    "chinese": "学习：杨",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5359,
+    "japanese": "加藤を勉強しています。",
+    "chinese": "学习：加藤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5360,
+    "japanese": "葉子を勉強しています。",
+    "chinese": "学习：叶子",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5361,
+    "japanese": "光～を勉強しています。",
+    "chinese": "学习：阳光百货公司",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5362,
+    "japanese": "北京～を勉強しています。",
+    "chinese": "学习：北京猛虎队〈棒球队名称〉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5363,
+    "japanese": "あいさつ回りを勉強しています。",
+    "chinese": "学习：寒暄拜访",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5364,
+    "japanese": "いけないを勉強しています。",
+    "chinese": "学习：不行，不好，不可以",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5365,
+    "japanese": "～社を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5366,
+    "japanese": "国際関係学を勉強しています。",
+    "chinese": "学习：国际关系学",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5367,
+    "japanese": "お年寄りを勉強しています。",
+    "chinese": "学习：老年人",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5368,
+    "japanese": "～体操を勉強しています。",
+    "chinese": "学习：广播体操",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5369,
+    "japanese": "社交～を勉強しています。",
+    "chinese": "学习：交际舞",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5370,
+    "japanese": "バスケットボールを勉強しています。",
+    "chinese": "学习：篮球",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5371,
+    "japanese": "スポーツセンターを勉強しています。",
+    "chinese": "学习：体育中心",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5372,
+    "japanese": "入園料を勉強しています。",
+    "chinese": "学习：门票，入园费",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5373,
+    "japanese": "グラフを勉強しています。",
+    "chinese": "学习：图表",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5374,
+    "japanese": "海外旅行を勉強しています。",
+    "chinese": "学习：海外旅行",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5375,
+    "japanese": "通いますを勉強しています。",
+    "chinese": "学习：上学，来往",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5376,
+    "japanese": "要りますを勉強しています。",
+    "chinese": "学习：要",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5377,
+    "japanese": "たたきますを勉強しています。",
+    "chinese": "学习：拍，敲，打",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5378,
+    "japanese": "看病～を勉強しています。",
+    "chinese": "学习：护理",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5379,
+    "japanese": "利用～を勉強しています。",
+    "chinese": "学习：利用",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5380,
+    "japanese": "相談～を勉強しています。",
+    "chinese": "学习：商谈",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5381,
+    "japanese": "木下を勉強しています。",
+    "chinese": "学习：木下",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5382,
+    "japanese": "田村を勉強しています。",
+    "chinese": "学习：田村",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5383,
+    "japanese": "気がつきますを勉強しています。",
+    "chinese": "学习：察觉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5384,
+    "japanese": "しばらくですを勉強しています。",
+    "chinese": "学习：好久不见",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5385,
+    "japanese": "～行き〳～便を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5386,
+    "japanese": "マフラーを勉強しています。",
+    "chinese": "学习：围巾",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5387,
+    "japanese": "ネックレスを勉強しています。",
+    "chinese": "学习：项链",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5388,
+    "japanese": "不動産屋を勉強しています。",
+    "chinese": "学习：房产公司",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5389,
+    "japanese": "新居を勉強しています。",
+    "chinese": "学习：新居",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5390,
+    "japanese": "支社長を勉強しています。",
+    "chinese": "学习：分公司经理",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5391,
+    "japanese": "訳しますを勉強しています。",
+    "chinese": "学习：翻译",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5392,
+    "japanese": "届けますを勉強しています。",
+    "chinese": "学习：送到，送去",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5393,
+    "japanese": "案内～を勉強しています。",
+    "chinese": "学习：向导，导游",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5394,
+    "japanese": "交換～を勉強しています。",
+    "chinese": "学习：换，交换",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5395,
+    "japanese": "紹介～を勉強しています。",
+    "chinese": "学习：介绍",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5396,
+    "japanese": "すてきを勉強しています。",
+    "chinese": "学习：漂亮，极好",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5397,
+    "japanese": "中田を勉強しています。",
+    "chinese": "学习：中田",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5398,
+    "japanese": "国際貿易～)／こくぼう(国貿を勉強しています。",
+    "chinese": "学习：国际贸易中心，国贸",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5399,
+    "japanese": "どの辺を勉強しています。",
+    "chinese": "学习：哪儿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5400,
+    "japanese": "～先を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5401,
+    "japanese": "フジを勉強しています。",
+    "chinese": "学习：紫藤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5402,
+    "japanese": "カササギを勉強しています。",
+    "chinese": "学习：喜鹊",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5403,
+    "japanese": "横断禁止を勉強しています。",
+    "chinese": "学习：禁止横穿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5404,
+    "japanese": "免許証を勉強しています。",
+    "chinese": "学习：许可证，执照",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5405,
+    "japanese": "企画書を勉強しています。",
+    "chinese": "学习：计划书",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5406,
+    "japanese": "野球場を勉強しています。",
+    "chinese": "学习：棒球场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5407,
+    "japanese": "～講座を勉強しています。",
+    "chinese": "学习：电视讲座",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5408,
+    "japanese": "止まりますを勉強しています。",
+    "chinese": "学习：停，停住",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5409,
+    "japanese": "変わりますを勉強しています。",
+    "chinese": "学习：变，转变",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5410,
+    "japanese": "サボりますを勉強しています。",
+    "chinese": "学习：逃学，怠工",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5411,
+    "japanese": "破りますを勉強しています。",
+    "chinese": "学习：爽约，打破",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5412,
+    "japanese": "答えますを勉強しています。",
+    "chinese": "学习：回答",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5413,
+    "japanese": "提出～を勉強しています。",
+    "chinese": "学习：提交，提出",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5414,
+    "japanese": "遠慮～を勉強しています。",
+    "chinese": "学习：客气",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5415,
+    "japanese": "シュートしますを勉強しています。",
+    "chinese": "学习：(足球)射门，投篮",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5416,
+    "japanese": "注意～を勉強しています。",
+    "chinese": "学习：注意",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5417,
+    "japanese": "丁寧にを勉強しています。",
+    "chinese": "学习：恭敬地；细心地",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5418,
+    "japanese": "周恩来を勉強しています。",
+    "chinese": "学习：周恩来",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5419,
+    "japanese": "魯迅を勉強しています。",
+    "chinese": "学习：鲁迅",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5420,
+    "japanese": "世田谷を勉強しています。",
+    "chinese": "学习：世田谷",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5421,
+    "japanese": "富士を勉強しています。",
+    "chinese": "学习：富士",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5422,
+    "japanese": "変わったを勉強しています。",
+    "chinese": "学习：怪",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5423,
+    "japanese": "風邪を引きますを勉強しています。",
+    "chinese": "学习：感冒",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5424,
+    "japanese": "報告書を勉強しています。",
+    "chinese": "学习：报告书",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5425,
+    "japanese": "ピクニックを勉強しています。",
+    "chinese": "学习：郊游",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5426,
+    "japanese": "行楽地を勉強しています。",
+    "chinese": "学习：景点，游览地",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5427,
+    "japanese": "ピザを勉強しています。",
+    "chinese": "学习：比萨饼",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5428,
+    "japanese": "吸殻を勉強しています。",
+    "chinese": "学习：烟头，烟灰，烟蒂",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5429,
+    "japanese": "そろいますを勉強しています。",
+    "chinese": "学习：到齐，齐全",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5430,
+    "japanese": "寄りますを勉強しています。",
+    "chinese": "学习：顺便去；靠近",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5431,
+    "japanese": "開きますを勉強しています。",
+    "chinese": "学习：开，开张",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5432,
+    "japanese": "引っ越しますを勉強しています。",
+    "chinese": "学习：搬迁，搬家",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5433,
+    "japanese": "壊れますを勉強しています。",
+    "chinese": "学习：出故障，坏",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5434,
+    "japanese": "間違えますを勉強しています。",
+    "chinese": "学习：搞错",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5435,
+    "japanese": "出発～を勉強しています。",
+    "chinese": "学习：出发",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5436,
+    "japanese": "転職～を勉強しています。",
+    "chinese": "学习：换工作",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5437,
+    "japanese": "パンクしますを勉強しています。",
+    "chinese": "学习：轮胎爆裂，撑破",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5438,
+    "japanese": "それでは〳それじゃを勉強しています。",
+    "chinese": "学习：那么",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5439,
+    "japanese": "そうかを勉強しています。",
+    "chinese": "学习：是吗",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5440,
+    "japanese": "パクを勉強しています。",
+    "chinese": "学习：朴",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5441,
+    "japanese": "長江下りを勉強しています。",
+    "chinese": "学习：坐船游览长江两岸风光",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5442,
+    "japanese": "香山を勉強しています。",
+    "chinese": "学习：香山",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5443,
+    "japanese": "北京植物園を勉強しています。",
+    "chinese": "学习：北京植物园",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5444,
+    "japanese": "ブローチを勉強しています。",
+    "chinese": "学习：胸针",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5445,
+    "japanese": "コンクリートを勉強しています。",
+    "chinese": "学习：混凝土，水泥",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5446,
+    "japanese": "プラスチックを勉強しています。",
+    "chinese": "学习：塑胶，塑料",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5447,
+    "japanese": "ひすいを勉強しています。",
+    "chinese": "学习：翡翠",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5448,
+    "japanese": "サービスセンターを勉強しています。",
+    "chinese": "学习：维修服务中心",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5449,
+    "japanese": "お手洗いを勉強しています。",
+    "chinese": "学习：洗手间，厕所",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5450,
+    "japanese": "そばを勉強しています。",
+    "chinese": "学习：旁边",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5451,
+    "japanese": "卓球台を勉強しています。",
+    "chinese": "学习：乒乓球台",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5452,
+    "japanese": "白鳥を勉強しています。",
+    "chinese": "学习：天鹅",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5453,
+    "japanese": "スイカを勉強しています。",
+    "chinese": "学习：西瓜",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5454,
+    "japanese": "つきますを勉強しています。",
+    "chinese": "学习：灯亮，灯开",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5455,
+    "japanese": "下がりますを勉強しています。",
+    "chinese": "学习：下降，降低",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5456,
+    "japanese": "怒りますを勉強しています。",
+    "chinese": "学习：生气",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5457,
+    "japanese": "生きますを勉強しています。",
+    "chinese": "学习：活，生存",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5458,
+    "japanese": "下りますを勉強しています。",
+    "chinese": "学习：下，下来",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5459,
+    "japanese": "フリーズしますを勉強しています。",
+    "chinese": "学习：死机",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5460,
+    "japanese": "故障～を勉強しています。",
+    "chinese": "学习：故障",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5461,
+    "japanese": "気持ち悪いを勉強しています。",
+    "chinese": "学习：不舒服",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5462,
+    "japanese": "～メートル/～つ目を勉強しています。",
+    "chinese": "学习：~米/第一个",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5463,
+    "japanese": "高速～を勉強しています。",
+    "chinese": "学习：走高速的公共汽车",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5464,
+    "japanese": "出発時刻を勉強しています。",
+    "chinese": "学习：出发时间",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5465,
+    "japanese": "旅行予定を勉強しています。",
+    "chinese": "学习：旅行计划",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5466,
+    "japanese": "うわさを勉強しています。",
+    "chinese": "学习：传说，风言风语",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5467,
+    "japanese": "ラーメンを勉強しています。",
+    "chinese": "学习：面条",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5468,
+    "japanese": "餃子～を勉強しています。",
+    "chinese": "学习：饺子宴",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5469,
+    "japanese": "正月休みを勉強しています。",
+    "chinese": "学习：新年假日",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5470,
+    "japanese": "～用品を勉強しています。",
+    "chinese": "学习：体育用品",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5471,
+    "japanese": "上がりますを勉強しています。",
+    "chinese": "学习：提高，涨",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5472,
+    "japanese": "辞めますを勉強しています。",
+    "chinese": "学习：辞去",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5473,
+    "japanese": "留学～を勉強しています。",
+    "chinese": "学习：留学",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5474,
+    "japanese": "入学～を勉強しています。",
+    "chinese": "学习：入学",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5475,
+    "japanese": "流行～を勉強しています。",
+    "chinese": "学习：流行",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5476,
+    "japanese": "入院～を勉強しています。",
+    "chinese": "学习：住院",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5477,
+    "japanese": "お邪魔～を勉強しています。",
+    "chinese": "学习：打扰，拜访",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5478,
+    "japanese": "担当～を勉強しています。",
+    "chinese": "学习：承担",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5479,
+    "japanese": "劉英を勉強しています。",
+    "chinese": "学习：刘英",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5480,
+    "japanese": "京都～を勉強しています。",
+    "chinese": "学习：京都宾馆",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5481,
+    "japanese": "お邪魔しましたを勉強しています。",
+    "chinese": "学习：打扰了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5482,
+    "japanese": "風が強いを勉強しています。",
+    "chinese": "学习：风大",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5483,
+    "japanese": "スーツケースを勉強しています。",
+    "chinese": "学习：旅行箱",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5484,
+    "japanese": "トランクを勉強しています。",
+    "chinese": "学习：后备箱；手提箱，皮箱",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5485,
+    "japanese": "Ｔ～を勉強しています。",
+    "chinese": "学习：Ｔ恤衫",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5486,
+    "japanese": "サンダルを勉強しています。",
+    "chinese": "学习：凉鞋",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5487,
+    "japanese": "空を勉強しています。",
+    "chinese": "学习：空",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5488,
+    "japanese": "カキを勉強しています。",
+    "chinese": "学习：柿子",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5489,
+    "japanese": "清涼飲料水を勉強しています。",
+    "chinese": "学习：清凉饮料",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5490,
+    "japanese": "閉まりますを勉強しています。",
+    "chinese": "学习：关闭，关",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5491,
+    "japanese": "付きますを勉強しています。",
+    "chinese": "学习：附带，附加",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5492,
+    "japanese": "掛かりますを勉強しています。",
+    "chinese": "学习：挂，悬挂",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5493,
+    "japanese": "やみますを勉強しています。",
+    "chinese": "学习：停，停息，停止",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5494,
+    "japanese": "建ちますを勉強しています。",
+    "chinese": "学习：盖，建",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5495,
+    "japanese": "消えますを勉強しています。",
+    "chinese": "学习：熄灭，消失",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5496,
+    "japanese": "落ちますを勉強しています。",
+    "chinese": "学习：落下，掉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5497,
+    "japanese": "割れますを勉強しています。",
+    "chinese": "学习：裂开，破裂",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5498,
+    "japanese": "汚れますを勉強しています。",
+    "chinese": "学习：脏",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5499,
+    "japanese": "お久しぶりですを勉強しています。",
+    "chinese": "学习：好久不见",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5500,
+    "japanese": "ハードスケジュールを勉強しています。",
+    "chinese": "学习：紧张的日程",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5501,
+    "japanese": "カレーライスを勉強しています。",
+    "chinese": "学习：咖喱饭",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5502,
+    "japanese": "ロッカーを勉強しています。",
+    "chinese": "学习：橱柜，文件柜",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5503,
+    "japanese": "視察団を勉強しています。",
+    "chinese": "学习：视察团",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5504,
+    "japanese": "あちこち/あっちこっちを勉強しています。",
+    "chinese": "学习：到处，处处",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5505,
+    "japanese": "稼ぎますを勉強しています。",
+    "chinese": "学习：挣钱，赚钱",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5506,
+    "japanese": "ためますを勉強しています。",
+    "chinese": "学习：积攒，储存",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5507,
+    "japanese": "預けますを勉強しています。",
+    "chinese": "学习：寄存，托付",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5508,
+    "japanese": "訪問～を勉強しています。",
+    "chinese": "学习：拜访，访问",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5509,
+    "japanese": "貯金～を勉強しています。",
+    "chinese": "学习：存钱，储蓄",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5510,
+    "japanese": "歓迎～を勉強しています。",
+    "chinese": "学习：欢迎",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5511,
+    "japanese": "用意～を勉強しています。",
+    "chinese": "学习：准备",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5512,
+    "japanese": "非常にを勉強しています。",
+    "chinese": "学习：非常",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5513,
+    "japanese": "うわあを勉強しています。",
+    "chinese": "学习：哇",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5514,
+    "japanese": "このままを勉強しています。",
+    "chinese": "学习：就这样，照这样，如此",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5515,
+    "japanese": "～　部を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5516,
+    "japanese": "～大会を勉強しています。",
+    "chinese": "学习：马拉松大赛",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5517,
+    "japanese": "ホームパーティーを勉強しています。",
+    "chinese": "学习：家庭聚会",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5518,
+    "japanese": "ゴーカートを勉強しています。",
+    "chinese": "学习：游戏汽车，玩具汽车",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5519,
+    "japanese": "テレビゲームを勉強しています。",
+    "chinese": "学习：电子游戏",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5520,
+    "japanese": "消し～を勉強しています。",
+    "chinese": "学习：橡皮",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5521,
+    "japanese": "～剤を勉強しています。",
+    "chinese": "学习：维生素片剂",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5522,
+    "japanese": "最終点検を勉強しています。",
+    "chinese": "学习：最终检查",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5523,
+    "japanese": "効きますを勉強しています。",
+    "chinese": "学习：有效，起作用",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5524,
+    "japanese": "祝いますを勉強しています。",
+    "chinese": "学习：祝贺",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5525,
+    "japanese": "当たりますを勉強しています。",
+    "chinese": "学习：中(彩)，抽中",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5526,
+    "japanese": "空きますを勉強しています。",
+    "chinese": "学习：空，有空",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5527,
+    "japanese": "腐りますを勉強しています。",
+    "chinese": "学习：腐烂，腐败",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5528,
+    "japanese": "訪ねますを勉強しています。",
+    "chinese": "学习：访问，拜访",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5529,
+    "japanese": "滞在～を勉強しています。",
+    "chinese": "学习：停留，滞留",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5530,
+    "japanese": "休憩～を勉強しています。",
+    "chinese": "学习：休息",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5531,
+    "japanese": "参加～を勉強しています。",
+    "chinese": "学习：参加",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5532,
+    "japanese": "乾杯～を勉強しています。",
+    "chinese": "学习：干杯",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5533,
+    "japanese": "あと～/～曲を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5534,
+    "japanese": "フライパンを勉強しています。",
+    "chinese": "学习：平底锅",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5535,
+    "japanese": "卵焼きを勉強しています。",
+    "chinese": "学习：煎鸡蛋",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5536,
+    "japanese": "グラウンドを勉強しています。",
+    "chinese": "学习：操场，运动场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5537,
+    "japanese": "凧を勉強しています。",
+    "chinese": "学习：风筝",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5538,
+    "japanese": "テープを勉強しています。",
+    "chinese": "学习：磁带，音像带",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5539,
+    "japanese": "関西弁を勉強しています。",
+    "chinese": "学习：关西话，关西方言",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5540,
+    "japanese": "日常会話を勉強しています。",
+    "chinese": "学习：日常会话",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5541,
+    "japanese": "日本文化を勉強しています。",
+    "chinese": "学习：日本文化",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5542,
+    "japanese": "生産～を勉強しています。",
+    "chinese": "学习：生产成本",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5543,
+    "japanese": "量り売りを勉強しています。",
+    "chinese": "学习：称斤卖，论重量卖",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5544,
+    "japanese": "持ち歩きますを勉強しています。",
+    "chinese": "学习：携带，拿着走",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5545,
+    "japanese": "繰り返しますを勉強しています。",
+    "chinese": "学习：反复",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5546,
+    "japanese": "間に合いますを勉強しています。",
+    "chinese": "学习：来得及，赶得上",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5547,
+    "japanese": "鳴きますを勉強しています。",
+    "chinese": "学习：叫，鸣，啼",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5548,
+    "japanese": "喜びますを勉強しています。",
+    "chinese": "学习：喜悦，高兴",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5549,
+    "japanese": "役立ちますを勉強しています。",
+    "chinese": "学习：有用，有益",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5550,
+    "japanese": "雇いますを勉強しています。",
+    "chinese": "学习：雇佣",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5551,
+    "japanese": "振りますを勉強しています。",
+    "chinese": "学习：挥动，摆动",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5552,
+    "japanese": "見えますを勉強しています。",
+    "chinese": "学习：看到，看得见",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5553,
+    "japanese": "聞こえますを勉強しています。",
+    "chinese": "学习：听到，听得见",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5554,
+    "japanese": "通じますを勉強しています。",
+    "chinese": "学习：通过，相通",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5555,
+    "japanese": "揚げますを勉強しています。",
+    "chinese": "学习：放(风筝)；扬起",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5556,
+    "japanese": "慣れますを勉強しています。",
+    "chinese": "学习：习惯",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5557,
+    "japanese": "ぬれますを勉強しています。",
+    "chinese": "学习：淋湿，打湿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5558,
+    "japanese": "焼けますを勉強しています。",
+    "chinese": "学习：着火，燃烧",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5559,
+    "japanese": "失敗～を勉強しています。",
+    "chinese": "学习：出岔子，失败",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5560,
+    "japanese": "苦労～を勉強しています。",
+    "chinese": "学习：辛苦，辛劳",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5561,
+    "japanese": "出席～を勉強しています。",
+    "chinese": "学习：出席",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5562,
+    "japanese": "ほんとを勉強しています。",
+    "chinese": "学习：真的",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5563,
+    "japanese": "ワンワンを勉強しています。",
+    "chinese": "学习：(狗)汪汪(叫)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5564,
+    "japanese": "ザーザーを勉強しています。",
+    "chinese": "学习：(雨)哗啦哗啦",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5565,
+    "japanese": "～斤を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5566,
+    "japanese": "メダルを勉強しています。",
+    "chinese": "学习：纪念章，奖牌",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5567,
+    "japanese": "全長を勉強しています。",
+    "chinese": "学习：全长",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5568,
+    "japanese": "小さじを勉強しています。",
+    "chinese": "学习：小匙，小勺",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5569,
+    "japanese": "ボリュームを勉強しています。",
+    "chinese": "学习：音量",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5570,
+    "japanese": "直通列車を勉強しています。",
+    "chinese": "学习：直达列车",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5571,
+    "japanese": "観光～を勉強しています。",
+    "chinese": "学习：旅游点",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5572,
+    "japanese": "超えますを勉強しています。",
+    "chinese": "学习：超过",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5573,
+    "japanese": "出場～を勉強しています。",
+    "chinese": "学习：参加，出场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5574,
+    "japanese": "釈放～を勉強しています。",
+    "chinese": "学习：释放",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5575,
+    "japanese": "つまみ食い～を勉強しています。",
+    "chinese": "学习：偷吃",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5576,
+    "japanese": "換算～を勉強しています。",
+    "chinese": "学习：换算",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5577,
+    "japanese": "復習～を勉強しています。",
+    "chinese": "学习：复习",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5578,
+    "japanese": "成功～を勉強しています。",
+    "chinese": "学习：成功",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5579,
+    "japanese": "ぜいたくを勉強しています。",
+    "chinese": "学习：奢望，奢侈，过分",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5580,
+    "japanese": "実際にを勉強しています。",
+    "chinese": "学习：实地，实际上",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5581,
+    "japanese": "東大を勉強しています。",
+    "chinese": "学习：东大，东京大学",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5582,
+    "japanese": "八達嶺を勉強しています。",
+    "chinese": "学习：八达岭",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5583,
+    "japanese": "北京北駅を勉強しています。",
+    "chinese": "学习：北京北站",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5584,
+    "japanese": "～ちょっと/～以上/～里/～万里を勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5585,
+    "japanese": "ペットボトルを勉強しています。",
+    "chinese": "学习：塑料瓶",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5586,
+    "japanese": "タイヤを勉強しています。",
+    "chinese": "学习：轮胎",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5587,
+    "japanese": "胡同を勉強しています。",
+    "chinese": "学习：胡同",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5588,
+    "japanese": "油条を勉強しています。",
+    "chinese": "学习：油条",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5589,
+    "japanese": "日本食を勉強しています。",
+    "chinese": "学习：日本食品",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5590,
+    "japanese": "刺し身を勉強しています。",
+    "chinese": "学习：生鲜鱼、贝片",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5591,
+    "japanese": "英字新聞を勉強しています。",
+    "chinese": "学习：英文报纸",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5592,
+    "japanese": "衛星放送を勉強しています。",
+    "chinese": "学习：卫星广播",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5593,
+    "japanese": "伝統的を勉強しています。",
+    "chinese": "学习：传统的",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5594,
+    "japanese": "入り組みますを勉強しています。",
+    "chinese": "学习：错综复杂",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5595,
+    "japanese": "減りますを勉強しています。",
+    "chinese": "学习：减少",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5596,
+    "japanese": "通り抜けますを勉強しています。",
+    "chinese": "学习：走得出去，穿过，通过",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5597,
+    "japanese": "感じますを勉強しています。",
+    "chinese": "学习：感觉，觉得",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5598,
+    "japanese": "徹夜～を勉強しています。",
+    "chinese": "学习：熬通宵，彻夜",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5599,
+    "japanese": "火傷～を勉強しています。",
+    "chinese": "学习：烫伤，烧伤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5600,
+    "japanese": "なんだかを勉強しています。",
+    "chinese": "学习：总觉得，总有点",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5601,
+    "japanese": "上野動物園を勉強しています。",
+    "chinese": "学习：上野动物园",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5602,
+    "japanese": "急いでを勉強しています。",
+    "chinese": "学习：急急忙忙地，匆忙地",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5603,
+    "japanese": "瑠璃瓦を勉強しています。",
+    "chinese": "学习：琉璃瓦",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5604,
+    "japanese": "バックを勉強しています。",
+    "chinese": "学习：背景",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5605,
+    "japanese": "音楽会を勉強しています。",
+    "chinese": "学习：音乐会",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5606,
+    "japanese": "野外～を勉強しています。",
+    "chinese": "学习：露天音乐会",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5607,
+    "japanese": "クジラを勉強しています。",
+    "chinese": "学习：鲸",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5608,
+    "japanese": "サメを勉強しています。",
+    "chinese": "学习：鲨鱼",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5609,
+    "japanese": "UFOを勉強しています。",
+    "chinese": "学习：不明飞行物",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5610,
+    "japanese": "別名を勉強しています。",
+    "chinese": "学习：别名",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5611,
+    "japanese": "道路工事を勉強しています。",
+    "chinese": "学习：道路施工",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5612,
+    "japanese": "通勤～を勉強しています。",
+    "chinese": "学习：上下班高峰",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5613,
+    "japanese": "通行禁止を勉強しています。",
+    "chinese": "学习：禁止通行",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5614,
+    "japanese": "見渡しますを勉強しています。",
+    "chinese": "学习：眺望，远眺",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5615,
+    "japanese": "続きますを勉強しています。",
+    "chinese": "学习：继续，持续",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5616,
+    "japanese": "なくなりますを勉強しています。",
+    "chinese": "学习：完，丢失",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5617,
+    "japanese": "育ちますを勉強しています。",
+    "chinese": "学习：生长，成长",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5618,
+    "japanese": "増えますを勉強しています。",
+    "chinese": "学习：增加，增多",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5619,
+    "japanese": "連れますを勉強しています。",
+    "chinese": "学习：带，领",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5620,
+    "japanese": "欠席～を勉強しています。",
+    "chinese": "学习：缺席",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5621,
+    "japanese": "輸入～を勉強しています。",
+    "chinese": "学习：进口，输入",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5622,
+    "japanese": "そうそうを勉強しています。",
+    "chinese": "学习：是的是的",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5623,
+    "japanese": "紫禁城を勉強しています。",
+    "chinese": "学习：紫禁城",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5624,
+    "japanese": "～リットルを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5625,
+    "japanese": "モノレールを勉強しています。",
+    "chinese": "学习：单轨铁路，单轨电车",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5626,
+    "japanese": "オイルを勉強しています。",
+    "chinese": "学习：油，润滑油",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5627,
+    "japanese": "子犬を勉強しています。",
+    "chinese": "学习：小狗",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5628,
+    "japanese": "試写会を勉強しています。",
+    "chinese": "学习：试映会，预映会",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5629,
+    "japanese": "～機を勉強しています。",
+    "chinese": "学习：复印机",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5630,
+    "japanese": "最終便を勉強しています。",
+    "chinese": "学习：最晚航班",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5631,
+    "japanese": "入場券を勉強しています。",
+    "chinese": "学习：入场券，门票",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5632,
+    "japanese": "招待券を勉強しています。",
+    "chinese": "学习：招待券，请帖",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5633,
+    "japanese": "そろえますを勉強しています。",
+    "chinese": "学习：备齐，凑齐；使一致",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5634,
+    "japanese": "漏れますを勉強しています。",
+    "chinese": "学习：漏，泄漏",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5635,
+    "japanese": "開通～を勉強しています。",
+    "chinese": "学习：开通",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5636,
+    "japanese": "改築～を勉強しています。",
+    "chinese": "学习：改建",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5637,
+    "japanese": "完成～を勉強しています。",
+    "chinese": "学习：完成",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5638,
+    "japanese": "入社～を勉強しています。",
+    "chinese": "学习：进公司，入社",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5639,
+    "japanese": "清を勉強しています。",
+    "chinese": "学习：清，清代",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5640,
+    "japanese": "お待たせしましたを勉強しています。",
+    "chinese": "学习：让您久等了",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5641,
+    "japanese": "万博を勉強しています。",
+    "chinese": "学习：世博会，万国博览会",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5642,
+    "japanese": "市場を勉強しています。",
+    "chinese": "学习：市场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5643,
+    "japanese": "ダイナマイトを勉強しています。",
+    "chinese": "学习：炸药",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5644,
+    "japanese": "ネーミングを勉強しています。",
+    "chinese": "学习：名称，命名，取名",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5645,
+    "japanese": "コストダウンを勉強しています。",
+    "chinese": "学习：降低成本",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5646,
+    "japanese": "低価格を勉強しています。",
+    "chinese": "学习：低价(格)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5647,
+    "japanese": "いっさくねん(一昨年)/おととしを勉強しています。",
+    "chinese": "学习：前年",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5648,
+    "japanese": "すべてを勉強しています。",
+    "chinese": "学习：全部，所有",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5649,
+    "japanese": "びしょぬれを勉強しています。",
+    "chinese": "学习：落汤鸡，湿透，濡湿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5650,
+    "japanese": "汚職事件を勉強しています。",
+    "chinese": "学习：贪污事件",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5651,
+    "japanese": "交通事情を勉強しています。",
+    "chinese": "学习：交通状况",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5652,
+    "japanese": "合弁会社を勉強しています。",
+    "chinese": "学习：合资公司",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5653,
+    "japanese": "巻き込みますを勉強しています。",
+    "chinese": "学习：卷入，卷进",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5654,
+    "japanese": "至りますを勉強しています。",
+    "chinese": "学习：到达，达到",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5655,
+    "japanese": "見つかりますを勉強しています。",
+    "chinese": "学习：找到，发现",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5656,
+    "japanese": "図りますを勉強しています。",
+    "chinese": "学习：谋求；考虑",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5657,
+    "japanese": "見込みますを勉強しています。",
+    "chinese": "学习：预料，估计",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5658,
+    "japanese": "盗みますを勉強しています。",
+    "chinese": "学习：盗取，偷盗",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5659,
+    "japanese": "ほめますを勉強しています。",
+    "chinese": "学习：表扬，赞扬",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5660,
+    "japanese": "求めますを勉強しています。",
+    "chinese": "学习：要求；追求，寻求",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5661,
+    "japanese": "ぶつけますを勉強しています。",
+    "chinese": "学习：碰上，撞上；扔，投，掷",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5662,
+    "japanese": "発見～を勉強しています。",
+    "chinese": "学习：发现",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5663,
+    "japanese": "辞職～を勉強しています。",
+    "chinese": "学习：辞职",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5664,
+    "japanese": "創立～を勉強しています。",
+    "chinese": "学习：成立，创立",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5665,
+    "japanese": "依頼～を勉強しています。",
+    "chinese": "学习：委托，请求",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5666,
+    "japanese": "発売～を勉強しています。",
+    "chinese": "学习：上市，发售，出售",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5667,
+    "japanese": "開発～を勉強しています。",
+    "chinese": "学习：开发",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5668,
+    "japanese": "製造～を勉強しています。",
+    "chinese": "学习：生产，制造",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5669,
+    "japanese": "管理～を勉強しています。",
+    "chinese": "学习：管理",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5670,
+    "japanese": "実現～を勉強しています。",
+    "chinese": "学习：实现",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5671,
+    "japanese": "洗練～を勉強しています。",
+    "chinese": "学习：精炼，洗练",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5672,
+    "japanese": "放送～を勉強しています。",
+    "chinese": "学习：广播，播送",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5673,
+    "japanese": "生産～を勉強しています。",
+    "chinese": "学习：生产",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5674,
+    "japanese": "翻訳～を勉強しています。",
+    "chinese": "学习：翻译，笔译",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5675,
+    "japanese": "発明～を勉強しています。",
+    "chinese": "学习：发明",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5676,
+    "japanese": "いやあを勉強しています。",
+    "chinese": "学习：哎呀",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5677,
+    "japanese": "ニュートンを勉強しています。",
+    "chinese": "学习：牛顿",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5678,
+    "japanese": "ノーベルを勉強しています。",
+    "chinese": "学习：诺贝尔",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5679,
+    "japanese": "CS公司を勉強しています。",
+    "chinese": "学习：CS公司",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5680,
+    "japanese": "青島～を勉強しています。",
+    "chinese": "学习：青岛啤酒",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5681,
+    "japanese": "阿Q正伝を勉強しています。",
+    "chinese": "学习：阿Q正传",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5682,
+    "japanese": "参りましたを勉強しています。",
+    "chinese": "学习：真糟糕，真倒霉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5683,
+    "japanese": "万有引力の法則を勉強しています。",
+    "chinese": "学习：万有引力定律",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5684,
+    "japanese": "アラームを勉強しています。",
+    "chinese": "学习：闹钟，闹铃",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5685,
+    "japanese": "企画案を勉強しています。",
+    "chinese": "学习：策划方案",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5686,
+    "japanese": "お返事を勉強しています。",
+    "chinese": "学习：回信",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5687,
+    "japanese": "気づきますを勉強しています。",
+    "chinese": "学习：发觉，发现",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5688,
+    "japanese": "告げますを勉強しています。",
+    "chinese": "学习：说，告诉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5689,
+    "japanese": "冷えますを勉強しています。",
+    "chinese": "学习：变冷；感觉凉",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5690,
+    "japanese": "折れますを勉強しています。",
+    "chinese": "学习：折，断；拐弯",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5691,
+    "japanese": "出勤～を勉強しています。",
+    "chinese": "学习：上班，出勤",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5692,
+    "japanese": "検討～を勉強しています。",
+    "chinese": "学习：讨论",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5693,
+    "japanese": "早速を勉強しています。",
+    "chinese": "学习：马上，立即",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5694,
+    "japanese": "西長安街を勉強しています。",
+    "chinese": "学习：西长安街",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5695,
+    "japanese": "留守にしますを勉強しています。",
+    "chinese": "学习：不在家，无人在家",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5696,
+    "japanese": "お手伝いを勉強しています。",
+    "chinese": "学习：帮忙，帮助",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5697,
+    "japanese": "女性向けを勉強しています。",
+    "chinese": "学习：女性专用，专为女性",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5698,
+    "japanese": "案内役を勉強しています。",
+    "chinese": "学习：向导，导游",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5699,
+    "japanese": "プレゼンテーション/プレゼンを勉強しています。",
+    "chinese": "学习：策划方案说明(会)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5700,
+    "japanese": "アルファベットを勉強しています。",
+    "chinese": "学习：英语字母，拉丁字母",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5701,
+    "japanese": "イメージを勉強しています。",
+    "chinese": "学习：形象，印象",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5702,
+    "japanese": "インパクトを勉強しています。",
+    "chinese": "学习：冲击力，力量感",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5703,
+    "japanese": "免税店を勉強しています。",
+    "chinese": "学习：免税店",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5704,
+    "japanese": "ものを勉強しています。",
+    "chinese": "学习：东西，事物",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5705,
+    "japanese": "引っ張りますを勉強しています。",
+    "chinese": "学习：拉，拽",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5706,
+    "japanese": "浮かびますを勉強しています。",
+    "chinese": "学习：想起，浮，浮现",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5707,
+    "japanese": "整いますを勉強しています。",
+    "chinese": "学习：齐备，完备",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5708,
+    "japanese": "乾きますを勉強しています。",
+    "chinese": "学习：干，干燥",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5709,
+    "japanese": "避けますを勉強しています。",
+    "chinese": "学习：回避，避免",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5710,
+    "japanese": "売れますを勉強しています。",
+    "chinese": "学习：好卖，畅销",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5711,
+    "japanese": "受けますを勉強しています。",
+    "chinese": "学习：感受，受到",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5712,
+    "japanese": "温めますを勉強しています。",
+    "chinese": "学习：热，温",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5713,
+    "japanese": "理解～を勉強しています。",
+    "chinese": "学习：理解",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5714,
+    "japanese": "提案～を勉強しています。",
+    "chinese": "学习：建议，提案",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5715,
+    "japanese": "試作～を勉強しています。",
+    "chinese": "学习：试作，试制",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5716,
+    "japanese": "経験～を勉強しています。",
+    "chinese": "学习：经验，经历",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5717,
+    "japanese": "暗記～を勉強しています。",
+    "chinese": "学习：熟记，背诵",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5718,
+    "japanese": "早退～を勉強しています。",
+    "chinese": "学习：早退",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5719,
+    "japanese": "休職～を勉強しています。",
+    "chinese": "学习：(暂时)停职",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5720,
+    "japanese": "理想的を勉強しています。",
+    "chinese": "学习：理想",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5721,
+    "japanese": "言うまでもなくを勉強しています。",
+    "chinese": "学习：不言而喻",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5722,
+    "japanese": "～なんかを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5723,
+    "japanese": "社員旅行を勉強しています。",
+    "chinese": "学习：员工旅行",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5724,
+    "japanese": "新入社員を勉強しています。",
+    "chinese": "学习：新来的职员",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5725,
+    "japanese": "会議場を勉強しています。",
+    "chinese": "学习：会场",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5726,
+    "japanese": "国際会議を勉強しています。",
+    "chinese": "学习：国际会议",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5727,
+    "japanese": "ビアガーデンを勉強しています。",
+    "chinese": "学习：庭院式的啤酒店",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5728,
+    "japanese": "大型～を勉強しています。",
+    "chinese": "学习：大型超市",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5729,
+    "japanese": "パトカーを勉強しています。",
+    "chinese": "学习：警车，巡逻车",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5730,
+    "japanese": "サイレンを勉強しています。",
+    "chinese": "学习：警笛，警报器",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5731,
+    "japanese": "パワーを勉強しています。",
+    "chinese": "学习：能力，力量",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5732,
+    "japanese": "中国全土を勉強しています。",
+    "chinese": "学习：全中国",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5733,
+    "japanese": "長期予報を勉強しています。",
+    "chinese": "学习：长期预报",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5734,
+    "japanese": "暑さを勉強しています。",
+    "chinese": "学习：暑热，暑气",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5735,
+    "japanese": "美しさを勉強しています。",
+    "chinese": "学习：美好，美丽程度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5736,
+    "japanese": "おもしろさを勉強しています。",
+    "chinese": "学习：趣味，有趣程度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5737,
+    "japanese": "深さを勉強しています。",
+    "chinese": "学习：深度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5738,
+    "japanese": "太さを勉強しています。",
+    "chinese": "学习：粗(度)",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5739,
+    "japanese": "厚さを勉強しています。",
+    "chinese": "学习：厚度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5740,
+    "japanese": "速さを勉強しています。",
+    "chinese": "学习：速度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5741,
+    "japanese": "便利さを勉強しています。",
+    "chinese": "学习：方便程度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5742,
+    "japanese": "複雑さを勉強しています。",
+    "chinese": "学习：复杂程度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5743,
+    "japanese": "おいしさを勉強しています。",
+    "chinese": "学习：美味，好吃程度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5744,
+    "japanese": "重要さを勉強しています。",
+    "chinese": "学习：重要性，重要程度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5745,
+    "japanese": "甘さを勉強しています。",
+    "chinese": "学习：甜度",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5746,
+    "japanese": "広がりますを勉強しています。",
+    "chinese": "学习：蔓延，拓宽",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5747,
+    "japanese": "驚きますを勉強しています。",
+    "chinese": "学习：惊讶，吃惊",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5748,
+    "japanese": "しゃれますを勉強しています。",
+    "chinese": "学习：别致，风趣；打扮得漂亮",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5749,
+    "japanese": "実感～を勉強しています。",
+    "chinese": "学习：切实感受，真切感受",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5750,
+    "japanese": "けっこうを勉強しています。",
+    "chinese": "学习：很，相当",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5751,
+    "japanese": "佐々木を勉強しています。",
+    "chinese": "学习：佐佐木",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5752,
+    "japanese": "～キロ/～キログラム/～センチを勉強しています。",
+    "chinese": "学习：/",
+    "source": "standard_jp",
+    "jlpt_level": null
+  },
+  {
+    "id": 5753,
+    "japanese": "平均年齢を勉強しています。",
+    "chinese": "学习：平均年龄",
+    "source": "standard_jp",
+    "jlpt_level": null
   }
 ]
