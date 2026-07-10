@@ -130,7 +130,7 @@ export default function SettingsScreen() {
         <Text style={s.resetText}>恢复默认设置</Text>
       </Pressable>
 
-      <Text style={s.version}>wordJP v1.1 · 18,001 词</Text>
+      <Text style={s.version}>wordJP v1.2 · 16,757 词</Text>
     </ScrollView>
   );
 }
