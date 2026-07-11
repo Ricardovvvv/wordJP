@@ -9,11 +9,13 @@ interface WordCardProps {
   mode: QuizMode;
   showMeaning?: boolean;
   blind?: boolean;
+  stats?: { correct: number; wrong: number };
 }
 
-export function WordCard({ word, mode, showMeaning = false, blind = false }: WordCardProps) {
+export function WordCard({ word, mode, showMeaning = false, blind = false, stats }: WordCardProps) {
   const { isFavorite, addFavorite, removeFavorite } = useCollectionStore();
   const fav = isFavorite(word.id);
+  const st = stats || { correct: 0, wrong: 0 };
 
   const isJpPrompt = mode === 1 || mode === 3;
   const isKanjiPrompt = mode === 5;
@@ -54,13 +56,21 @@ export function WordCard({ word, mode, showMeaning = false, blind = false }: Wor
 
   return (
     <View style={styles.card}>
-      {/* Badges */}
+      {/* Badges row */}
       <View style={styles.topRow}>
-        {word.jlpt_level ? (
-          <View style={styles.jlptBadge}>
-            <Text style={styles.jlptText}>N{word.jlpt_level}</Text>
-          </View>
-        ) : <View />}
+        <View style={styles.badgeGroup}>
+          {word.jlpt_level ? (
+            <View style={styles.jlptBadge}>
+              <Text style={styles.jlptText}>N{word.jlpt_level}</Text>
+            </View>
+          ) : null}
+          {(st.correct > 0 || st.wrong > 0) ? (
+            <View style={styles.statBadges}>
+              <Text style={styles.statBadgeCorrect}>✅{st.correct}</Text>
+              <Text style={styles.statBadgeWrong}>❌{st.wrong}</Text>
+            </View>
+          ) : null}
+        </View>
         <Pressable onPress={() => fav ? removeFavorite(word.id) : addFavorite(word)}
           style={[styles.favBtn, fav && styles.favActive]}>
           <Text style={styles.favText}>{fav ? "⭐" : "☆"}</Text>
@@ -98,7 +108,11 @@ const styles = StyleSheet.create({
     shadowColor: "#000", shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.05, shadowRadius: 2, elevation: 1,
   },
-  topRow: { position: "absolute", top: 10, left: 12, right: 12, flexDirection: "row", justifyContent: "space-between" },
+  topRow: { position: "absolute", top: 10, left: 12, right: 12, flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
+  badgeGroup: { flexDirection: "row", alignItems: "center", gap: 6 },
+  statBadges: { flexDirection: "row", gap: 4 },
+  statBadgeCorrect: { fontSize: 11, fontWeight: "700", color: "#16a34a" },
+  statBadgeWrong: { fontSize: 11, fontWeight: "700", color: "#ef4444" },
   label: { fontSize: 12, fontWeight: "500", color: COLORS.textSecondary, textTransform: "uppercase", letterSpacing: 1, marginBottom: 12 },
   wordRow: { flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 },
   mainText: { fontSize: 30, fontWeight: "700", color: COLORS.text, textAlign: "center" },

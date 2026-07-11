@@ -72,7 +72,6 @@ export default function FlashcardScreen() {
       {/* Progress */}
       <View style={s.progressRow}>
         <Text style={s.progressText}>{index + 1} / {allWords.length}</Text>
-        <Text style={s.progressText}>✅{st.correct} ❌{st.wrong}</Text>
       </View>
 
       <ScrollView style={s.scroll} contentContainerStyle={{ paddingBottom: 20 }}>
@@ -81,6 +80,12 @@ export default function FlashcardScreen() {
           <View style={s.cardBadges}>
             {word.jlpt_level ? <Text style={s.badge}>N{word.jlpt_level}</Text> : null}
             {word.part_of_speech ? <Text style={s.badge}>{word.part_of_speech}</Text> : null}
+            {(st.correct > 0 || st.wrong > 0) ? (
+              <>
+                <Text style={[s.badge, { color: "#16a34a" }]}>✅{st.correct}</Text>
+                <Text style={[s.badge, { color: "#ef4444" }]}>❌{st.wrong}</Text>
+              </>
+            ) : null}
             <Pressable onPress={() => fav ? removeFavorite(word.id) : addFavorite(word)} style={[s.favBtn, fav && s.favActive]}>
               <Text style={s.favText}>{fav ? "⭐" : "☆"}</Text>
             </Pressable>
@@ -98,13 +103,7 @@ export default function FlashcardScreen() {
           {/* Meaning */}
           <Text style={s.meaning}>{word.chinese_meaning}</Text>
 
-          {/* Stats */}
-          {(st.correct > 0 || st.wrong > 0) && (
-            <View style={s.statsRow}>
-              <Text style={s.statCorrect}>答对 {st.correct} 次</Text>
-              <Text style={s.statWrong}>答错 {st.wrong} 次</Text>
-            </View>
-          )}
+          {/* Stats moved to card header badges */}
         </View>
       </ScrollView>
 

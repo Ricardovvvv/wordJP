@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { View, Text, Pressable, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { WordCard } from "../../src/components/WordCard";
@@ -166,6 +166,7 @@ export default function QuizScreen() {
           mode={mode}
           showMeaning={phase === "feedback"}
           blind={listening && phase === "answering"}
+          stats={st}
         />
 
         <Text style={styles.optionLabel}>{optionLabel}</Text>
@@ -188,13 +189,7 @@ export default function QuizScreen() {
                 <Text style={styles.feedbackSecondary}>{detail.secondary}</Text>
               </View>
             ))}
-            {/* Per-word stats */}
-            {(st.correct > 0 || st.wrong > 0) && (
-              <View style={styles.wordStatRow}>
-                <Text style={styles.statCorrect}>✅ 答对 {st.correct} 次</Text>
-                <Text style={styles.statWrong}>❌ 答错 {st.wrong} 次</Text>
-              </View>
-            )}
+            {/* Per-word stats removed from here — now shown in the word card badge row */}
           </View>
         )}
 
@@ -238,9 +233,6 @@ const styles = StyleSheet.create({
   feedbackText: { fontSize: 14, flex: 1, color: "#475569" },
   feedbackCorrect: { color: "#15803d", fontWeight: "600" },
   feedbackSecondary: { fontSize: 12, color: "#94a3b8", marginLeft: 8 },
-  wordStatRow: { flexDirection: "row", gap: 16, marginTop: 10, paddingTop: 10, borderTopWidth: 1, borderTopColor: "#f1f5f9" },
-  statCorrect: { fontSize: 13, color: "#16a34a", fontWeight: "600" },
-  statWrong: { fontSize: 13, color: "#ef4444", fontWeight: "600" },
   feedbackArea: { paddingHorizontal: 16, marginTop: 16 },
   resultBanner: { borderRadius: 12, padding: 16, marginBottom: 12 },
   resultCorrect: { backgroundColor: "#f0fdf4", borderWidth: 1, borderColor: "#bbf7d0" },
