@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 
 function TabIcon({ label }: { label: string; focused: boolean }) {
   const icons: Record<string, string> = {
-    "学习": "📚", "进度": "📊", "搜索": "🔍", "五十音": "🔤", "收藏": "⭐",
+    "学习": "📚", "刷词": "🔄", "搜索": "🔍", "五十音": "🔤", "收藏": "⭐", "进度": "📊",
   };
   return (
     <View style={styles.iconWrap}>
@@ -24,6 +24,7 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen name="index" options={{ title: "学习", headerTitle: "wordJP", tabBarIcon: ({ focused }) => <TabIcon label="学习" focused={focused} /> }} />
+      <Tabs.Screen name="flashcard" options={{ title: "刷词", headerTitle: "刷词模式", tabBarIcon: ({ focused }) => <TabIcon label="刷词" focused={focused} /> }} />
       <Tabs.Screen name="search" options={{ title: "搜索", headerTitle: "单词搜索", tabBarIcon: ({ focused }) => <TabIcon label="搜索" focused={focused} /> }} />
       <Tabs.Screen name="gojuon" options={{ title: "五十音", headerTitle: "五十音图", tabBarIcon: ({ focused }) => <TabIcon label="五十音" focused={focused} /> }} />
       <Tabs.Screen name="collection" options={{ title: "收藏", headerTitle: "收藏 · 错题", tabBarIcon: ({ focused }) => <TabIcon label="收藏" focused={focused} /> }} />

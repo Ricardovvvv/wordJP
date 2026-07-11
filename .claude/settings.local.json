@@ -50,7 +50,8 @@
       "WebFetch(domain:ankiweb.net)",
       "Bash(git show *)",
       "Bash(node -e \"const s=JSON.parse\\(require\\('fs'\\).readFileSync\\('/tmp/old_sentences.json','utf-8'\\)\\);console.log\\('Sentences:',s.length\\);console.log\\('Sample:',JSON.stringify\\(s.slice\\(0,3\\),null,2\\)\\)\")",
-      "Bash(curl -s -k -o \"D:/Ricardo/Documents/apps/wordJP/assets/seed/notes_full.csv\" -L \"https://raw.githubusercontent.com/firavoyage/_anki-jlpt-decks/main/NEW-JLPT/notes.csv\")"
+      "Bash(curl -s -k -o \"D:/Ricardo/Documents/apps/wordJP/assets/seed/notes_full.csv\" -L \"https://raw.githubusercontent.com/firavoyage/_anki-jlpt-decks/main/NEW-JLPT/notes.csv\")",
+      "Bash(git commit -m 'Add flashcard mode, per-word stats, listening mode *)"
     ]
   }
 }

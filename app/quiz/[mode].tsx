@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { View, Text, Pressable, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { WordCard } from "../../src/components/WordCard";
@@ -10,6 +10,9 @@ import { useSettingsStore } from "../../src/stores/settingsStore";
 import { useCollectionStore } from "../../src/stores/collectionStore";
 import { recordAnswer } from "../../src/services/spaced-repetition";
 import { generateQuestions } from "../../src/services/quiz";
+import { getDatabase } from "../../src/db/client";
+import { userProgress } from "../../src/db/client";
+import { speakJapanese } from "../../src/services/tts";
 import type { QuizMode } from "../../src/types";
 
 type QuizPhase = "answering" | "feedback" | "finished";
@@ -21,31 +24,46 @@ export default function QuizScreen() {
   const { questions, currentIndex, results, isActive, submitAnswer, nextQuestion, endQuiz } = useQuizStore();
   const [phase, setPhase] = useState<QuizPhase>("answering");
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+  const [listening, setListening] = useState(false);
+  const [wordStats, setWordStats] = useState<Record<number, { correct: number; wrong: number }>>({});
 
-  // Clean up on unmount: always reset quiz state when leaving this page
+  // Load per-word stats
   useEffect(() => {
-    return () => {
-      endQuiz();
-    };
-  }, []);
+    try {
+      const { db } = getDatabase();
+      const progress = db.select().from(userProgress).all();
+      const st: Record<number, { correct: number; wrong: number }> = {};
+      for (const p of progress) {
+        if (!st[p.word_id]) st[p.word_id] = { correct: 0, wrong: 0 };
+        st[p.word_id].correct += p.correct_count || 0;
+        st[p.word_id].wrong += p.wrong_count || 0;
+      }
+      setWordStats(st);
+    } catch {}
+  }, [results]);
 
-  // If the store has no active quiz (e.g., user navigated directly to /quiz/X), go home
+  useEffect(() => { return () => { endQuiz(); }; }, []);
+
   useEffect(() => {
     if (!isActive || questions.length === 0) {
-      // Give the store a moment to populate (startQuiz is called before router.push)
       const timer = setTimeout(() => {
         const s = useQuizStore.getState();
-        if (!s.isActive || s.questions.length === 0) {
-          router.replace("/(tabs)");
-        }
+        if (!s.isActive || s.questions.length === 0) router.replace("/(tabs)");
       }, 100);
       return () => clearTimeout(timer);
     }
   }, []);
 
+  // Auto-speak when listening mode is on and entering a new question
+  useEffect(() => {
+    if (listening && phase === "answering" && question) {
+      const text = mode === 1 ? question.promptWord.reading : question.promptWord.japanese;
+      speakJapanese(text);
+    }
+  }, [listening, phase, currentIndex]);
+
   const question = questions[currentIndex];
   const currentResult = results[currentIndex];
-
   const collection = useCollectionStore();
 
   const handleSelect = (index: number) => {
@@ -55,11 +73,9 @@ export default function QuizScreen() {
     setPhase("feedback");
     const option = question.options[index];
     try { recordAnswer(question.promptWord.id, mode, option.isCorrect); } catch {}
-    // Track wrong answers
     if (!option.isCorrect) {
       try { collection.addWrong(question.promptWord); } catch {}
     } else {
-      // If answered correctly, remove from wrong book
       try { collection.removeWrong(question.promptWord.id); } catch {}
     }
   };
@@ -80,11 +96,9 @@ export default function QuizScreen() {
   const handleRestart = () => {
     endQuiz();
     const s = useSettingsStore.getState().settings;
-    const newQuestions = generateQuestions(mode, s.dailyGoal, {
-      jlptLevels: s.jlptLevels, sources: s.sources,
-    });
-    if (newQuestions.length > 0) {
-      useQuizStore.getState().startQuiz(mode, newQuestions);
+    const qs = generateQuestions(mode, s.dailyGoal, { jlptLevels: s.jlptLevels, sources: s.sources });
+    if (qs.length > 0) {
+      useQuizStore.getState().startQuiz(mode, qs);
       setPhase("answering");
       setSelectedIdx(null);
     } else {
@@ -115,53 +129,51 @@ export default function QuizScreen() {
   if (!question) {
     return (
       <View style={styles.empty}>
-        <Text style={styles.emptyText}>暂无题目，请检查词库设置</Text>
-        <Pressable onPress={handleGoHome} style={styles.backBtn}>
-          <Text style={styles.backBtnText}>返回</Text>
-        </Pressable>
+        <Text style={styles.emptyText}>暂无题目</Text>
+        <Pressable onPress={handleGoHome} style={styles.backBtn}><Text style={styles.backBtnText}>返回</Text></Pressable>
       </View>
     );
   }
 
   const isJpPrompt = mode === 1 || mode === 3;
   const isSentenceMode = mode === 3 || mode === 4;
-  const isKanaMode = mode === 5 || mode === 6;
-  // Show audio on options that are Japanese text
-  // Audio on options: only for modes where options are single words (not full sentences)
   const showOptionAudio = mode === 2 || mode === 5 || mode === 6;
+  const st = wordStats[question.promptWord.id] || { correct: 0, wrong: 0 };
 
-  // Option label text
   let optionLabel: string;
-  if (mode === 1) optionLabel = "选择对应的中文释义（不看汉字，听读音）";
+  if (mode === 1) optionLabel = "听读音，选中文释义";
   else if (mode === 5) optionLabel = "选择对应的平假名读音";
   else if (mode === 6) optionLabel = "选择对应的汉字";
-  else if (isSentenceMode)
-    optionLabel = isJpPrompt ? "选择可能使用该单词的中文句子" : "选择可能使用该单词的日语句子";
-  else
-    optionLabel = "选择对应的日语单词";
+  else if (isSentenceMode) optionLabel = isJpPrompt ? "选含此词的中文句子" : "选含此词的日语句子";
+  else optionLabel = "选择对应的日语单词";
 
   return (
     <SafeAreaView style={styles.safe}>
       <ProgressBar current={currentIndex + (phase === "feedback" ? 1 : 0)} total={questions.length} />
 
-      <ScrollView style={styles.scroll} contentContainerStyle={{ paddingBottom: 40 }}>
-        <WordCard word={question.promptWord} mode={mode} showMeaning={phase === "feedback"} />
+      {/* Listening mode toggle */}
+      <View style={styles.listenBar}>
+        <Pressable onPress={() => setListening(!listening)} style={[styles.listenBtn, listening && styles.listenActive]}>
+          <Text style={[styles.listenText, listening && styles.listenTextActive]}>
+            {listening ? "🔊 听力模式: 开" : "🔇 听力模式: 关"}
+          </Text>
+        </Pressable>
+      </View>
 
-        <Text style={styles.optionLabel}>
-          {optionLabel}
-        </Text>
+      <ScrollView style={styles.scroll} contentContainerStyle={{ paddingBottom: 40 }}>
+        <WordCard
+          word={question.promptWord}
+          mode={mode}
+          showMeaning={phase === "feedback"}
+          blind={listening && phase === "answering"}
+        />
+
+        <Text style={styles.optionLabel}>{optionLabel}</Text>
 
         <View style={styles.optionsWrap}>
           {question.options.map((option, idx) => (
-            <OptionButton
-              key={idx}
-              option={option}
-              index={idx}
-              state={getOptionState(idx)}
-              onPress={handleSelect}
-              disabled={phase === "feedback"}
-              showAudio={showOptionAudio}
-            />
+            <OptionButton key={idx} option={option} index={idx} state={getOptionState(idx)}
+              onPress={handleSelect} disabled={phase === "feedback"} showAudio={showOptionAudio} />
           ))}
         </View>
 
@@ -176,6 +188,13 @@ export default function QuizScreen() {
                 <Text style={styles.feedbackSecondary}>{detail.secondary}</Text>
               </View>
             ))}
+            {/* Per-word stats */}
+            {(st.correct > 0 || st.wrong > 0) && (
+              <View style={styles.wordStatRow}>
+                <Text style={styles.statCorrect}>✅ 答对 {st.correct} 次</Text>
+                <Text style={styles.statWrong}>❌ 答错 {st.wrong} 次</Text>
+              </View>
+            )}
           </View>
         )}
 
@@ -205,6 +224,11 @@ const styles = StyleSheet.create({
   emptyText: { color: "#94a3b8", fontSize: 16 },
   backBtn: { marginTop: 16, paddingVertical: 8, paddingHorizontal: 24, backgroundColor: "#3b82f6", borderRadius: 8 },
   backBtnText: { color: "#ffffff", fontWeight: "500" },
+  listenBar: { flexDirection: "row", justifyContent: "center", paddingVertical: 6 },
+  listenBtn: { paddingHorizontal: 16, paddingVertical: 6, borderRadius: 16, borderWidth: 1, borderColor: "#e2e8f0", backgroundColor: "#f1f5f9" },
+  listenActive: { backgroundColor: "#dbeafe", borderColor: "#93c5fd" },
+  listenText: { fontSize: 13, fontWeight: "600", color: "#64748b" },
+  listenTextActive: { color: "#2563eb" },
   optionLabel: { fontSize: 14, fontWeight: "500", color: "#94a3b8", paddingHorizontal: 16, marginTop: 20, marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 },
   optionsWrap: { paddingHorizontal: 16 },
   feedbackDetail: { marginHorizontal: 16, marginTop: 8, padding: 16, backgroundColor: "#ffffff", borderRadius: 12, borderWidth: 1, borderColor: "#f1f5f9" },
@@ -214,6 +238,9 @@ const styles = StyleSheet.create({
   feedbackText: { fontSize: 14, flex: 1, color: "#475569" },
   feedbackCorrect: { color: "#15803d", fontWeight: "600" },
   feedbackSecondary: { fontSize: 12, color: "#94a3b8", marginLeft: 8 },
+  wordStatRow: { flexDirection: "row", gap: 16, marginTop: 10, paddingTop: 10, borderTopWidth: 1, borderTopColor: "#f1f5f9" },
+  statCorrect: { fontSize: 13, color: "#16a34a", fontWeight: "600" },
+  statWrong: { fontSize: 13, color: "#ef4444", fontWeight: "600" },
   feedbackArea: { paddingHorizontal: 16, marginTop: 16 },
   resultBanner: { borderRadius: 12, padding: 16, marginBottom: 12 },
   resultCorrect: { backgroundColor: "#f0fdf4", borderWidth: 1, borderColor: "#bbf7d0" },
