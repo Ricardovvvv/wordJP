@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 import { View, Text, Pressable, ScrollView, StyleSheet, SafeAreaView } from "react-native";
 import { useFocusEffect } from "expo-router";
-import { getDatabase } from "../../src/db/client";
-import { words, userProgress, sentences, wordSentences } from "../../src/db/client";
-import { useCollectionStore } from "../../src/stores/collectionStore";
-import { useSettingsStore } from "../../src/stores/settingsStore";
-import { speakJapanese } from "../../src/services/tts";
-import type { Word } from "../../src/types";
+import { getDatabase } from "../src/db/client";
+import { words, userProgress } from "../src/db/client";
+import { useCollectionStore } from "../src/stores/collectionStore";
+import { useSettingsStore } from "../src/stores/settingsStore";
+import { speakJapanese } from "../src/services/tts";
+import type { Word } from "../src/types";
 
 export default function FlashcardScreen() {
   const [allWords, setAllWords] = useState<Word[]>([]);

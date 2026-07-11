@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { View, Text, ScrollView, Pressable, Switch, TextInput, StyleSheet, Platform } from "react-native";
-import { useSettingsStore } from "../../src/stores/settingsStore";
-import { useLibraryStore } from "../../src/stores/libraryStore";
-import { QUESTION_COUNT_OPTIONS, SOURCES, TEXTBOOK_INFO } from "../../src/constants";
+import { useSettingsStore } from "../src/stores/settingsStore";
+import { useLibraryStore } from "../src/stores/libraryStore";
+import { QUESTION_COUNT_OPTIONS, SOURCES, TEXTBOOK_INFO } from "../src/constants";
 
 export default function SettingsScreen() {
   const { settings, updateSettings, resetToDefaults } = useSettingsStore();

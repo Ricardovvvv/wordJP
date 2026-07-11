@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { useFocusEffect } from "expo-router";
-import { getProgressStats } from "../../src/services/spaced-repetition";
+import { getProgressStats } from "../src/services/spaced-repetition";
 
 export default function ProgressScreen() {
   const [stats, setStats] = useState({

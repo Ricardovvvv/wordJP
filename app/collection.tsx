@@ -1,9 +1,9 @@
 import { useEffect, useState, useCallback } from "react";
 import { View, Text, ScrollView, Pressable, StyleSheet } from "react-native";
-import { useCollectionStore } from "../../src/stores/collectionStore";
-import { getDatabase } from "../../src/db/client";
-import { userProgress } from "../../src/db/client";
-import { speakJapanese } from "../../src/services/tts";
+import { useCollectionStore } from "../src/stores/collectionStore";
+import { getDatabase } from "../src/db/client";
+import { userProgress } from "../src/db/client";
+import { speakJapanese } from "../src/services/tts";
 import { useFocusEffect } from "expo-router";
 
 export default function CollectionScreen() {

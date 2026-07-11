@@ -2,9 +2,9 @@ import { View, Text, Pressable, ScrollView, StyleSheet } from "react-native";
 import { router } from "expo-router";
 
 const ITEMS = [
-  { label: "⭐ 收藏夹", description: "查看收藏单词和错题本", icon: "⭐", route: "/(tabs)/collection" },
-  { label: "📊 学习进度", description: "累计答题统计与正确率", icon: "📊", route: "/(tabs)/progress" },
-  { label: "⚙️ 设置", description: "教材选择、词库管理、每日目标", icon: "⚙️", route: "/(tabs)/settings" },
+  { label: "⭐ 收藏夹", description: "查看收藏单词和错题本", icon: "⭐", route: "/collection" },
+  { label: "📊 学习进度", description: "累计答题统计与正确率", icon: "📊", route: "/progress" },
+  { label: "⚙️ 设置", description: "教材选择、词库管理、每日目标", icon: "⚙️", route: "/settings" },
 ];
 
 export default function ProfileScreen() {
