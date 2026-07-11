@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { View, Text, Pressable, ScrollView, StyleSheet } from "react-native";
-import { router } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
 import { QUIZ_MODES, SOURCES, JLPT_LEVELS } from "../../src/constants";
 import { useSettingsStore } from "../../src/stores/settingsStore";
 import { getProgressStats } from "../../src/services/spaced-repetition";
@@ -14,7 +14,12 @@ export default function HomeScreen() {
   const startQuiz = useQuizStore((s) => s.startQuiz);
   const [stats, setStats] = useState({ todayReviewed: 0, wordsLearned: 0, accuracy: 0 });
 
-  useEffect(() => { try { setStats(getProgressStats()); } catch {} }, []);
+  // Refresh stats every time the screen is focused
+  useFocusEffect(
+    useCallback(() => {
+      try { setStats(getProgressStats()); } catch {}
+    }, [])
+  );
 
   const toggleSource = (src: string) => {
     const updated = settings.sources.includes(src)

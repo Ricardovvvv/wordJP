@@ -1,31 +1,48 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { View, Text, TextInput, Pressable, ScrollView, StyleSheet } from "react-native";
-import { getDatabase } from "../../src/db/client";
-import { words } from "../../src/db/client";
+import { getDatabase, eq } from "../../src/db/client";
+import { words, userProgress } from "../../src/db/client";
 import { speakJapanese } from "../../src/services/tts";
+import { useFocusEffect } from "expo-router";
 
 export default function SearchScreen() {
   const [query, setQuery] = useState("");
   const [mode, setMode] = useState<"local" | "online">("local");
   const [results, setResults] = useState<any[]>([]);
   const [allWords, setAllWords] = useState<any[]>([]);
+  const [wordStats, setWordStats] = useState<Record<number, { correct: number; wrong: number }>>({});
 
-  useEffect(() => {
-    try {
-      const { db } = getDatabase();
-      setAllWords(db.select().from(words).all());
-    } catch {}
-  }, []);
+  // Load on focus
+  useFocusEffect(
+    useCallback(() => {
+      try {
+        const { db } = getDatabase();
+        setAllWords(db.select().from(words).all());
+        // Load per-word stats
+        const progress = db.select().from(userProgress).all();
+        const stats: Record<number, { correct: number; wrong: number }> = {};
+        for (const p of progress) {
+          const wid = p.word_id;
+          if (!stats[wid]) stats[wid] = { correct: 0, wrong: 0 };
+          stats[wid].correct += p.correct_count || 0;
+          stats[wid].wrong += p.wrong_count || 0;
+        }
+        setWordStats(stats);
+      } catch {}
+    }, [])
+  );
 
   const doLocalSearch = (q: string) => {
     if (!q.trim()) { setResults([]); return; }
     const kw = q.toLowerCase();
-    const matches = allWords.filter(
-      (w: any) =>
-        (w.japanese || "").toLowerCase().includes(kw) ||
-        (w.reading || "").toLowerCase().includes(kw) ||
-        (w.chinese_meaning || "").toLowerCase().includes(kw)
-    ).slice(0, 50);
+    const matches = allWords
+      .filter(
+        (w: any) =>
+          (w.japanese || "").toLowerCase().includes(kw) ||
+          (w.reading || "").toLowerCase().includes(kw) ||
+          (w.chinese_meaning || "").toLowerCase().includes(kw)
+      )
+      .slice(0, 50);
     setResults(matches);
   };
 
@@ -34,12 +51,14 @@ export default function SearchScreen() {
     setResults([{ type: "loading" }]);
     try {
       const isJP = /[぀-ヿ一-鿿]/.test(q);
-      const pair = isJP ? "ja|zh" : "zh|ja";
-      const resp = await fetch(
-        `https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=${pair}`
-      );
+      // Google Translate (free, no key needed for web)
+      const source = isJP ? "ja" : "zh-CN";
+      const target = isJP ? "zh-CN" : "ja";
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${source}&tl=${target}&dt=t&q=${encodeURIComponent(q)}`;
+      const resp = await fetch(url);
       const data = await resp.json();
-      const translated = data?.responseData?.translatedText || "无结果";
+      // Google API returns [[["translated text", "original", ...]], ...]
+      const translated = data?.[0]?.[0]?.[0] || data?.[0]?.map((x: any) => x[0]).join("") || "无结果";
       setResults([{ type: "online", query: q, translated, isJP }]);
     } catch {
       setResults([{ type: "error" }]);
@@ -55,9 +74,19 @@ export default function SearchScreen() {
     if (mode === "online") doOnlineSearch(query);
   };
 
+  const getStatsDisplay = (wordId: number) => {
+    const st = wordStats[wordId];
+    if (!st || (st.correct === 0 && st.wrong === 0)) return null;
+    return (
+      <View style={s.statRow}>
+        <Text style={s.statCorrect}>✓{st.correct}</Text>
+        <Text style={s.statWrong}>✗{st.wrong}</Text>
+      </View>
+    );
+  };
+
   return (
     <View style={s.container}>
-      {/* Search bar */}
       <View style={s.searchBar}>
         <TextInput
           style={s.input}
@@ -73,9 +102,11 @@ export default function SearchScreen() {
         </Pressable>
       </View>
 
-      {/* Mode toggle */}
       <View style={s.toggleRow}>
-        <Pressable onPress={() => { setMode("local"); doLocalSearch(query); }} style={[s.toggleBtn, mode === "local" && s.toggleActive]}>
+        <Pressable
+          onPress={() => { setMode("local"); doLocalSearch(query); }}
+          style={[s.toggleBtn, mode === "local" && s.toggleActive]}
+        >
           <Text style={[s.toggleText, mode === "local" && s.toggleTextActive]}>词库</Text>
         </Pressable>
         <Pressable onPress={() => setMode("online")} style={[s.toggleBtn, mode === "online" && s.toggleActive]}>
@@ -83,14 +114,9 @@ export default function SearchScreen() {
         </Pressable>
       </View>
 
-      {/* Results */}
       <ScrollView style={s.results} contentContainerStyle={{ paddingBottom: 20 }}>
-        {results.length === 0 && query && (
-          <Text style={s.empty}>未找到匹配项</Text>
-        )}
-        {results.length === 0 && !query && (
-          <Text style={s.empty}>在上方输入单词开始搜索</Text>
-        )}
+        {results.length === 0 && query && <Text style={s.empty}>未找到匹配项</Text>}
+        {results.length === 0 && !query && <Text style={s.empty}>在上方输入单词开始搜索</Text>}
         {results[0]?.type === "loading" && <Text style={s.empty}>翻译中...</Text>}
         {results[0]?.type === "error" && <Text style={s.empty}>请求失败，请检查网络</Text>}
         {results[0]?.type === "online" && (
@@ -110,12 +136,11 @@ export default function SearchScreen() {
                 </Pressable>
               </View>
               <Text style={s.wordMeaning}>{word.chinese_meaning}</Text>
-              {(word.jlpt_level || word.source) && (
-                <View style={s.metaRow}>
-                  {word.jlpt_level ? <Text style={s.tag}>N{word.jlpt_level}</Text> : null}
-                  {word.source ? <Text style={s.tag}>{word.source.split(",")[0]}</Text> : null}
-                </View>
-              )}
+              <View style={s.metaRow}>
+                {word.jlpt_level ? <Text style={s.tag}>N{word.jlpt_level}</Text> : null}
+                {word.source ? <Text style={s.tag}>{word.source.split(",")[0]}</Text> : null}
+                {getStatsDisplay(word.id)}
+              </View>
             </View>
           ))}
       </ScrollView>
@@ -143,8 +168,11 @@ const s = StyleSheet.create({
   audioBtn: { width: 34, height: 34, borderRadius: 17, backgroundColor: "#f1f5f9", alignItems: "center", justifyContent: "center" },
   audioIcon: { fontSize: 14 },
   wordMeaning: { fontSize: 15, color: "#475569", marginTop: 6 },
-  metaRow: { flexDirection: "row", gap: 6, marginTop: 6 },
+  metaRow: { flexDirection: "row", gap: 6, marginTop: 6, alignItems: "center" },
   tag: { fontSize: 11, color: "#64748b", backgroundColor: "#f1f5f9", paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, overflow: "hidden" },
+  statRow: { flexDirection: "row", gap: 6, marginLeft: "auto" },
+  statCorrect: { fontSize: 11, color: "#16a34a", fontWeight: "600" },
+  statWrong: { fontSize: 11, color: "#ef4444", fontWeight: "600" },
   onlineCard: { backgroundColor: "#ffffff", marginHorizontal: 16, marginTop: 8, borderRadius: 12, padding: 16, borderWidth: 1, borderColor: "#e2e8f0" },
   onlineQuery: { fontSize: 13, color: "#94a3b8" },
   onlineTranslation: { fontSize: 20, color: "#1e293b", fontWeight: "600", marginTop: 8 },
