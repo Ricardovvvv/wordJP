@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { useFocusEffect } from "expo-router";
 import { getProgressStats } from "../../src/services/spaced-repetition";
 
 export default function ProgressScreen() {
@@ -8,9 +9,11 @@ export default function ProgressScreen() {
     accuracy: 0, wordsLearned: 0, todayReviewed: 0,
   });
 
-  useEffect(() => {
-    try { setStats(getProgressStats()); } catch {}
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      try { setStats(getProgressStats()); } catch {}
+    }, [])
+  );
 
   const total = stats.totalCorrect + stats.totalWrong;
 
