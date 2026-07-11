@@ -54,7 +54,13 @@
       "Bash(git commit -m 'Add flashcard mode, per-word stats, listening mode *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8081)",
       "Bash(ipconfig)",
-      "Bash(git commit -m 'Add deploy.bat for PWA deployment to surge.sh *)"
+      "Bash(git commit -m 'Add deploy.bat for PWA deployment to surge.sh *)",
+      "Bash(git checkout *)",
+      "Bash(git stash *)",
+      "Bash(git reflog *)",
+      "Bash(rm -rf .git-rewrite)",
+      "Bash(git reset *)",
+      "Bash(git commit *)"
     ]
   }
 }
