@@ -47,7 +47,9 @@
       "Bash(cmd //c start \"\" \"D:\\\\Ricardo\\\\Documents\\\\apps\\\\jp-flashcard\\\\index.html\")",
       "Bash(curl -s -o /dev/null -w \"HTTP: %{http_code}\\\\n\" http://localhost:8081)",
       "WebFetch(domain:www.heywhale.com)",
-      "WebFetch(domain:ankiweb.net)"
+      "WebFetch(domain:ankiweb.net)",
+      "Bash(git show *)",
+      "Bash(node -e \"const s=JSON.parse\\(require\\('fs'\\).readFileSync\\('/tmp/old_sentences.json','utf-8'\\)\\);console.log\\('Sentences:',s.length\\);console.log\\('Sample:',JSON.stringify\\(s.slice\\(0,3\\),null,2\\)\\)\")"
     ]
   }
 }
