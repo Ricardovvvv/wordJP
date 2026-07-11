@@ -64,17 +64,19 @@ export function WordCard({ word, mode, showMeaning = false, blind = false, stats
               <Text style={styles.jlptText}>N{word.jlpt_level}</Text>
             </View>
           ) : null}
+        </View>
+        <View style={styles.rightBadgeGroup}>
           {(st.correct > 0 || st.wrong > 0) ? (
             <View style={styles.statBadges}>
               <Text style={styles.statBadgeCorrect}>✅{st.correct}</Text>
               <Text style={styles.statBadgeWrong}>❌{st.wrong}</Text>
             </View>
           ) : null}
+          <Pressable onPress={() => fav ? removeFavorite(word.id) : addFavorite(word)}
+            style={[styles.favBtn, fav && styles.favActive]}>
+            <Text style={styles.favText}>{fav ? "⭐" : "☆"}</Text>
+          </Pressable>
         </View>
-        <Pressable onPress={() => fav ? removeFavorite(word.id) : addFavorite(word)}
-          style={[styles.favBtn, fav && styles.favActive]}>
-          <Text style={styles.favText}>{fav ? "⭐" : "☆"}</Text>
-        </Pressable>
       </View>
 
       <Text style={styles.label}>{label}</Text>
@@ -110,6 +112,7 @@ const styles = StyleSheet.create({
   },
   topRow: { position: "absolute", top: 10, left: 12, right: 12, flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
   badgeGroup: { flexDirection: "row", alignItems: "center", gap: 6 },
+  rightBadgeGroup: { flexDirection: "row", alignItems: "center", gap: 6 },
   statBadges: { flexDirection: "row", gap: 4 },
   statBadgeCorrect: { fontSize: 11, fontWeight: "700", color: "#16a34a" },
   statBadgeWrong: { fontSize: 11, fontWeight: "700", color: "#ef4444" },
