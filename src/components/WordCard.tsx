@@ -23,7 +23,13 @@ export function WordCard({ word, mode, showMeaning = false }: WordCardProps) {
   let mainText: string;
   let hintText: string;
 
-  if (isKanjiPrompt) {
+  // Mode 1: show reading (kana), user must pick the correct Chinese meaning
+  // This tests whether user knows the meaning from pronunciation — not kanji shape
+  if (mode === 1) {
+    label = "读音";
+    mainText = word.reading;
+    hintText = word.japanese;
+  } else if (isKanjiPrompt) {
     label = "汉字";
     mainText = word.japanese;
     hintText = word.chinese_meaning;
@@ -60,7 +66,9 @@ export function WordCard({ word, mode, showMeaning = false }: WordCardProps) {
         <Text style={[styles.mainText, isKanaPrompt && { fontSize: 26 }]}>
           {mainText}
         </Text>
-        {(isJpPrompt || isKanjiPrompt) && <AudioButton text={word.japanese} />}
+        {isJpPrompt && mode === 1 && <AudioButton text={word.reading} />}
+        {isJpPrompt && mode !== 1 && <AudioButton text={word.japanese} />}
+        {isKanjiPrompt && <AudioButton text={word.japanese} />}
         {isKanaPrompt && <AudioButton text={word.reading} />}
       </View>
       {hintText ? <Text style={styles.reading}>{hintText}</Text> : null}

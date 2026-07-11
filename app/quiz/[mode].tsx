@@ -127,16 +127,18 @@ export default function QuizScreen() {
   const isSentenceMode = mode === 3 || mode === 4;
   const isKanaMode = mode === 5 || mode === 6;
   // Show audio on options that are Japanese text
-  const showOptionAudio = mode === 2 || mode === 4 || mode === 5 || mode === 6;
+  // Audio on options: only for modes where options are single words (not full sentences)
+  const showOptionAudio = mode === 2 || mode === 5 || mode === 6;
 
   // Option label text
   let optionLabel: string;
-  if (mode === 5) optionLabel = "选择对应的平假名读音";
+  if (mode === 1) optionLabel = "选择对应的中文释义（不看汉字，听读音）";
+  else if (mode === 5) optionLabel = "选择对应的平假名读音";
   else if (mode === 6) optionLabel = "选择对应的汉字";
   else if (isSentenceMode)
     optionLabel = isJpPrompt ? "选择可能使用该单词的中文句子" : "选择可能使用该单词的日语句子";
   else
-    optionLabel = isJpPrompt ? "选择对应的中文释义" : "选择对应的日语单词";
+    optionLabel = "选择对应的日语单词";
 
   return (
     <SafeAreaView style={styles.safe}>
