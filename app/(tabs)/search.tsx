@@ -50,7 +50,9 @@ export default function SearchScreen() {
     if (!q.trim()) return;
     setResults([{ type: "loading" }]);
     try {
-      const isJP = /[぀-ヿ一-鿿]/.test(q);
+      // Only kana (hiragana/katakana) reliably indicates Japanese input
+      // Kanji (一-鿿) overlaps with Chinese characters, so we don't use it for detection
+      const isJP = /[぀-ヿ]/.test(q);
       // Google Translate (free, no key needed for web)
       const source = isJP ? "ja" : "zh-CN";
       const target = isJP ? "zh-CN" : "ja";

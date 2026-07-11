@@ -3,6 +3,7 @@ import { View, Text, Pressable, ScrollView, StyleSheet } from "react-native";
 import { router, useFocusEffect } from "expo-router";
 import { QUIZ_MODES, SOURCES, JLPT_LEVELS } from "../../src/constants";
 import { useSettingsStore } from "../../src/stores/settingsStore";
+import { useLibraryStore } from "../../src/stores/libraryStore";
 import { getProgressStats } from "../../src/services/spaced-repetition";
 import { generateQuestions } from "../../src/services/quiz";
 import { useQuizStore } from "../../src/stores/quizStore";
@@ -11,6 +12,7 @@ import type { QuizMode } from "../../src/types";
 export default function HomeScreen() {
   const settings = useSettingsStore((s) => s.settings);
   const updateSettings = useSettingsStore((s) => s.updateSettings);
+  const libs = useLibraryStore((s) => s.libraries);
   const startQuiz = useQuizStore((s) => s.startQuiz);
   const [stats, setStats] = useState({ todayReviewed: 0, wordsLearned: 0, accuracy: 0 });
 
@@ -53,6 +55,15 @@ export default function HomeScreen() {
             return (
               <Pressable key={src.value} onPress={() => toggleSource(src.value)} style={[st.chip, active && st.chipActive]}>
                 <Text style={[st.chipText, active && st.chipTextActive]}>{src.label}</Text>
+              </Pressable>
+            );
+          })}
+          {/* Custom libraries */}
+          {Object.values(libs).map((lib) => {
+            const active = settings.sources.includes(lib.key);
+            return (
+              <Pressable key={lib.key} onPress={() => toggleSource(lib.key)} style={[st.chip, active && st.chipActive]}>
+                <Text style={[st.chipText, active && st.chipTextActive]}>{lib.name}</Text>
               </Pressable>
             );
           })}
