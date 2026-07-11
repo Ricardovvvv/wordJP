@@ -33,7 +33,18 @@
       "WebFetch(domain:commons.wikimedia.org)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8081)",
       "Bash(cp /tmp/minna.yaml \"D:/Ricardo/Documents/apps/wordJP/assets/seed/minna.yaml\")",
-      "Bash(cp /tmp/genki1.csv \"D:/Ricardo/Documents/apps/wordJP/assets/seed/genki1.csv\")"
+      "Bash(cp /tmp/genki1.csv \"D:/Ricardo/Documents/apps/wordJP/assets/seed/genki1.csv\")",
+      "WebFetch(domain:github.com)",
+      "Bash(curl -s -k -o \"D:/Ricardo/Documents/apps/jp-flashcard.zip\" -L \"https://github.com/NepQAQ/-csv-/archive/refs/heads/main.zip\")",
+      "Bash(mkdir -p \"D:/Ricardo/Documents/apps/jp-flashcard\")",
+      "Bash(unzip -o \"D:/Ricardo/Documents/apps/jp-flashcard.zip\")",
+      "Read(//d/Ricardo/Documents/apps/jp-flashcard/**)",
+      "Bash(mv -csv--main/* .)",
+      "Bash(rmdir -csv--main)",
+      "Bash(mv ./-csv--main/* .)",
+      "Bash(rmdir ./-csv--main)",
+      "Bash(rm -f \"D:/Ricardo/Documents/apps/jp-flashcard.zip\")",
+      "Bash(cmd //c start \"\" \"D:\\\\Ricardo\\\\Documents\\\\apps\\\\jp-flashcard\\\\index.html\")"
     ]
   }
 }

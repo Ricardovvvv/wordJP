@@ -79,6 +79,18 @@ export interface QuizFilters {
   questionCount: number;
 }
 
+// Favorites and wrong answers
+export interface FavoriteWord {
+  addedAt: string;
+  word: Word;
+}
+
+export interface WrongWord {
+  wrongCount: number;
+  addedAt: string;
+  word: Word;
+}
+
 // Settings
 export interface AppSettings {
   jlptLevels: number[];

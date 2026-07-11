@@ -7,6 +7,7 @@ import { ProgressBar } from "../../src/components/ProgressBar";
 import { QuizSummary } from "../../src/components/QuizSummary";
 import { useQuizStore } from "../../src/stores/quizStore";
 import { useSettingsStore } from "../../src/stores/settingsStore";
+import { useCollectionStore } from "../../src/stores/collectionStore";
 import { recordAnswer } from "../../src/services/spaced-repetition";
 import { generateQuestions } from "../../src/services/quiz";
 import type { QuizMode } from "../../src/types";
@@ -45,6 +46,8 @@ export default function QuizScreen() {
   const question = questions[currentIndex];
   const currentResult = results[currentIndex];
 
+  const collection = useCollectionStore();
+
   const handleSelect = (index: number) => {
     if (phase !== "answering") return;
     setSelectedIdx(index);
@@ -52,6 +55,13 @@ export default function QuizScreen() {
     setPhase("feedback");
     const option = question.options[index];
     try { recordAnswer(question.promptWord.id, mode, option.isCorrect); } catch {}
+    // Track wrong answers
+    if (!option.isCorrect) {
+      try { collection.addWrong(question.promptWord); } catch {}
+    } else {
+      // If answered correctly, remove from wrong book
+      try { collection.removeWrong(question.promptWord.id); } catch {}
+    }
   };
 
   const handleNext = () => {
