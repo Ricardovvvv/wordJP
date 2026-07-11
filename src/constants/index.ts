@@ -31,6 +31,7 @@ export const SOURCES = [
   { value: "minna_no_nihongo", label: "みんなの日本語" },
   { value: "standard_jp", label: "标准日本语" },
   { value: "genki", label: "Genki" },
+  { value: "thesaurus", label: "中日词典" },
 ] as const;
 
 // Textbook metadata — shown in the source selector cards
@@ -103,6 +104,20 @@ export const TEXTBOOK_INFO: Record<string, {
     coverAccent: "#22c55e",
     coverText: "GENKI\nAn Integrated\nCourse in\nElementary\nJapanese",
     isbn: "978-4-7890-1730-5",
+  },
+  thesaurus: {
+    title: "中日词典",
+    titleJP: "日中辞典",
+    author: "开源社区整理",
+    publisher: "GitHub @lxl66566",
+    description: "综合性中日词汇对照表，融合多个开源词库，包含12,716条词汇释义。含假名、声调（部分）、词性（部分）、中文解释。",
+    levels: "全等级混合",
+    totalLessons: 0,
+    totalWords: 2508,
+    coverColor: "#b45309",
+    coverAccent: "#f59e0b",
+    coverText: "中日\n词典\n日中辞典",
+    isbn: "",
   },
 } as const;
 

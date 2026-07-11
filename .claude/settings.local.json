@@ -45,7 +45,9 @@
       "Bash(rmdir ./-csv--main)",
       "Bash(rm -f \"D:/Ricardo/Documents/apps/jp-flashcard.zip\")",
       "Bash(cmd //c start \"\" \"D:\\\\Ricardo\\\\Documents\\\\apps\\\\jp-flashcard\\\\index.html\")",
-      "Bash(curl -s -o /dev/null -w \"HTTP: %{http_code}\\\\n\" http://localhost:8081)"
+      "Bash(curl -s -o /dev/null -w \"HTTP: %{http_code}\\\\n\" http://localhost:8081)",
+      "WebFetch(domain:www.heywhale.com)",
+      "WebFetch(domain:ankiweb.net)"
     ]
   }
 }
