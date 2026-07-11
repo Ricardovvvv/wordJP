@@ -80,12 +80,11 @@ export default function FlashcardScreen() {
           <View style={s.cardBadges}>
             {word.jlpt_level ? <Text style={s.badge}>N{word.jlpt_level}</Text> : null}
             {word.part_of_speech ? <Text style={s.badge}>{word.part_of_speech}</Text> : null}
-            {(st.correct > 0 || st.wrong > 0) ? (
-              <>
-                <Text style={[s.badge, { color: "#16a34a" }]}>✅{st.correct}</Text>
-                <Text style={[s.badge, { color: "#ef4444" }]}>❌{st.wrong}</Text>
-              </>
-            ) : null}
+          </View>
+          {/* Stats + Favorite row */}
+          <View style={s.favoriteRow}>
+            <Text style={[s.badge, { color: "#16a34a" }]}>✅{st.correct}</Text>
+            <Text style={[s.badge, { color: "#ef4444" }]}>❌{st.wrong}</Text>
             <Pressable onPress={() => fav ? removeFavorite(word.id) : addFavorite(word)} style={[s.favBtn, fav && s.favActive]}>
               <Text style={s.favText}>{fav ? "⭐" : "☆"}</Text>
             </Pressable>
@@ -135,7 +134,8 @@ const s = StyleSheet.create({
     padding: 28, alignItems: "center", borderWidth: 1, borderColor: "#e2e8f0",
     shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.06, shadowRadius: 8, elevation: 2,
   },
-  cardBadges: { flexDirection: "row", flexWrap: "wrap", gap: 6, justifyContent: "center", marginBottom: 20 },
+  cardBadges: { flexDirection: "row", flexWrap: "wrap", gap: 6, justifyContent: "flex-start", marginBottom: 12 },
+  favoriteRow: { flexDirection: "row", alignItems: "center", gap: 6, justifyContent: "flex-end", width: "100%", marginBottom: 8 },
   badge: { fontSize: 12, color: "#64748b", backgroundColor: "#f1f5f9", paddingHorizontal: 10, paddingVertical: 3, borderRadius: 6, fontWeight: "500" },
   favBtn: { paddingHorizontal: 10, paddingVertical: 3, borderRadius: 6, backgroundColor: "#f1f5f9" },
   favActive: { backgroundColor: "#fef9c3" },
@@ -146,9 +146,6 @@ const s = StyleSheet.create({
   audioBtn: { width: 44, height: 44, borderRadius: 22, backgroundColor: "#dbeafe", alignItems: "center", justifyContent: "center" },
   audioText: { fontSize: 20 },
   meaning: { fontSize: 22, fontWeight: "600", color: "#2563eb", textAlign: "center", marginBottom: 16 },
-  statsRow: { flexDirection: "row", gap: 20, paddingTop: 16, borderTopWidth: 1, borderTopColor: "#f1f5f9", width: "100%", justifyContent: "center" },
-  statCorrect: { fontSize: 14, color: "#16a34a", fontWeight: "600" },
-  statWrong: { fontSize: 14, color: "#ef4444", fontWeight: "600" },
   controls: {
     flexDirection: "row", paddingHorizontal: 20, paddingVertical: 14, gap: 10,
     backgroundColor: "#ffffff", borderTopWidth: 1, borderTopColor: "#e2e8f0",
