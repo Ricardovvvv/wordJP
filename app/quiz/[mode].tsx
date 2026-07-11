@@ -141,7 +141,7 @@ export default function QuizScreen() {
   const st = wordStats[question.promptWord.id] || { correct: 0, wrong: 0 };
 
   let optionLabel: string;
-  if (mode === 1) optionLabel = "听读音，选中文释义";
+  if (mode === 1) optionLabel = "选择对应的中文释义";
   else if (mode === 5) optionLabel = "选择对应的平假名读音";
   else if (mode === 6) optionLabel = "选择对应的汉字";
   else if (isSentenceMode) optionLabel = isJpPrompt ? "选含此词的中文句子" : "选含此词的日语句子";

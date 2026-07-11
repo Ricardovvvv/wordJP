@@ -9,12 +9,13 @@ export const JLPT_LEVELS = [
 ] as const;
 
 export const QUIZ_MODES = [
-  { value: 1 as const, title: "读音→中文", description: "听/看假名读音，选对应的中文释义" },
-  { value: 2 as const, title: "中文→日语", description: "看中文释义，选对应的日语单词" },
+  { value: 1 as const, title: "日→中 单词", description: "看日语读音，选对应的中文释义" },
+  { value: 2 as const, title: "中→日 单词", description: "看中文释义，选对应的日语单词" },
   { value: 5 as const, title: "汉字→假名", description: "看汉字单词，选对应的平假名读音" },
-  { value: 6 as const, title: "假名→汉字", description: "看平假名和中文释义，选对应汉字" },
+  { value: 6 as const, title: "假名→汉字", description: "看平假名读音，选对应汉字" },
   { value: 3 as const, title: "日→中 句子", description: "看日语单词，选合适的中文句子" },
   { value: 4 as const, title: "中→日 句子", description: "看中文释义，选合适的日语句子" },
+  { value: 7 as const, title: "刷词模式", description: "翻卡片浏览单词，收藏标记，查看统计" },
 ] as const;
 
 export const DEFAULT_SETTINGS = {

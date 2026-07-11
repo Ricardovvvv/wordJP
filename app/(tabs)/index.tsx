@@ -38,6 +38,11 @@ export default function HomeScreen() {
   };
 
   const handleStartQuiz = (mode: QuizMode) => {
+    if (mode === 7) {
+      // Flashcard mode: just switch to the flashcard tab
+      router.push("/(tabs)/flashcard");
+      return;
+    }
     const qs = generateQuestions(mode, settings.dailyGoal, { jlptLevels: settings.jlptLevels, sources: settings.sources });
     if (qs.length === 0) return;
     startQuiz(mode, qs);

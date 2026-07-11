@@ -28,7 +28,7 @@ export function WordCard({ word, mode, showMeaning = false, blind = false, stats
   let audioText: string;
 
   if (mode === 1) {
-    label = "读音";
+    label = "日语单词";
     mainText = blind ? "🔇 听读音选择" : word.reading;
     hintText = blind ? "" : word.japanese;
     audioText = word.reading;
