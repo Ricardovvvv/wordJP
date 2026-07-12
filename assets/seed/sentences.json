@@ -6365,7 +6365,7 @@
   {
     "id": 910,
     "japanese": "私はイーエムエスで荷物を海外に送りました",
-    "chinese": "我用EMS把包裹寄到了海外",
+    "chinese": "我用把包裹寄到了海外",
     "source": "anki",
     "jlpt_level": 4
   },
@@ -12637,7 +12637,7 @@
   {
     "id": 1806,
     "japanese": "日本放送協会",
-    "chinese": "（NHK）日本广播协会",
+    "chinese": "日本广播协会",
     "source": "anki",
     "jlpt_level": 4
   },
@@ -48001,7 +48001,7 @@
   {
     "id": 6858,
     "japanese": "このバッテリーの容量は5000mAhです",
-    "chinese": "这个电池的容量是5000mAh",
+    "chinese": "这个电池的容量是5000",
     "source": "anki",
     "jlpt_level": 2
   },
@@ -48582,7 +48582,7 @@
   {
     "id": 6941,
     "japanese": "英語をいろはから始める",
-    "chinese": "从ABC开始学英语",
+    "chinese": "从开始学英语",
     "source": "anki",
     "jlpt_level": 1
   },
@@ -64227,7 +64227,7 @@
   {
     "id": 9176,
     "japanese": "善玉コレステロール",
-    "chinese": "高密度脂蛋白胆固醇；HDL",
+    "chinese": "高密度脂蛋白胆固醇；",
     "source": "anki",
     "jlpt_level": 2
   },
@@ -68770,7 +68770,7 @@
   {
     "id": 9825,
     "japanese": "デオキシリボ核酸",
-    "chinese": "脱氧核糖核酸，DNA",
+    "chinese": "脱氧核糖核酸",
     "source": "anki",
     "jlpt_level": 1
   },
@@ -73215,7 +73215,7 @@
   {
     "id": 10460,
     "japanese": "これはあくまで私見ですが、",
-    "chinese": "这只是我的个人意见，",
+    "chinese": "这只是我的个人意见",
     "source": "anki",
     "jlpt_level": 1
   },
@@ -80803,7 +80803,7 @@
   {
     "id": 11544,
     "japanese": "水の分子式はH2Oだ",
-    "chinese": "水的分子式是H<sub>2</sub>O",
+    "chinese": "水的分子式是H<>2</>O",
     "source": "anki",
     "jlpt_level": 1
   },
