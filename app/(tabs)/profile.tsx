@@ -22,8 +22,10 @@ export default function ProfileScreen() {
 
   const handleSwitch = (id: string) => {
     switchTo(id);
-    // Clear old displayed data immediately, reload from new user's localStorage
-    useCollectionStore.getState().loadFromStorage();
+    // Force page reload to reinitialize all stores with new user's data
+    if (typeof window !== "undefined") {
+      window.location.reload();
+    }
   };
 
   const handleAdd = () => {
