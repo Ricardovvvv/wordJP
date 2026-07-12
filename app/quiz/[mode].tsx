@@ -137,7 +137,7 @@ export default function QuizScreen() {
 
   const isJpPrompt = mode === 1 || mode === 3;
   const isSentenceMode = mode === 3 || mode === 4;
-  const showOptionAudio = mode === 2 || mode === 5 || mode === 6;
+  const showOptionAudio = mode === 2 || mode === 4 || mode === 5 || mode === 6;
   const st = wordStats[question.promptWord.id] || { correct: 0, wrong: 0 };
 
   let optionLabel: string;
