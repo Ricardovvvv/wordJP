@@ -112,6 +112,8 @@ function generateSentenceQuestion(
     .all();
   if (distractors.length < 3) return null;
 
+  const isJpPrompt = mode === 3;
+
   // Match distractors by similar length (within ±30% of correct sentence length)
   const correctLen = (isJpPrompt ? correctSentence.japanese : correctSentence.chinese).length;
   const candidates = distractors
@@ -124,8 +126,6 @@ function generateSentenceQuestion(
 
   const shuffled = candidates.slice(0, 6).sort(() => Math.random() - 0.5).slice(0, 3).map((c) => c.s);
   if (shuffled.length < 3) return null;
-
-  const isJpPrompt = mode === 3;
 
   const correctOption: QuizOption = {
     id: correctSentence.id,
