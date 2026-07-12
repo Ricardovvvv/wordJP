@@ -22,8 +22,8 @@ export default function ProfileScreen() {
 
   const handleSwitch = (id: string) => {
     switchTo(id);
-    // Immediately refresh collections & progress for the new user
-    setTimeout(() => loadCollections(), 50);
+    // Clear old displayed data immediately, reload from new user's localStorage
+    useCollectionStore.getState().loadFromStorage();
   };
 
   const handleAdd = () => {
@@ -129,20 +129,6 @@ export default function ProfileScreen() {
           ))}
         </View>
       )}
-
-      {/* Quick switch chips */}
-      <Text style={st.sectionLabel}>快速切换</Text>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={st.chipScroll} contentContainerStyle={{ paddingHorizontal: 16, gap: 8 }}>
-        {users.map((u) => (
-          <Pressable
-            key={u.id}
-            onPress={() => handleSwitch(u.id)}
-            style={[st.chip, u.id === currentUser.id && st.chipActive]}
-          >
-            <Text style={[st.chipText, u.id === currentUser.id && st.chipTextActive]}>{u.name}</Text>
-          </Pressable>
-        ))}
-      </ScrollView>
 
       {/* Navigation */}
       <Text style={st.sectionLabel}>功能</Text>
