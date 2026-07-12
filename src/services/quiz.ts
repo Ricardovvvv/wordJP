@@ -63,53 +63,70 @@ function generateKanaQuestion(
   return { promptWord: correctWord, options: shuffleArray([correctOption, ...distractorOptions]) };
 }
 
-// ---- Sentence question (modes 3 & 4) — real-time text matching ----
+// ---- Cached sentence index (built once per page load) ----
+let _sentIndex: Map<number, any[]> | null = null;
+let _sentList: any[] | null = null;
+
+function getSentenceIndex() {
+  if (_sentIndex && _sentList) return { index: _sentIndex, list: _sentList };
+
+  const { db } = getDatabase();
+  const allSents: any[] = db.select().from(sentences).all();
+  const allWords: any[] = db.select().from(words).all();
+
+  // Pre-build map: word_id -> sentences containing that word
+  const map = new Map<number, any[]>();
+  for (const s of allSents) {
+    for (const w of allWords) {
+      if (s.japanese.includes(w.japanese) || s.chinese.includes(w.chinese_meaning)) {
+        if (!map.has(w.id)) map.set(w.id, []);
+        map.get(w.id)!.push(s);
+      }
+    }
+  }
+
+  _sentIndex = map;
+  _sentList = allSents;
+  return { index: map, list: allSents };
+}
+
+// ---- Sentence question (modes 3 & 4) — uses pre-built index ----
 function generateSentenceQuestion(
   mode: QuizMode,
   availableWords: Word[],
   allWords: Word[]
 ): QuizQuestion | null {
-  const { db } = getDatabase();
-  const allSents: any[] = db.select().from(sentences).all();
-  if (allSents.length < 10) return null;
+  const { index, list } = getSentenceIndex();
+  if (list.length < 4) return null;
 
-  if (availableWords.length < 4) return null;
-
-  // Build a map: word -> sentences that actually contain that word
-  const sentsByWord = new Map<number, any[]>();
-  for (const s of allSents) {
-    for (const w of allWords) {
-      const jp = w.japanese;
-      if (s.japanese.includes(jp) || s.chinese.includes(w.chinese_meaning)) {
-        if (!sentsByWord.has(w.id)) sentsByWord.set(w.id, []);
-        sentsByWord.get(w.id)!.push(s);
-      }
-    }
+  // Find candidates from available words that have sentence matches
+  let candidates = availableWords.filter((w) => index.has(w.id));
+  if (candidates.length < 4) {
+    candidates = allWords.filter((w) => index.has(w.id));
   }
-
-  // Pick words that have at least one real sentence match
-  let candidates = availableWords.filter((w) => sentsByWord.has(w.id));
-  if (candidates.length < 4) candidates = allWords.filter((w) => sentsByWord.has(w.id));
   if (candidates.length < 4) return null;
 
   const correctWord = candidates[Math.floor(Math.random() * candidates.length)];
-  const wordSents = sentsByWord.get(correctWord.id)!;
+  const wordSents = index.get(correctWord.id)!;
   const correctSentence = wordSents[Math.floor(Math.random() * wordSents.length)];
 
   const isJpPrompt = mode === 3;
   const correctLen = (isJpPrompt ? correctSentence.japanese : correctSentence.chinese).length;
-  const usedIds = new Set([correctSentence.id]);
 
-  // Distractors: similar length, exclude the correct sentence
-  const ranked = allSents
-    .filter((s) => !usedIds.has(s.id))
-    .map((s) => {
-      const len = (isJpPrompt ? s.japanese : s.chinese).length;
-      return { s, diff: Math.abs(len - correctLen) / Math.max(correctLen, 1) };
-    })
-    .sort((a, b) => a.diff - b.diff);
+  // Get 3 distractors of similar length
+  const used = new Set([correctSentence.id]);
+  let distractors: any[] = [];
 
-  const distractors = ranked.slice(0, 10).sort(() => Math.random() - 0.5).slice(0, 3).map((c) => c.s);
+  // Random walk: pick from pre-sorted candidates near the target length
+  const pool = list
+    .filter((s) => !used.has(s.id))
+    .sort((a, b) => {
+      const aLen = (isJpPrompt ? a.japanese : a.chinese).length;
+      const bLen = (isJpPrompt ? b.japanese : b.chinese).length;
+      return Math.abs(aLen - correctLen) - Math.abs(bLen - correctLen);
+    });
+
+  distractors = pool.slice(0, 6).sort(() => Math.random() - 0.5).slice(0, 3);
   if (distractors.length < 3) return null;
 
   const correctOption: QuizOption = {
@@ -152,6 +169,9 @@ export function generateQuestions(
     });
   }
   if (availableWords.length === 0) return [];
+
+  // Warm the sentence cache once
+  if (mode === 3 || mode === 4) getSentenceIndex();
 
   const questions: QuizQuestion[] = [];
   for (let i = 0; i < count; i++) {
