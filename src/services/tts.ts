@@ -1,37 +1,48 @@
 /**
- * TTS service — uses Youdao dictvoice API (same as PWA 日语闪卡 project).
- * Much clearer and louder than browser SpeechSynthesis.
+ * TTS service — uses browser SpeechSynthesis (always works, no CORS).
  */
 import { Platform } from "react-native";
+import type { SpeechSynthesisVoice } from "../types";
 
-// Primary: Youdao — excellent JP quality, free, no key needed
-// Fallback: Google TTS
-function getAudioUrl(text: string): string {
-  return `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(text)}&le=jap`;
-}
+let cachedVoices: typeof SpeechSynthesisVoice[] = [];
 
-function getFallbackUrl(text: string): string {
-  return `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=ja&client=tw-ob`;
+function getJapaneseVoice(): SpeechSynthesisVoice | null {
+  const voices: SpeechSynthesisVoice[] = (window as any).speechSynthesis?.getVoices?.() || [];
+  const ja = voices.filter((v) => v.lang.startsWith("ja"));
+  if (ja.length === 0) return null;
+  const best = ja.find((v) => v.name.includes("Kyoko") || v.name.includes("Otoya") || v.name.includes("Google")) || ja[0];
+  return best;
 }
 
 export async function speakJapanese(text: string): Promise<void> {
-  if (Platform.OS === "web" && typeof window !== "undefined") {
-    speakViaAudio(text);
-    return;
-  }
-  // Native: fallback
-  console.log("TTS not available on native yet");
-}
+  if (Platform.OS !== "web" || typeof window === "undefined") return;
 
-function speakViaAudio(text: string) {
-  const audio = new window.Audio(getAudioUrl(text));
-  audio.play().catch(() => {
-    // Fallback to Google TTS
-    const fallback = new window.Audio(getFallbackUrl(text));
-    fallback.play().catch(() => {});
+  return new Promise((resolve) => {
+    const synth = (window as any).speechSynthesis;
+    if (!synth) { resolve(); return; }
+
+    synth.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "ja-JP";
+    u.rate = 0.9;
+
+    if (cachedVoices.length === 0) {
+      const v = (window as any).speechSynthesis.getVoices();
+      if (v.length > 0) cachedVoices = v;
+    }
+    const voice = getJapaneseVoice();
+    if (voice) u.voice = voice;
+
+    u.onend = () => resolve();
+    u.onerror = () => resolve();
+    synth.speak(u);
   });
 }
 
 export function preloadVoices() {
-  // No-op with audio-based TTS
+  if (Platform.OS !== "web" || typeof window === "undefined") return;
+  const s = (window as any).speechSynthesis;
+  if (!s) return;
+  cachedVoices = s.getVoices();
+  s.onvoiceschanged = () => { cachedVoices = s.getVoices(); };
 }

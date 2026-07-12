@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { View, Text, Pressable, ScrollView, TextInput, StyleSheet, Alert } from "react-native";
+import { View, Text, Pressable, ScrollView, TextInput, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import { useUserStore } from "../../src/stores/userStore";
 import { useCollectionStore } from "../../src/stores/collectionStore";
@@ -14,20 +14,23 @@ export default function ProfileScreen() {
   const { users, currentUser, switchTo, addUser, renameUser, deleteUser, load } = useUserStore();
   const loadCollections = useCollectionStore((s) => s.loadFromStorage);
   const [newName, setNewName] = useState("");
+  const [expanded, setExpanded] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editName, setEditName] = useState("");
 
   useEffect(() => { load(); }, []);
+
+  const handleSwitch = (id: string) => {
+    switchTo(id);
+    // Immediately refresh collections & progress for the new user
+    setTimeout(() => loadCollections(), 50);
+  };
 
   const handleAdd = () => {
     const n = newName.trim();
     if (!n) return;
     addUser(n);
     setNewName("");
-  };
-
-  const handleSwitch = (id: string) => {
-    switchTo(id);
     loadCollections();
   };
 
@@ -39,99 +42,110 @@ export default function ProfileScreen() {
   };
 
   const handleDelete = (id: string) => {
-    if (users.length <= 1) {
-      Alert.alert("提示", "至少保留一个用户");
-      return;
-    }
     deleteUser(id);
+    loadCollections();
   };
 
   return (
     <ScrollView style={st.container} contentContainerStyle={{ paddingBottom: 30 }}>
+      {/* Header */}
       <View style={st.header}>
         <Text style={st.title}>我的</Text>
         <Text style={st.subtitle}>wordJP 日语单词学习</Text>
       </View>
 
-      {/* Current user */}
+      {/* Current user badge */}
       <View style={st.userCard}>
-        <View style={st.avatar}>
-          <Text style={st.avatarText}>{currentUser.name[0]}</Text>
+        <View style={st.avatarLarge}>
+          <Text style={st.avatarLargeText}>{currentUser.name[0]}</Text>
         </View>
         <View style={{ flex: 1 }}>
-          <Text style={st.userName}>{currentUser.name}</Text>
-          <Text style={st.userSub}>当前用户</Text>
+          <Text style={st.userNameLarge}>{currentUser.name}</Text>
+          <Text style={st.userHint}>当前用户</Text>
         </View>
+        <Pressable onPress={() => setExpanded(!expanded)} style={st.expandBtn}>
+          <Text style={st.expandText}>{expanded ? "收起 ▲" : "管理 ▼"}</Text>
+        </Pressable>
       </View>
 
-      {/* Switch user */}
-      <Text style={st.sectionLabel}>切换用户</Text>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={st.userList} contentContainerStyle={{ gap: 8, paddingHorizontal: 16 }}>
+      {/* Collapsible user manager */}
+      {expanded && (
+        <View style={st.manager}>
+          {/* Add user */}
+          <View style={st.addRow}>
+            <TextInput
+              style={st.addInput}
+              placeholder="输入新用户名..."
+              placeholderTextColor="#94a3b8"
+              value={newName}
+              onChangeText={setNewName}
+              onSubmitEditing={handleAdd}
+              returnKeyType="done"
+            />
+            <Pressable onPress={handleAdd} style={st.addBtn}>
+              <Text style={st.addBtnText}>+ 添加</Text>
+            </Pressable>
+          </View>
+
+          {/* User list */}
+          {users.map((u, i) => (
+            <View key={u.id} style={st.userItem}>
+              {/* Avatar + name */}
+              <Pressable
+                onPress={() => handleSwitch(u.id)}
+                style={[st.userSelect, u.id === currentUser.id && st.userSelectActive]}
+              >
+                <View style={[st.avatarSmall, u.id === currentUser.id && st.avatarSmallActive]}>
+                  <Text style={[st.avatarSmallText, u.id === currentUser.id && st.avatarSmallTextActive]}>
+                    {u.name[0]}
+                  </Text>
+                </View>
+                {editingId === u.id ? (
+                  <TextInput
+                    style={st.editInput}
+                    value={editName}
+                    onChangeText={setEditName}
+                    onSubmitEditing={() => handleRename(u.id)}
+                    autoFocus
+                    onBlur={() => setEditingId(null)}
+                  />
+                ) : (
+                  <Text style={[st.userItemName, u.id === currentUser.id && st.userItemNameActive]}>
+                    {u.name}
+                    {u.id === currentUser.id ? " ✓" : ""}
+                  </Text>
+                )}
+              </Pressable>
+              {/* Actions */}
+              <Pressable onPress={() => { setEditingId(u.id); setEditName(u.name); }} style={st.iconBtn}>
+                <Text>✏️</Text>
+              </Pressable>
+              {users.length > 1 && (
+                <Pressable onPress={() => handleDelete(u.id)} style={st.iconBtn}>
+                  <Text>🗑️</Text>
+                </Pressable>
+              )}
+            </View>
+          ))}
+        </View>
+      )}
+
+      {/* Quick switch chips */}
+      <Text style={st.sectionLabel}>快速切换</Text>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={st.chipScroll} contentContainerStyle={{ paddingHorizontal: 16, gap: 8 }}>
         {users.map((u) => (
           <Pressable
             key={u.id}
             onPress={() => handleSwitch(u.id)}
-            style={[st.userChip, u.id === currentUser.id && st.userChipActive]}
+            style={[st.chip, u.id === currentUser.id && st.chipActive]}
           >
-            <Text style={[st.userChipText, u.id === currentUser.id && st.userChipTextActive]}>
-              {u.name}
-            </Text>
+            <Text style={[st.chipText, u.id === currentUser.id && st.chipTextActive]}>{u.name}</Text>
           </Pressable>
         ))}
       </ScrollView>
 
-      {/* Manage users */}
-      <Text style={st.sectionLabel}>管理用户</Text>
-      {users.map((u) => (
-        <View key={u.id} style={st.userRow}>
-          <View style={st.avatarSmall}>
-            <Text style={st.avatarSmallText}>{u.name[0]}</Text>
-          </View>
-          {editingId === u.id ? (
-            <TextInput
-              style={st.editInput}
-              value={editName}
-              onChangeText={setEditName}
-              onSubmitEditing={() => handleRename(u.id)}
-              autoFocus
-            />
-          ) : (
-            <Text style={st.userRowName}>{u.name}</Text>
-          )}
-          <View style={st.userActions}>
-            {editingId === u.id ? (
-              <Pressable onPress={() => handleRename(u.id)} style={st.actionBtn}>
-                <Text style={st.actionText}>✓</Text>
-              </Pressable>
-            ) : (
-              <Pressable onPress={() => { setEditingId(u.id); setEditName(u.name); }} style={st.actionBtn}>
-                <Text style={st.actionText}>✏️</Text>
-              </Pressable>
-            )}
-            <Pressable onPress={() => handleDelete(u.id)} style={st.actionBtn}>
-              <Text style={[st.actionText, { color: "#ef4444" }]}>🗑️</Text>
-            </Pressable>
-          </View>
-        </View>
-      ))}
-
-      {/* Add user */}
-      <View style={st.addRow}>
-        <TextInput
-          style={st.addInput}
-          placeholder="输入新用户名..."
-          placeholderTextColor="#94a3b8"
-          value={newName}
-          onChangeText={setNewName}
-          onSubmitEditing={handleAdd}
-        />
-        <Pressable onPress={handleAdd} style={st.addBtn}>
-          <Text style={st.addBtnText}>+ 添加</Text>
-        </Pressable>
-      </View>
-
       {/* Navigation */}
-      <Text style={[st.sectionLabel, { marginTop: 20 }]}>功能</Text>
+      <Text style={st.sectionLabel}>功能</Text>
       {ITEMS.map((item) => (
         <Pressable key={item.route} onPress={() => router.push(item.route)} style={st.card}>
           <Text style={st.cardIcon}>{item.icon}</Text>
@@ -152,53 +166,67 @@ const st = StyleSheet.create({
   title: { fontSize: 28, fontWeight: "700", color: "#1e293b" },
   subtitle: { fontSize: 14, color: "#94a3b8", marginTop: 4 },
 
-  // Current user card
+  // Current user
   userCard: {
-    backgroundColor: "#ffffff", marginHorizontal: 16, borderRadius: 14, padding: 16,
+    backgroundColor: "#ffffff", marginHorizontal: 16, borderRadius: 16, padding: 16,
     flexDirection: "row", alignItems: "center", borderWidth: 1, borderColor: "#e2e8f0",
   },
-  avatar: {
+  avatarLarge: {
     width: 52, height: 52, borderRadius: 26, backgroundColor: "#dbeafe",
     alignItems: "center", justifyContent: "center", marginRight: 14,
   },
-  avatarText: { fontSize: 24, fontWeight: "700", color: "#2563eb" },
-  userName: { fontSize: 18, fontWeight: "700", color: "#1e293b" },
-  userSub: { fontSize: 12, color: "#94a3b8", marginTop: 2 },
-
-  // User chips
-  sectionLabel: { fontSize: 14, fontWeight: "500", color: "#94a3b8", textTransform: "uppercase", letterSpacing: 1, paddingHorizontal: 16, marginTop: 16, marginBottom: 8 },
-  userList: { marginBottom: 4 },
-  userChip: { paddingHorizontal: 16, paddingVertical: 8, borderRadius: 20, borderWidth: 1, borderColor: "#e2e8f0", backgroundColor: "#f8fafc" },
-  userChipActive: { backgroundColor: "#dbeafe", borderColor: "#93c5fd" },
-  userChipText: { fontSize: 14, fontWeight: "600", color: "#64748b" },
-  userChipTextActive: { color: "#2563eb" },
-
-  // Manage
-  userRow: {
-    flexDirection: "row", alignItems: "center", marginHorizontal: 16, marginBottom: 6,
-    backgroundColor: "#ffffff", borderRadius: 12, padding: 12, borderWidth: 1, borderColor: "#f1f5f9",
+  avatarLargeText: { fontSize: 24, fontWeight: "700", color: "#2563eb" },
+  userNameLarge: { fontSize: 18, fontWeight: "700", color: "#1e293b" },
+  userHint: { fontSize: 12, color: "#94a3b8", marginTop: 2 },
+  expandBtn: {
+    paddingHorizontal: 14, paddingVertical: 8, borderRadius: 8,
+    borderWidth: 1, borderColor: "#e2e8f0",
   },
+  expandText: { fontSize: 13, fontWeight: "600", color: "#64748b" },
+
+  // Collapsible manager
+  manager: {
+    marginHorizontal: 16, backgroundColor: "#ffffff", borderRadius: 14, marginTop: 10,
+    padding: 14, borderWidth: 1, borderColor: "#f1f5f9",
+  },
+  addRow: { flexDirection: "row", gap: 8, marginBottom: 12 },
+  addInput: { flex: 1, backgroundColor: "#f8fafc", borderRadius: 10, padding: 12, fontSize: 14, borderWidth: 1, borderColor: "#e2e8f0" },
+  addBtn: { backgroundColor: "#2563eb", borderRadius: 10, paddingHorizontal: 18, alignItems: "center", justifyContent: "center" },
+  addBtnText: { color: "#fff", fontWeight: "700", fontSize: 14 },
+
+  userItem: {
+    flexDirection: "row", alignItems: "center", paddingVertical: 6,
+    borderBottomWidth: 1, borderBottomColor: "#f8fafc",
+  },
+  userSelect: {
+    flex: 1, flexDirection: "row", alignItems: "center",
+    paddingVertical: 6, paddingHorizontal: 6, borderRadius: 10,
+  },
+  userSelectActive: { backgroundColor: "#eff6ff" },
   avatarSmall: {
     width: 36, height: 36, borderRadius: 18, backgroundColor: "#f1f5f9",
-    alignItems: "center", justifyContent: "center", marginRight: 12,
+    alignItems: "center", justifyContent: "center", marginRight: 10,
   },
-  avatarSmallText: { fontSize: 16, fontWeight: "700", color: "#64748b" },
-  userRowName: { flex: 1, fontSize: 15, fontWeight: "600", color: "#1e293b" },
-  editInput: { flex: 1, backgroundColor: "#f8fafc", borderRadius: 8, paddingHorizontal: 10, paddingVertical: 6, fontSize: 15, borderWidth: 1, borderColor: "#e2e8f0" },
-  userActions: { flexDirection: "row", gap: 4 },
-  actionBtn: { paddingHorizontal: 10, paddingVertical: 6 },
-  actionText: { fontSize: 16 },
+  avatarSmallActive: { backgroundColor: "#dbeafe" },
+  avatarSmallText: { fontSize: 16, fontWeight: "700", color: "#94a3b8" },
+  avatarSmallTextActive: { color: "#2563eb" },
+  userItemName: { fontSize: 15, fontWeight: "600", color: "#475569" },
+  userItemNameActive: { color: "#2563eb" },
+  editInput: { flex: 1, backgroundColor: "#f8fafc", borderRadius: 8, paddingHorizontal: 10, paddingVertical: 6, fontSize: 14, borderWidth: 1, borderColor: "#e2e8f0" },
+  iconBtn: { padding: 8 },
 
-  addRow: { flexDirection: "row", gap: 8, marginHorizontal: 16, marginTop: 6 },
-  addInput: { flex: 1, backgroundColor: "#ffffff", borderRadius: 12, padding: 12, fontSize: 15, borderWidth: 1, borderColor: "#e2e8f0" },
-  addBtn: { backgroundColor: "#2563eb", borderRadius: 12, paddingHorizontal: 20, alignItems: "center", justifyContent: "center" },
-  addBtnText: { color: "#ffffff", fontWeight: "700", fontSize: 15 },
+  // Chips
+  sectionLabel: { fontSize: 14, fontWeight: "500", color: "#94a3b8", textTransform: "uppercase", letterSpacing: 1, paddingHorizontal: 16, marginTop: 16, marginBottom: 8 },
+  chipScroll: { marginBottom: 2 },
+  chip: { paddingHorizontal: 16, paddingVertical: 9, borderRadius: 20, borderWidth: 1.5, borderColor: "#e2e8f0", backgroundColor: "#f8fafc" },
+  chipActive: { backgroundColor: "#dbeafe", borderColor: "#93c5fd" },
+  chipText: { fontSize: 14, fontWeight: "600", color: "#64748b" },
+  chipTextActive: { color: "#2563eb" },
 
   // Feature cards
   card: {
     backgroundColor: "#ffffff", marginHorizontal: 16, marginBottom: 8, borderRadius: 14,
-    padding: 18, flexDirection: "row", alignItems: "center",
-    borderWidth: 1, borderColor: "#e2e8f0",
+    padding: 18, flexDirection: "row", alignItems: "center", borderWidth: 1, borderColor: "#e2e8f0",
   },
   cardIcon: { fontSize: 26, marginRight: 16 },
   cardLabel: { fontSize: 16, fontWeight: "700", color: "#1e293b" },

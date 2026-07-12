@@ -19,8 +19,8 @@ export const QUIZ_MODES = [
 ] as const;
 
 export const DEFAULT_SETTINGS = {
-  jlptLevels: [5, 4],
-  sources: ["jlpt"],
+  jlptLevels: [5, 4, 3, 2, 1],
+  sources: ["jlpt", "minna_no_nihongo", "standard_jp", "genki", "thesaurus"],
   dailyGoal: 20,
   soundEnabled: true,
 } as const;
