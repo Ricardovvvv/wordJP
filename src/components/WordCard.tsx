@@ -86,10 +86,10 @@ export function WordCard({ word, mode, showMeaning = false, blind = false, stats
         </Text>
         {audioText && <AudioButton text={audioText} />}
       </View>
-      {/* Hint: only show during answering for mode 1 (kanji info is context, not answer) */}
+      {/* Hint: show during answering if it's safe context (kanji/kana, not meaning) */}
       {hintText && showMeaning ? (
         <Text style={styles.reading}>{hintText}</Text>
-      ) : hintText && mode === 1 && !showMeaning ? (
+      ) : hintText && (mode === 1 || mode === 3) && !showMeaning ? (
         <Text style={styles.reading}>{hintText}</Text>
       ) : null}
       {/* Answer reveal */}
