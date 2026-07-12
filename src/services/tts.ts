@@ -1,48 +1,49 @@
 /**
- * TTS service — uses browser SpeechSynthesis (always works, no CORS).
+ * TTS — Youdao dictvoice primary, SpeechSynthesis fallback.
  */
 import { Platform } from "react-native";
-import type { SpeechSynthesisVoice } from "../types";
 
-let cachedVoices: typeof SpeechSynthesisVoice[] = [];
-
-function getJapaneseVoice(): SpeechSynthesisVoice | null {
-  const voices: SpeechSynthesisVoice[] = (window as any).speechSynthesis?.getVoices?.() || [];
-  const ja = voices.filter((v) => v.lang.startsWith("ja"));
-  if (ja.length === 0) return null;
-  const best = ja.find((v) => v.name.includes("Kyoko") || v.name.includes("Otoya") || v.name.includes("Google")) || ja[0];
-  return best;
+function playViaAudioElement(url: string): Promise<boolean> {
+  return new Promise((resolve) => {
+    if (typeof window === "undefined") { resolve(false); return; }
+    const a = new Audio(url);
+    a.onended = () => resolve(true);
+    a.onerror = () => resolve(false);
+    const p = a.play();
+    if (p) p.catch(() => resolve(false));
+  });
 }
 
 export async function speakJapanese(text: string): Promise<void> {
   if (Platform.OS !== "web" || typeof window === "undefined") return;
 
-  return new Promise((resolve) => {
-    const synth = (window as any).speechSynthesis;
-    if (!synth) { resolve(); return; }
+  // Google TTS — reliably produces Japanese voice with tl=ja parameter
+  const google = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=ja&client=tw-ob`;
+  const result = await playViaAudioElement(google);
+  if (result) return;
 
+  // Youdao as backup
+  const youdao = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(text)}&le=jap`;
+  const r2 = await playViaAudioElement(youdao);
+  if (r2) return;
+
+  // Browser fallback
+  try {
+    const synth = (window as any).speechSynthesis;
+    if (!synth) return;
     synth.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "ja-JP";
     u.rate = 0.9;
-
-    if (cachedVoices.length === 0) {
-      const v = (window as any).speechSynthesis.getVoices();
-      if (v.length > 0) cachedVoices = v;
-    }
-    const voice = getJapaneseVoice();
-    if (voice) u.voice = voice;
-
-    u.onend = () => resolve();
-    u.onerror = () => resolve();
-    synth.speak(u);
-  });
+    const voices = synth.getVoices();
+    const ja = voices.find((v: any) => v.lang.startsWith("ja"));
+    if (ja) u.voice = ja;
+    await new Promise<void>((resolve) => {
+      u.onend = () => resolve();
+      u.onerror = () => resolve();
+      synth.speak(u);
+    });
+  } catch {}
 }
 
-export function preloadVoices() {
-  if (Platform.OS !== "web" || typeof window === "undefined") return;
-  const s = (window as any).speechSynthesis;
-  if (!s) return;
-  cachedVoices = s.getVoices();
-  s.onvoiceschanged = () => { cachedVoices = s.getVoices(); };
-}
+export function preloadVoices() {}
