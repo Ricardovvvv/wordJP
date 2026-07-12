@@ -63,69 +63,54 @@ function generateKanaQuestion(
   return { promptWord: correctWord, options: shuffleArray([correctOption, ...distractorOptions]) };
 }
 
-// ---- Sentence question (modes 3 & 4) — uses real database sentences ----
+// ---- Sentence question (modes 3 & 4) — real-time text matching ----
 function generateSentenceQuestion(
   mode: QuizMode,
   availableWords: Word[],
   allWords: Word[]
 ): QuizQuestion | null {
   const { db } = getDatabase();
-  const wordIds = availableWords.map((w) => w.id);
-  if (wordIds.length === 0) return null;
+  const allSents: any[] = db.select().from(sentences).all();
+  if (allSents.length < 10) return null;
 
-  const linkedIds = new Set(
-    db.selectDistinct({ word_id: wordSentences.word_id })
-      .from(wordSentences)
-      .where(inArray(wordSentences.word_id, wordIds))
-      .all()
-      .map((r) => r.word_id)
-  );
+  if (availableWords.length < 4) return null;
 
-  let wordsWithSentences = availableWords.filter((w) => linkedIds.has(w.id));
-
-  if (wordsWithSentences.length < 4) {
-    const allLinked = new Set(
-      db.selectDistinct({ word_id: wordSentences.word_id })
-        .from(wordSentences)
-        .all()
-        .map((r) => r.word_id)
-    );
-    wordsWithSentences = allWords.filter((w) => allLinked.has(w.id));
+  // Build a map: word -> sentences that actually contain that word
+  const sentsByWord = new Map<number, any[]>();
+  for (const s of allSents) {
+    for (const w of allWords) {
+      const jp = w.japanese;
+      if (s.japanese.includes(jp) || s.chinese.includes(w.chinese_meaning)) {
+        if (!sentsByWord.has(w.id)) sentsByWord.set(w.id, []);
+        sentsByWord.get(w.id)!.push(s);
+      }
+    }
   }
 
-  if (wordsWithSentences.length < 4) return null;
+  // Pick words that have at least one real sentence match
+  let candidates = availableWords.filter((w) => sentsByWord.has(w.id));
+  if (candidates.length < 4) candidates = allWords.filter((w) => sentsByWord.has(w.id));
+  if (candidates.length < 4) return null;
 
-  const correctWord = wordsWithSentences[Math.floor(Math.random() * wordsWithSentences.length)];
-  const refs = db.select({ sentence_id: wordSentences.sentence_id })
-    .from(wordSentences)
-    .where(eq(wordSentences.word_id, correctWord.id))
-    .all();
-  if (refs.length === 0) return null;
-
-  const ref = refs[Math.floor(Math.random() * refs.length)];
-  const correctSentence = db.select().from(sentences).where(eq(sentences.id, ref.sentence_id)).all()[0];
-  if (!correctSentence) return null;
-
-  const distractors = db.select().from(sentences)
-    .where(ne(sentences.id, correctSentence.id))
-    .limit(200)
-    .all();
-  if (distractors.length < 3) return null;
+  const correctWord = candidates[Math.floor(Math.random() * candidates.length)];
+  const wordSents = sentsByWord.get(correctWord.id)!;
+  const correctSentence = wordSents[Math.floor(Math.random() * wordSents.length)];
 
   const isJpPrompt = mode === 3;
-
-  // Match distractors by similar length (within ±30% of correct sentence length)
   const correctLen = (isJpPrompt ? correctSentence.japanese : correctSentence.chinese).length;
-  const candidates = distractors
+  const usedIds = new Set([correctSentence.id]);
+
+  // Distractors: similar length, exclude the correct sentence
+  const ranked = allSents
+    .filter((s) => !usedIds.has(s.id))
     .map((s) => {
       const len = (isJpPrompt ? s.japanese : s.chinese).length;
-      const diff = Math.abs(len - correctLen) / Math.max(correctLen, 1);
-      return { s, diff };
+      return { s, diff: Math.abs(len - correctLen) / Math.max(correctLen, 1) };
     })
     .sort((a, b) => a.diff - b.diff);
 
-  const shuffled = candidates.slice(0, 6).sort(() => Math.random() - 0.5).slice(0, 3).map((c) => c.s);
-  if (shuffled.length < 3) return null;
+  const distractors = ranked.slice(0, 10).sort(() => Math.random() - 0.5).slice(0, 3).map((c) => c.s);
+  if (distractors.length < 3) return null;
 
   const correctOption: QuizOption = {
     id: correctSentence.id,
@@ -133,7 +118,7 @@ function generateSentenceQuestion(
     secondaryText: isJpPrompt ? correctSentence.japanese : correctSentence.chinese,
     isCorrect: true,
   };
-  const distractorOptions: QuizOption[] = shuffled.map((s) => ({
+  const distractorOptions: QuizOption[] = distractors.map((s) => ({
     id: s.id,
     text: isJpPrompt ? s.chinese : s.japanese,
     secondaryText: isJpPrompt ? s.japanese : s.chinese,
