@@ -108,10 +108,22 @@ function generateSentenceQuestion(
 
   const distractors = db.select().from(sentences)
     .where(ne(sentences.id, correctSentence.id))
-    .limit(100)
+    .limit(200)
     .all();
   if (distractors.length < 3) return null;
-  const shuffled = shuffleArray(distractors).slice(0, 3);
+
+  // Match distractors by similar length (within ±30% of correct sentence length)
+  const correctLen = (isJpPrompt ? correctSentence.japanese : correctSentence.chinese).length;
+  const candidates = distractors
+    .map((s) => {
+      const len = (isJpPrompt ? s.japanese : s.chinese).length;
+      const diff = Math.abs(len - correctLen) / Math.max(correctLen, 1);
+      return { s, diff };
+    })
+    .sort((a, b) => a.diff - b.diff);
+
+  const shuffled = candidates.slice(0, 6).sort(() => Math.random() - 0.5).slice(0, 3).map((c) => c.s);
+  if (shuffled.length < 3) return null;
 
   const isJpPrompt = mode === 3;
 

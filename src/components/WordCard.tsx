@@ -30,22 +30,22 @@ export function WordCard({ word, mode, showMeaning = false, blind = false, stats
   if (mode === 1) {
     label = "日语单词";
     mainText = blind ? "🔇 听读音选择" : word.reading;
-    hintText = blind ? "" : word.japanese;
+    hintText = word.japanese;
     audioText = word.reading;
   } else if (isKanjiPrompt) {
-    label = "汉字";
+    label = "汉字 → 选假名读音";
     mainText = blind ? "🔇 听读音选择" : word.japanese;
-    hintText = blind ? "" : word.chinese_meaning;
+    hintText = word.chinese_meaning;
     audioText = word.japanese;
   } else if (isKanaPrompt) {
-    label = "平假名读音";
+    label = "假名读音 → 选汉字";
     mainText = blind ? "🔇 听读音选择" : word.reading;
-    hintText = blind ? "" : "";
+    hintText = "";
     audioText = word.reading;
   } else if (isJpPrompt) {
     label = "日语单词";
     mainText = blind ? "🔇 听读音选择" : word.japanese;
-    hintText = blind ? "" : word.reading;
+    hintText = word.reading;
     audioText = word.japanese;
   } else {
     label = "中文释义";
@@ -86,7 +86,13 @@ export function WordCard({ word, mode, showMeaning = false, blind = false, stats
         </Text>
         {audioText && <AudioButton text={audioText} />}
       </View>
-      {hintText ? <Text style={styles.reading}>{hintText}</Text> : null}
+      {/* Hint: only show during answering for mode 1 (kanji info is context, not answer) */}
+      {hintText && showMeaning ? (
+        <Text style={styles.reading}>{hintText}</Text>
+      ) : hintText && mode === 1 && !showMeaning ? (
+        <Text style={styles.reading}>{hintText}</Text>
+      ) : null}
+      {/* Answer reveal */}
       {showMeaning && (
         <View style={styles.meaningSection}>
           <Text style={styles.meaningText}>

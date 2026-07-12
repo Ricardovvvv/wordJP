@@ -1,28 +1,32 @@
 import { create } from "zustand";
 import type { Word, FavoriteWord, WrongWord } from "../types";
 
+function userKey(base: string): string {
+  try {
+    const uid = localStorage.getItem("wordjp_current_user") || "default";
+    return `wordjp_${uid}_${base}`;
+  } catch { return `wordjp_default_${base}`; }
+}
+
 interface CollectionState {
   favorites: FavoriteWord[];
   wrongAnswers: WrongWord[];
 
-  // Favorites
   addFavorite: (word: Word) => void;
   removeFavorite: (wordId: number) => void;
   isFavorite: (wordId: number) => boolean;
 
-  // Wrong answers
   addWrong: (word: Word) => void;
   removeWrong: (wordId: number) => void;
   isWrong: (wordId: number) => boolean;
 
-  // Load from localStorage
   loadFromStorage: () => void;
 }
 
 function saveToStorage(favs: FavoriteWord[], wrongs: WrongWord[]) {
   try {
-    localStorage.setItem("wordjp_favorites", JSON.stringify(favs));
-    localStorage.setItem("wordjp_wrong", JSON.stringify(wrongs));
+    localStorage.setItem(userKey("favorites"), JSON.stringify(favs));
+    localStorage.setItem(userKey("wrong"), JSON.stringify(wrongs));
   } catch {}
 }
 
@@ -55,17 +59,13 @@ export const useCollectionStore = create<CollectionState>((set, get) => ({
         w.word.id === word.id ? { ...w, wrongCount: w.wrongCount + 1 } : w
       );
     } else {
-      updated = [
-        ...wrongAnswers,
-        { wrongCount: 1, addedAt: new Date().toISOString(), word },
-      ];
+      updated = [...wrongAnswers, { wrongCount: 1, addedAt: new Date().toISOString(), word }];
     }
     set({ wrongAnswers: updated });
     saveToStorage(get().favorites, updated);
   },
 
   removeWrong: (wordId: number) => {
-    // Called when user answers correctly — remove from wrong book
     const updated = get().wrongAnswers.filter((w) => w.word.id !== wordId);
     set({ wrongAnswers: updated });
     saveToStorage(get().favorites, updated);
@@ -75,8 +75,8 @@ export const useCollectionStore = create<CollectionState>((set, get) => ({
 
   loadFromStorage: () => {
     try {
-      const favs = localStorage.getItem("wordjp_favorites");
-      const wrongs = localStorage.getItem("wordjp_wrong");
+      const favs = localStorage.getItem(userKey("favorites"));
+      const wrongs = localStorage.getItem(userKey("wrong"));
       if (favs) set({ favorites: JSON.parse(favs) });
       if (wrongs) set({ wrongAnswers: JSON.parse(wrongs) });
     } catch {}

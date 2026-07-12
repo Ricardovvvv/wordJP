@@ -1,34 +1,37 @@
 import { getDatabase, eq, and } from "../db/client";
 import { userProgress } from "../db/client";
 
-// Simplified SM-2 spaced repetition algorithm
-// Maps quality of response (0-5) to next review interval
+const INTERVALS_MINUTES = [1, 10, 60, 1440, 4320, 10080];
 
-const INTERVALS_MINUTES = [1, 10, 60, 1440, 4320, 10080]; // 1m, 10m, 1h, 1d, 3d, 7d
-
-function calculateNextReview(
-  quality: number, // 0 = wrong, 5 = perfect
-  consecutiveCorrect: number
-): string {
-  const intervalMinutes =
-    INTERVALS_MINUTES[Math.min(consecutiveCorrect, INTERVALS_MINUTES.length - 1)];
-  const nextDate = new Date(Date.now() + intervalMinutes * 60 * 1000);
-  return nextDate.toISOString();
+function calculateNextReview(consecutiveCorrect: number): string {
+  const interval = INTERVALS_MINUTES[Math.min(consecutiveCorrect, INTERVALS_MINUTES.length - 1)];
+  return new Date(Date.now() + interval * 60 * 1000).toISOString();
 }
 
-export function recordAnswer(
-  wordId: number,
-  quizMode: number,
-  isCorrect: boolean
-) {
+// LocalStorage backup for web — survives refresh
+function lsKey(): string {
+  try {
+    const uid = localStorage.getItem("wordjp_current_user") || "default";
+    return `wordjp_${uid}_progress`;
+  } catch { return "wordjp_default_progress"; }
+}
+function saveProgressToLS(all: any[]) {
+  try { localStorage.setItem(lsKey(), JSON.stringify(all)); } catch {}
+}
+function loadProgressFromLS(): any[] {
+  try {
+    const raw = localStorage.getItem(lsKey());
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
+
+export function recordAnswer(wordId: number, quizMode: number, isCorrect: boolean) {
   const { db } = getDatabase();
 
   const existing = db
     .select()
     .from(userProgress)
-    .where(
-      and(eq(userProgress.word_id, wordId), eq(userProgress.quiz_mode, quizMode))
-    )
+    .where(and(eq(userProgress.word_id, wordId), eq(userProgress.quiz_mode, quizMode)))
     .all();
 
   const now = new Date().toISOString();
@@ -37,17 +40,13 @@ export function recordAnswer(
     const record = existing[0];
     const correctCount = record.correct_count + (isCorrect ? 1 : 0);
     const wrongCount = record.wrong_count + (isCorrect ? 0 : 1);
-    const nextReview = calculateNextReview(
-      isCorrect ? 4 : 1,
-      correctCount
-    );
 
     db.update(userProgress)
       .set({
         correct_count: correctCount,
         wrong_count: wrongCount,
         last_reviewed_at: now,
-        next_review_at: nextReview,
+        next_review_at: calculateNextReview(correctCount),
       })
       .where(eq(userProgress.id, record.id))
       .run();
@@ -59,65 +58,53 @@ export function recordAnswer(
         correct_count: isCorrect ? 1 : 0,
         wrong_count: isCorrect ? 0 : 1,
         last_reviewed_at: now,
-        next_review_at: calculateNextReview(isCorrect ? 3 : 1, isCorrect ? 1 : 0),
+        next_review_at: calculateNextReview(isCorrect ? 1 : 0),
       })
       .run();
   }
-}
 
-export function getWordsDueForReview(quizMode?: number): number[] {
-  const { db } = getDatabase();
-
-  const now = new Date().toISOString();
-  const conditions = quizMode
-    ? [eq(userProgress.quiz_mode, quizMode)]
-    : [];
-
-  const due = db
-    .select({ word_id: userProgress.word_id })
-    .from(userProgress)
-    .where(conditions.length > 0 ? and(...conditions) : undefined)
-    .all();
-
-  // Filter words where next_review_at <= now
-  return due
-    .filter((r) => {
-      const progress = db
-        .select()
-        .from(userProgress)
-        .where(eq(userProgress.word_id, r.word_id))
-        .all()[0];
-      return progress && progress.next_review_at && progress.next_review_at <= now;
-    })
-    .map((r) => r.word_id);
+  // Backup to localStorage for web persistence
+  try {
+    const all = db.select().from(userProgress).all();
+    saveProgressToLS(all);
+  } catch {}
 }
 
 export function getProgressStats() {
   const { db } = getDatabase();
+  let all = db.select().from(userProgress).all();
 
-  const all = db.select().from(userProgress).all();
+  // On web, restore from localStorage if in-memory DB is empty
+  if (all.length === 0) {
+    const backup = loadProgressFromLS();
+    if (backup.length > 0) {
+      // Re-insert into in-memory DB
+      for (const p of backup) {
+        try {
+          db.insert(userProgress).values({
+            word_id: p.word_id,
+            quiz_mode: p.quiz_mode,
+            correct_count: p.correct_count,
+            wrong_count: p.wrong_count,
+            last_reviewed_at: p.last_reviewed_at,
+            next_review_at: p.next_review_at,
+          }).run();
+        } catch {}
+      }
+      all = db.select().from(userProgress).all();
+    }
+  }
 
-  const totalReviewed = all.length;
-  const totalCorrect = all.reduce((sum, r) => sum + r.correct_count, 0);
-  const totalWrong = all.reduce((sum, r) => sum + r.wrong_count, 0);
+  const totalCorrect = all.reduce((sum: number, r: any) => sum + (r.correct_count || 0), 0);
+  const totalWrong = all.reduce((sum: number, r: any) => sum + (r.wrong_count || 0), 0);
   const total = totalCorrect + totalWrong;
   const accuracy = total > 0 ? Math.round((totalCorrect / total) * 100) : 0;
+  const wordsLearned = all.filter((r: any) => r.correct_count > 0).length;
 
-  // Words learned (correct at least once)
-  const wordsLearned = all.filter((r) => r.correct_count > 0).length;
-
-  // Today's stats
   const today = new Date().toISOString().split("T")[0];
   const todayReviewed = all.filter(
-    (r) => r.last_reviewed_at && r.last_reviewed_at.startsWith(today)
+    (r: any) => r.last_reviewed_at && r.last_reviewed_at.startsWith(today)
   ).length;
 
-  return {
-    totalReviewed,
-    totalCorrect,
-    totalWrong,
-    accuracy,
-    wordsLearned,
-    todayReviewed,
-  };
+  return { totalReviewed: all.length, totalCorrect, totalWrong, accuracy, wordsLearned, todayReviewed };
 }
