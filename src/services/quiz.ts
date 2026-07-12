@@ -27,12 +27,14 @@ function generateWordQuestion(
     text: isJpPrompt ? correctWord.chinese_meaning : correctWord.japanese,
     secondaryText: isJpPrompt ? correctWord.japanese : correctWord.chinese_meaning,
     isCorrect: true,
+    audioText: isJpPrompt ? correctWord.reading : correctWord.reading,
   };
   const distractorOptions: QuizOption[] = distractors.map((w) => ({
     id: w.id,
     text: isJpPrompt ? w.chinese_meaning : w.japanese,
     secondaryText: isJpPrompt ? w.japanese : w.chinese_meaning,
     isCorrect: false,
+    audioText: w.reading,
   }));
   return { promptWord: correctWord, options: shuffleArray([correctOption, ...distractorOptions]) };
 }
@@ -53,12 +55,14 @@ function generateKanaQuestion(
     text: isKanjiPrompt ? correctWord.reading : correctWord.japanese,
     secondaryText: isKanjiPrompt ? correctWord.japanese : correctWord.reading,
     isCorrect: true,
+    audioText: isKanjiPrompt ? correctWord.reading : correctWord.reading,
   };
   const distractorOptions: QuizOption[] = distractors.map((w) => ({
     id: w.id,
     text: isKanjiPrompt ? w.reading : w.japanese,
     secondaryText: isKanjiPrompt ? w.japanese : w.reading,
     isCorrect: false,
+    audioText: isKanjiPrompt ? w.reading : w.reading,
   }));
   return { promptWord: correctWord, options: shuffleArray([correctOption, ...distractorOptions]) };
 }

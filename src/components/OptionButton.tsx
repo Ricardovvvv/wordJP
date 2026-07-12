@@ -70,7 +70,7 @@ export function OptionButton({ option, index, state, onPress, disabled, showAudi
       <Text style={[styles.optionText, { color: colors.text }]} numberOfLines={3}>
         {option.text}
       </Text>
-      {showAudio && <SmallAudioBtn text={option.text} />}
+      {showAudio && <SmallAudioBtn text={option.audioText || option.text} />}
       {state === "selected-correct" && <Text style={styles.resultIcon}>✓</Text>}
       {state === "selected-wrong" && <Text style={styles.resultIcon}>✗</Text>}
       {state === "revealed-correct" && <Text style={styles.dimmedCorrect}>✓</Text>}

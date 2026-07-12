@@ -44,6 +44,7 @@ export interface QuizOption {
   text: string;
   secondaryText?: string;
   isCorrect: boolean;
+  audioText?: string;  // kana reading for TTS (not kanji)
 }
 
 export interface QuizQuestion {

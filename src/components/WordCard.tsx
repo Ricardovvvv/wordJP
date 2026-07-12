@@ -36,7 +36,7 @@ export function WordCard({ word, mode, showMeaning = false, blind = false, stats
     label = "汉字 → 选假名读音";
     mainText = blind ? "🔇 听读音选择" : word.japanese;
     hintText = word.chinese_meaning;
-    audioText = word.japanese;
+    audioText = word.reading || word.japanese;
   } else if (isKanaPrompt) {
     label = "假名读音 → 选汉字";
     mainText = blind ? "🔇 听读音选择" : word.reading;
@@ -46,7 +46,7 @@ export function WordCard({ word, mode, showMeaning = false, blind = false, stats
     label = "日语单词";
     mainText = blind ? "🔇 听读音选择" : word.japanese;
     hintText = word.reading;
-    audioText = word.japanese;
+    audioText = word.reading || word.japanese;
   } else {
     label = "中文释义";
     mainText = word.chinese_meaning;
